@@ -1,0 +1,65 @@
+.ambulanceHiring{
+    width: $defaultWidth;
+    height: $defaultHeight;
+    background-color: $globalWhite;
+    padding: 1% 0;
+    .ambulanceContainer{
+        width: $defaultWidth;
+        height: $defaultHeight;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-content: center;
+        align-items: center;
+
+        .ambulanceImage{
+            flex-basis: 55%;
+            height: auto;
+            padding: 5% 0;
+        }
+        .ambulanceInformation{
+            flex-basis: 40%;
+            overflow: hidden;
+            .ambulanceTitle{
+                width: $defaultWidth;
+                height: $defaultHeight;
+                padding: 3% 7%;
+                font-size: $fontGiant;
+                text-align: $textLeft;
+                font-weight: $fontEight;
+                font-style: $fontStyle;
+                text-transform: $textCapitalize;
+                color:$titleColor;
+                text-shadow:$globalTitleShadow;
+            }
+            .ambulanceBrief{
+                width: $defaultWidth;
+                height: $defaultHeight;
+                padding: 7% 9%;
+                font-size: $standardZeroNine;
+                text-transform: $textCapitalize;
+
+                a{
+                    color: $titleColor;
+                    transition: .2s all ease-in-out;
+                    font-style: $fontStyle;
+                    font-weight: $fontFive;
+
+                    &:hover{
+                        color: $globalBlue;
+                    }
+                }
+            }
+            .ambulanceNumber{
+                font-size: $fontMonster;
+                padding: 1% 5%;
+                font-style: $fontStyle;
+                font-weight: $fontSix;
+                color:$titleColor;
+                text-shadow:$globalTitleShadow;
+                display: inline-block;
+              }
+            }
+        }
+    }

@@ -1,0 +1,85 @@
+.aboutClinic{
+    width: $defaultWidth;
+    height: $defaultHeight;
+    background-color: $sectionPrimaryColor;
+    padding: 4% 0;
+    .aboutClinicContainer{
+        width: $defaultWidth;
+        height: $defaultHeight;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+        .aboutContentBox{
+            flex-basis: 45%;
+            height: $defaultHeight;
+            .headNoteTag{
+                @include tinyTitle;
+            }
+            .aboutTitle{
+                @include sectiionTitle ;
+            }
+            .aboutBrief{
+                font-size: $standardTwo;
+                font-weight: $fontTwo;
+                font-style: $fontStyle;
+                padding: 4% 0%;
+            }
+            .aboutBtn{
+                display: inline-block;
+                width: 200px;
+                height: auto;
+                border:1px solid rgb(0, 72, 97);
+                color: $globalDarkBlue;
+                padding: 3% 3%;
+                border-radius: 11px 11px 11px 11px;
+                text-align: $textCenter;
+                text-transform: $textCapitalize;
+                position: relative;
+                transition: .3s all ease;
+
+                &:hover{
+                    color: $globalWhite;
+                    border:1px solid $globalSemiDeepMagenta;
+                    background-color:$globalSemiDeepMagenta;
+                }
+            }
+            .matterPoints{
+                width: $defaultWidth;
+                height: $defaultHeight;
+                padding: 1% 0;
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-around;
+                .points{
+                    i{
+                        color: $globalSemiDeepMagenta;
+                        font-size: $standardOne;
+                        cursor: pointer;
+                    }
+                    .aboutBrief{
+                        font-size: $standardOne;
+                        font-weight: $fontFive;
+                        color:$globalDarkBlue;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+        .aboutImageBox{
+            flex-basis: 50%;
+            height: auto;
+            transition: all 340ms ease-in-out;
+            &:hover{
+                transform: scale(.97);
+            }
+            &:nth-child(1){
+                box-shadow: rgba(50, 50, 93, 0.1) 0px 1px 20px -1px, rgba(0, 0, 0, 0.1) 0px 3px 14px -4px;
+            }
+        }
+    }
+}

@@ -1,0 +1,120 @@
+.highlight{
+    width: $defaultWidth;
+    height: $defaultHeight;
+    background-color: $sectionPrimaryColor;
+    padding: 4% 0;
+
+    .highlightContainer{
+        width: 85%;
+        height: $defaultHeight;
+        margin: 0 auto;
+        display: flex !important;
+        flex-direction: row;
+        align-items: center;
+        box-shadow: 0px 7px 9px 1px rgba(255, 255, 255, 0.5);
+        overflow: hidden;
+
+        .noticeHighlight{
+            flex-basis: 29%;
+            max-height: 277px;
+            padding: 3% 0;
+            background-color: $globalPrimaryBlue;
+            border: 1px solid $globalPrimaryBlue;
+            border-radius: 6px 0 0 6px;
+            
+            table{
+                margin: 0 auto;
+            }
+            tr{
+                display: table-row;
+                vertical-align: inherit;
+                border-color: inherit;
+                
+                td{
+                    font-size: 14px;
+                    text-align: left;
+                    padding: 12px 3px;
+                    border-bottom: 1px dashed rgba(255,255,255,.6);
+                    color: white;
+                    font-weight: $fontThree;
+                    overflow: hidden;
+                    text-transform: capitalize;
+                }
+            }
+            h4{
+                font-size: 1.28rem;
+                padding: 2%;
+                padding-left: 28px;
+                text-transform: $textCapitalize;
+                color: $globalWhite;
+                font-style: $fontStyle;
+            }
+            p{
+                padding: 8.5% 8%;
+                font-size: 14px;
+                text-align: left;
+                width: $defaultWidth;
+                height: $defaultHeight;
+                color:  $globalWhite;
+                font-style: $fontStyle;
+                font-weight: $fontThree;
+            }
+
+            a{
+                padding: 8px 12px;
+                transform: translateX(20%);
+                display: inline-block;
+                border: 1.6px solid rgba(255,255,255,.6);
+                font-size: $fontLittle;
+                color: $globalWhite;
+                text-transform: $textUppercase;
+                font-weight: $fontFour;
+                transition: all 420ms ease-in-out;
+                position: relative;
+                z-index: 2;
+                overflow: hidden;
+
+                &::before{
+                    position: absolute;
+                    content: " ";
+                    width: 100%;
+                    height: 100%;
+                    left: 0;
+                    top: 100%;
+                    background-color:$globalSemiDeepMagenta;
+                    z-index: -3;
+                    transition: all 420ms ease-in-out;
+                    opacity: 0;
+                }
+                &:hover{
+                    border: none;
+                    &::before{
+                        top: 0;
+                        opacity: 1;
+                    }
+                }
+            }
+            
+            
+
+            &:nth-child(2){
+                background-color:rgb(8, 142, 221);
+                border: 1px solid rgb(8, 142, 221);
+                overflow: hidden;
+                border-radius: 0 0 0 0;
+            }  
+            &:nth-child(3){
+                background-color: #1977cc;
+                border: 1px solid #1977cc;
+                overflow: hidden;
+                border-radius: 0 0 0 0;
+            }
+            &:last-child{
+                background-color: #1063af;
+                border: 1px solid #1063af;
+                overflow: hidden;
+                border-radius: 0 6px 6px 0;
+            }
+        }
+    }
+}

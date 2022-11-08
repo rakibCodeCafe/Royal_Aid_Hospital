@@ -1,0 +1,61 @@
+.aboutPage{
+    width: $defaultWidth;
+    height: $defaultHeight;
+    .aboutContent{
+        background:$sectionPrimaryColor;
+        padding: 6% 0;  
+        .hospitalIdentity{
+            width: $defaultWidth;
+            height: $defaultHeight;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            .identityImageBox{
+                width: 40%;
+                flex-basis: 40%;
+                height: $defaultHeight;
+                padding: 1% 0;
+                .identityImage{
+                    padding: 180px 0;
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    border-radius: 36px 36px 36px 36px;
+                    box-shadow: rgba(50, 50, 93, 0.1) 0px 1px 20px -1px, rgba(0, 0, 0, 0.1) 0px 3px 14px -4px;
+                    border-radius: 10px 10px 10px 10px;
+                    transition: all 350ms ease-in-out;
+                    &:hover{
+                        transform: scale(0.97);
+                    }
+                }
+            }
+            .identityContentBox{
+                width: 40%;
+                flex-basis: 40%;
+                height: $defaultHeight;
+                margin: 1%;
+                padding: 4% 4%;
+                border-radius:36px 36px 36px 36px;
+                background-color: $globalPinkWhite;box-shadow: rgba(50, 50, 93, 0.1) 0px 1px 20px -1px, rgba(0, 0, 0, 0.1) 0px 3px 14px -4px;
+                .headNoteTag{
+                    @include tinyTitle;
+                }
+                .aboutTitle{
+                    @include sectiionTitle;
+                    padding: 1% 0;
+                }
+                .aboutBrief{
+                    @include sectionBrief;
+                    padding: 2% 0;
+                }
+                #read{
+                    @include aboutBtn;
+                }
+                #extend{
+                    @include aboutBtn;
+                }
+            }
+        }
+    }
+}

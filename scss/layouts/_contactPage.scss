@@ -1,0 +1,217 @@
+.contactSectionPage{
+    width: $defaultWidth;
+    height: $defaultHeight;
+
+    .contactPageContainer{
+        width: $defaultWidth;
+        height: $defaultHeight;
+        padding: 4% 0;
+        background-color: $sectionPrimaryColor;
+        // ** contact details started here
+        .contactDetails{
+            width: $defaultWidth;
+            height: $defaultHeight;
+            h3{
+                @include SectionHeading;
+                text-align: $textCenter;
+            }
+            p{
+                @include SectionDescription;
+                padding: 3% 0;
+                font-size: $standardThree;
+                text-align: $textCenter;
+                font-style: $fontStyle;
+                text-shadow:$TitleParagraphShadow;
+                text-transform: $textCapitalize;
+            }
+        }
+        // ** contact details completed here
+        .DetailInformation{
+            .infoDetails{
+
+                .contact{
+                    width: $defaultWidth;
+                    height: $defaultHeight;
+                    padding: 3% 0;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-around;
+                    .contactField{
+                        flex-basis: 47%;
+                        height: $defaultHeight;
+                        padding: 3%;
+                        background-color: $globalGhostWhite;
+                        border-radius: 10px 10px 10px 10px;
+                        box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+                        .contactForm{
+                            .contactFormTitle{
+                                @include contactFormTitle;
+                            }
+                            .visitor {
+                                @include contactDiv;
+                                .contactIcon {
+                                    @include contactSpan;
+                                    i {
+                                        @include contactIconStyle;
+                                    }
+                                }
+                                .contactInput{
+                                   @include contactInputStyle;
+                                }
+                            }
+                            .visitorEmail {
+                                @include contactDiv;
+                                .contactIcon {
+                                    @include contactSpan;
+                                    i {
+                                        @include contactIconStyle;
+                                    }
+                                }
+                                .contactInput{
+                                   @include contactInputStyle;
+                                   text-transform: $textLowercase;
+                                }
+                            }
+                            .visitorPhone {
+                                @include contactDiv;
+                                .contactIcon {
+                                    @include contactSpan;
+                                    i {
+                                        @include contactIconStyle;
+                                    }
+                                }
+                                .contactInput{
+                                   @include contactInputStyle;
+                                   text-transform: $textLowercase;
+                                }
+                            }
+                            .queries {
+                                @include contactDiv;
+                                .contactIcon {
+                                    @include contactSpan;
+                                    i {
+                                        @include contactIconStyle;
+                                    }
+                                }
+                                .contactInput{
+                                   @include contactInputStyle;
+                                   text-transform: $textLowercase;
+                                }
+                            }
+                            .message{
+                                @include contactDiv;
+
+                                .contactInput{
+                                   @include contactInputStyle;
+                                   text-align: $textLeft;
+                                }
+                            }
+                            .contactBtn{
+                                @include contactDiv;
+
+                                .contactInput{
+                                   @include contactInputStyle;
+                                   padding: 25px 25px 25px 25px;
+                                   width: 48%;
+                                   background-color:  $globalMagenta;
+                                   color: $globalPinkWhite;
+                                   transition: all 450ms ease-in-out;
+                                   &:hover{
+                                    color: $globalWhite;
+                                    background-color: $globalSemiDeepMagenta;
+                                   }
+                                }
+                            }
+                        }
+                    }
+                }
+                // ** contact completed here
+                .contactAddress{
+                    flex-basis: 47%;
+                    height: $defaultHeight;
+                    flex-wrap: wrap;
+                    flex-shrink: 0;
+                    padding: 6.4% 3%;
+                    background-color: $globalGhostWhite;
+                    border-radius: 10px 10px 10px 10px;
+                    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+                    .contactAddressTitle{
+                        @include contactFormTitle;
+                    }
+                    .contactAddressBox{
+                        @include contactBox;
+
+                        .contactDetailAdderss{
+                            @include contactBoxContent;
+                        }
+                    }
+                    .contactMailAddreess{
+                        @include contactBoxContent;
+                        text-align: $textLeft;
+                        text-transform: $textLowercase;
+                        margin-left: 43px;
+                    }
+                    .contactPhoneAddress{
+                        @include contactBoxContent;
+                        text-align: $textLeft;
+                        margin-left: 48px;
+                    }
+                }
+                // ** contact address completed here
+            }
+            // ** contact divider started here
+            .contactDivider{
+                width: $defaultWidth;
+                height:2px;
+                margin-top: 18px;
+                background-color: $globalLightShadow;
+            }
+            // ** contact divider completed here
+            .contactSocialMedia{
+                width: $defaultWidth;
+                height: $defaultHeight;
+                padding: 3% 0;
+                .socialMediaTitle{
+                    @include SectionHeading;
+                }
+                .contactSocialMediaContainer{
+                    width: 50%;
+                    height: $defaultHeight;
+                    padding: 2%;
+                    margin: 0 auto;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-evenly;
+
+                    .contactSocialMediaBox{
+                        width: 85px;
+                        height: 85px;
+                        border-radius: 50%;
+                        background-color: $globalMarineBlue;
+                        box-shadow: $elementShadow;
+                        position: relative;
+                        transition: all 450ms ease-in-out;
+                        .contactLink{
+                            font-size: $fontBig;
+                            color: $globalPinkWhite;
+                            position: absolute;
+                            left: 50%;
+                            top: 50%;
+                            transform: translate(-50%,-50%);
+                            transition: all 450ms ease-in-out;
+                        }
+
+                        &:hover{
+                            transform: rotate(360deg);
+                            background-color: $globalSemiDeepMagenta;
+                            .contactLink{
+                                color: $globalWhite;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

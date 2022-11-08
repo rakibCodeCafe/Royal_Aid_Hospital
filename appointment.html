@@ -1,0 +1,1548 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="write here company description in a short">
+    <meta name="Subject" content="Accident &amp; Cardiac Surgery,Cardiology,Critical Care, Dentistry,Dermatology,Diabetes &amp; Endocrinology,Dietetics &amp; Nutrition,ENT &amp; Head Neck Surgery,Family Medicine, Gastroenterology &amp; Hepatology,General Surgery,Health Screening,Hemodialysis,Internal Medicine,Laboratory, Laparoscopic Surgery,Neurology, Medicine,Oncology,Plastic Surgery,Physical Medicine &amp; Rehabilitation,Vaccination Centre,Vascular Surgery ,Emergency,Anesthesiology,Cancer Surgery (OncoSurgery),CARDIAC ANESTHESIA">
+    <meta name="description" content="Md Rakibul Hasan From Hunter Contributed Front-end Development -To built Royal Aid Hospital Website">
+    <meta name="description" content="Md Ashraful Haque From Hunter Contributed Graphic Design Support -To built Royal Aid Hospital Website">
+    <meta name="description" content="- Nazmul Alom - Saifullah Sifat From Hunter IT contributed back-end development to built Royal Aid Hospital Ltd.">
+    <meta name="Abstract" content="one-stop healthcare in Bangladesh">
+    <meta name="Googlebot" content="all">
+    <meta name="robots" content="index, follow">
+    <meta name="copyright" content="Copyright © Royal Aid Hospital">
+    <meta name="owner" content="Royal Aid Hospital">
+    <meta name="author" content="mother company">
+    <meta name="Rating" content="General">
+    <meta name="distribution" content="Global">
+    <meta name="classification" content="Patient info,For Physicians,Departments,Services,Gallery,News &amp; Events,Publication etc.">
+    <title>Appointment-Royal Aid Hospital</title>
+    <!-- font awesome css file -->
+    <link rel="stylesheet" href="plaguin/plugins/fontawesome/css/all.min.css">
+    <!-- owl css -->
+    <link rel="stylesheet" href="theme/owl.carousel.min.css">
+    <link rel="stylesheet" href="theme/owl.theme.default.min.css">
+    <!-- owl css ends here -->
+    <!-- swiper js starts here -->
+    <link rel="stylesheet" href="theme/swiper/swiper-bundle.min.css">
+    <!-- swiper js ends here -->
+    <!-- wow css starts here -->
+    <link rel="stylesheet" href="plaguin/plugins/wow/animate.css">
+    <!-- wow css ends here -->
+    <!-- magnific css starts here -->
+    <link rel="stylesheet" href="theme/magnific/magnific-popup.css">
+    <!-- magnific css starts here -->
+    <!-- ico logo css link -->
+    <link rel="shortcut icon" href="images/logo/favicon.ico" type="image/x-icon">
+    <!-- customized css file -->
+    <link rel="stylesheet" href="scss/style.css">
+</head>
+<body>
+    <main>
+        <!-- ** preloader started here -->
+        <div class="loader-container">
+            <img src="images/preloader/loadingGif.gif" alt="">
+        </div>
+        <!-- ** preloader comleted here -->
+
+        <!-- header starts -->
+        <header id="header" class="header">
+            <div class="primaryHeader">
+                    <div class="headerBasic">
+                         <div class="mainContent mainContentSection"> 
+                        <!-- website account login starts here -->
+                        <div class="LoginInformation">
+                            <!-- logging object strats here -->
+                            <span class="loginLink text-capitalize"><span class="loginIcon"><i class="fa-solid fa-user"></i></span><span></span> login or register</span>
+                            <!-- login object ends here -->
+                            <!-- login/registration container  starts here-->
+                            <div class="loginFormBox loginFormBox--SmloginFormBox">
+                                <!-- login & registration button starts here -->
+                                <div class="buttonBox buttonBox--smallBtnBox">
+                                    <div id="btn"></div>
+                                    <button type="button" class="toggleBtn" onclick="login()">log in</button>
+                                    <button type="button" class="toggleBtn" onclick="register()">registration</button>
+                                </div>
+                                <!-- login & registration button starts here -->
+                                <!-- login form starts here -->
+                                <form id="login" action="#" class="inputGroup inputGroup--smallInputGroup">
+                                    <input type="text" id="userId" name="#" class="inputField" placeholder="user ID" required>
+                                    <input type="email" name="mail" id="email" class="inputField" required placeholder="enter registared email">
+                                    <div class="password">
+                                        <input type="password" name="pwd" id="myInput" class="inputField" required placeholder="enter password">
+                                        <i class="fa-solid fa-eye" id="show" onclick="myFunction()"></i>
+                                        <i class="fa-solid fa-eye-slash" id="hide" onclick="myFunction()"></i>
+                                    </div>
+                                    <input type="checkbox" class="checkBox">
+                                    <span class="checkText">remember password</span>
+                                    <a href="#" class="passwordLink">forget your password ?</a>
+                                    <button type="submit" class="submitBtn text-capitalize">log in</button>
+                                </form>
+                                <!-- login form ends here -->
+                                <!-- registration form  starts here-->
+                                <form id="register" action="#" class="inputGroup inputGroup--smallInputGroup">
+                                    <input type="text" id="userName" name="#" class="inputField" placeholder="your name" required>
+                                    <input type="text" id="CompanyId" name="#" class="inputField" placeholder="your company ID Nummber" required>
+                                    <input type="tel" id="phoneNumber" class="inputField"  name="phone" placeholder="+8801234567890" pattern="[+,' '][\d]{7}[-,$,' ',][\d]{0,6}|[+,' '][\d]{3}[,-,$,' ',][\d]{4}[-,$,' ',][\d]{0,6}|[(][(+,' '][\d]{3}[)][-,$,' '][\d]{4}\b[-,$,' ',][\d]{0,6}|[[+,' '][\d]{3}[-,$,' ',][\d]{4}[-,$,' ',][\d]{0,6}|[(][(+,' '][\d]{3}[)][-,$,' '][\d]{4}\b[-,$,' ',][\d]{0,6}|[+' '][\d]{0,13}|[+,' '][\d]{0,7}[-,$,' ',][\d]{0,6}" required>
+                                    <input type="email" name="mail" id="mailAddress" class="inputField" required placeholder="enter registared email">
+                                    <div class="respassword">
+                                        <input type="password" name="pwd" id="resInput" class="inputField" required placeholder="enter password">
+                                        <i class="fa-solid fa-eye" id="Show" onclick="resFunction()"></i>
+                                        <i class="fa-solid fa-eye-slash" id="Hide" onclick="resFunction()"></i>
+                                    </div>
+                                    <input type="checkbox" id="CheckBox" class="checkBox checkBox--littleDevice"><span class="checkText">remember password</span>
+                                    <button type="submit" class="submitBtn text-capitalize">registration</button>
+                                </form>
+                                <!-- registration form  starts here-->
+                            </div>
+                            <!-- login/registration container  starts here-->
+                        </div>
+                        <!-- website account login starts here -->
+                        <!-- header contact numbers start here -->
+                        <div class="headerContactNumbers">
+                            <span class="headerNumber"> emergency contact <span></span><span></span> <i class="fa-solid fa-phone-flip"></i> <span></span><span></span> +880-000-000-000</span>
+                            <span class="headerNumber"> doctor's appointment <span></span><span><span><span></span></span></span><span></span><i class="fa-solid fa-phone-flip"></i> <span></span><span></span>+880-000-000-000</span>
+                        </div>
+                        <!-- header contact numbers end here -->
+                        <div class="headerSocialMedia">
+                            <div class="singleIcon">
+                                <a class="socialLink" href=""><i class="fa-brands fa-facebook-f media"></i></a>
+                            </div>
+                            <div class="singleIcon">
+                                <a class="socialLink" href=""><i class="fa-brands fa-linkedin-in media"></i></a>
+                            </div>                            
+                            <div class="singleIcon">
+                                <a class="socialLink" href=""><i class="fa-brands fa-twitter media"></i></a>
+                            </div>
+                            <div class="singleIcon">
+                                <a class="socialLink" href=""><i class="fa-brands fa-youtube media"></i></a>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="headerScrolling">
+                        <div class="mainContent">
+                            <marquee behavior="scroll" direction="left" scrollamount="5" onmouseover="this.stop();" onmouseout="this.start();">
+                                <a href="#" class="scrollinglink" style="margin-right: 15px;">welcome to Royal aid hospital.</a>
+                                <a href="#" class="scrollinglink" style="margin-right: 15px;"> we provide quality services at a minimal cost</a>
+                                <a href="#" class="scrollinglink"  style="margin-right: 15px;">Lorem ipsum dolor sit amet consectetur.</a>
+                                <a href="#" class="scrollinglink"  style="margin-right: 15px;">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a>
+                                <a href="#" class="scrollinglink"  style="margin-right: 15px;">Lorem ipsum dolor sit amet consectetur.</a>
+                                <a href="#" class="scrollinglink"  style="margin-right: 15px;">Lorem, ipsum dolor sit amet consectetur adipisicing.</a>
+                            </marquee>
+                        </div>
+                    </div>
+                 </div>
+            
+            <!-- primary header ends here -->
+            <!-- secondary header starts here -->
+            <div class="secondaryHeader">
+                <div class="mainContent">
+                    <div class="mainContainers">
+                    <div class="logoContainer">
+                        <!-- logo conbtainer starts here -->
+                        <div class="logoPart">
+                            <a href="index.html">
+                                <img src="images/logo/RoyalHospitalLogo.png" alt="companyLogo">
+                            </a>
+                        </div>
+                        <div class="logoTextPart">
+                            <h1 class="CompanyName">
+                                royal aid hospital ltd.
+                            </h1>
+                        </div>
+                    </div>
+                
+                <!-- logo container ends here -->
+                     <!-- nav containere starts here -->
+                     <div class="navContainer">
+                            <nav id="navBar" class="navBar">
+                                <ul class="navList navList--SmDevice">
+                                    <li class="navListItem parent_menu">
+                                        <a href="#about-menu" class="navListItemLink text-capitalize navListItemLink--parentLink">about <i class="fa-solid fa-caret-down"></i>
+                                        </a>
+                                        <!-- dropdown menu starts here -->
+                                        <ul class="dropdownList">
+                                            <li class="dropDownItems">
+                                                <a href="about.html" class="navListItemLink text-capitalize navListItemLink--childLink">about royal aid</a>
+                                            </li>
+                                            <li class="dropDownItems">
+                                                <a href="appointment.html" class="navListItemLink text-capitalize navListItemLink--childLink">our doctors</a>
+                                            </li>
+                                            <li class="dropDownItems">
+                                                <a href="Gallery.html" class="navListItemLink text-capitalize navListItemLink--childLink">gallery</a>
+                                            </li>
+                                            <li class="dropDownItems">
+                                                <a href="#" class="navListItemLink text-capitalize navListItemLink--childLink">patients' Review</a>
+                                            </li>
+                                            <li class="dropDownItems">
+                                                <a href="#" class="navListItemLink text-capitalize navListItemLink--childLink">career</a>
+                                            </li>
+                                            <li class="dropDownItems">
+                                                <a href="#" class="navListItemLink text-capitalize navListItemLink--childLink">FAQ</a>
+                                            </li>
+                                        </ul>
+                                        <!-- dropdown for about ends here -->
+                                    </li>
+                                    <li class="navListItem">
+                                        <a href="appointment.html" class="navListItemLink text-capitalize navListItemLink--parentLink">doctors' appointment</a>
+                                    </li>
+                                    <li class="navListItem parent_menu">
+                                        <a href="#" class="navListItemLink text-capitalize navListItemLink--parentLink">departments
+                                            <i class="fa-solid fa-caret-down"></i>
+                                        </a>
+                                        <!-- large dropdown starts here -->
+                                        <ul class="largeDropdownList">
+                                            <li class="largeDropdownItems">
+                                                <a href="#" class="navListItemLink text-capitalize navListItemLink--childLink">General & Laparoscopic Surgery</a>
+                                            </li>
+                                            <li class="largeDropdownItems">
+                                                <a href="#" class="navListItemLink text-capitalize navListItemLink--childLink">Cardiology</a>
+                                            </li>
+                                            <li class="largeDropdownItems">
+                                                <a href="#" class="navListItemLink text-capitalize navListItemLink--childLink">Oncology</a>
+                                            </li>
+                                            <li class="largeDropdownItems">
+                                                <a href="#" class="navListItemLink text-capitalize navListItemLink--childLink">Plastic & Aesthetic Surgery</a>
+                                            </li>
+                                            <li class="largeDropdownItems">
+                                                <a href="#" class="navListItemLink text-capitalize navListItemLink--childLink">Urology</a>
+                                            </li>
+                                            <li class="largeDropdownItems">
+                                                <a href="#" class="navListItemLink text-capitalize navListItemLink--childLink">Pediatric & Neonatology</a>
+                                            </li>
+                                            <li class="largeDropdownItems">
+                                                <a href="#" class="navListItemLink text-capitalize navListItemLink--childLink">Gastroenterology & Hepatology</a>
+                                            </li>
+                                            <li class="largeDropdownItems">
+                                                <a href="#" class="navListItemLink text-capitalize navListItemLink--childLink">Nephrology</a>
+                                            </li>
+                                            <li class="largeDropdownItems">
+                                                <a href="#" class="navListItemLink text-capitalize navListItemLink--childLink">Obstetrics & Gynecology</a>
+                                            </li>
+                                            <li class="largeDropdownItems">
+                                                <a href="#" class="navListItemLink text-capitalize navListItemLink--childLink">MRD SERVICES</a>
+                                            </li>
+                                            <li class="largeDropdownItems">
+                                                <a href="#" class="navListItemLink text-capitalize navListItemLink--childLink">Diabetes & Endocrinology</a>
+                                            </li>
+                                            <li class="largeDropdownItems">
+                                                <a href="#" class="navListItemLink text-capitalize navListItemLink--childLink">Cardiac surgery</a>
+                                            </li>
+                                            <li class="largeDropdownItems">
+                                                <a href="#" class="navListItemLink text-capitalize navListItemLink--childLink">ENT, Head & Neck Surgery</a>
+                                            </li>
+                                            <li class="largeDropdownItems">
+                                                <a href="#" class="navListItemLink text-capitalize navListItemLink--childLink">Neurosurgery</a>
+                                            </li>
+                                            <li class="largeDropdownItems">
+                                                <a href="#" class="navListItemLink text-capitalize navListItemLink--childLink">Vascular Surgery</a>
+                                            </li>
+                                            <li class="largeDropdownItems">
+                                                <a href="#" class="navListItemLink text-capitalize navListItemLink--childLink">Orthopedics </a>
+                                            </li>
+                                            <li class="largeDropdownItems">
+                                                <a href="#" class="navListItemLink text-capitalize navListItemLink--childLink">Arthoscopy & Joint Replacement</a>
+                                            </li>
+                                            <li class="largeDropdownItems">
+                                                <a href="#" class="navListItemLink text-capitalize navListItemLink--childLink">Thoracic Surgery</a>
+                                            </li>
+                                            <li class="largeDropdownItems">
+                                                <a href="#" class="navListItemLink text-capitalize navListItemLink--childLink">Internal Medicine</a>
+                                            </li>
+                                            <li class="largeDropdownItems">
+                                                <a href="#" class="navListItemLink text-capitalize navListItemLink--childLink">Respiratory Medicine</a>
+                                            </li>
+                                            <li class="largeDropdownItems">
+                                                <a href="#" class="navListItemLink text-capitalize navListItemLink--childLink">Clinical Hematology</a>
+                                            </li>
+                                            <li class="largeDropdownItems">
+                                                <a href="#" class="navListItemLink text-capitalize navListItemLink--childLink">ICU</a>
+                                            </li>
+                                            <li class="largeDropdownItems">
+                                                <a href="#" class="navListItemLink text-capitalize navListItemLink--childLink">Radiology & Imaging</a>
+                                            </li>
+                                            <li class="largeDropdownItems">
+                                                <a href="#" class="navListItemLink text-capitalize navListItemLink--childLink">Colorectal Surgery</a>
+                                            </li>
+                                            <li class="largeDropdownItems">
+                                                <a href="#" class="navListItemLink text-capitalize navListItemLink--childLink">NICU</a>
+                                            </li>
+                                            <li class="largeDropdownItems">
+                                                <a href="#" class="navListItemLink text-capitalize navListItemLink--childLink">Laboratory Medicine</a>
+                                            </li>
+                                            <li class="largeDropdownItems">
+                                                <a href="#" class="navListItemLink text-capitalize navListItemLink--childLink">Psychiatry</a>
+                                            </li>
+                                            <li class="largeDropdownItems">
+                                                <a href="#" class="navListItemLink text-capitalize navListItemLink--childLink">Dental and Maxillofacial Surgery</a>
+                                            </li>
+                                            <li class="largeDropdownItems">
+                                                <a href="#" class="navListItemLink text-capitalize navListItemLink--childLink">Blood Bank</a>
+                                            </li>
+                                            <li class="largeDropdownItems">
+                                                <a href="#" class="navListItemLink text-capitalize navListItemLink--childLink">Corporate Affairs Department</a>
+                                            </li>
+                                            <li class="largeDropdownItems">
+                                                <a href="#" class="navListItemLink text-capitalize navListItemLink--childLink">Vaccination Center</a>
+                                            </li>
+                                            <li class="largeDropdownItems">
+                                                <a href="#" class="navListItemLink text-capitalize navListItemLink--childLink">Nutrition & Dietetic Department</a>
+                                            </li>
+                                            <li class="largeDropdownItems">
+                                                <a href="#" class="navListItemLink text-capitalize navListItemLink--childLink">EMERGENCY</a>
+                                            </li>
+                                            <li class="largeDropdownItems">
+                                                <a href="#" class="navListItemLink text-capitalize navListItemLink--childLink">Health Check Up</a>
+                                            </li>
+                                            <li class="largeDropdownItems">
+                                                <a href="#" class="navListItemLink text-capitalize navListItemLink--childLink">Rheumatology</a>
+                                            </li>
+                                            <li class="largeDropdownItems">
+                                                <a href="#" class="navListItemLink text-capitalize navListItemLink--childLink">Surgical Oncology</a>
+                                            </li>
+                                            <li class="largeDropdownItems">
+                                                <a href="#" class="navListItemLink text-capitalize navListItemLink--childLink">Breast, Colorectal & Laparoscopic Surgery</a>
+                                            </li>
+                                            <li class="largeDropdownItems">
+                                                <a href="#" class="navListItemLink text-capitalize navListItemLink--childLink">Anaesthesia</a>
+                                            </li>
+                                            <li class="largeDropdownItems">
+                                                <a href="#" class="navListItemLink text-capitalize navListItemLink--childLink">Others</a>
+                                            </li>
+                                        </ul>
+                                        <!-- large drpdown ends here -->
+                                    </li>
+                                    <li class="navListItem">
+                                        <a href="#ambulanceHiring" class="navListItemLink text-capitalize navListItemLink--parentLink"> ambulance</a>
+                                    </li>
+                                    <li class="navListItem parent_menu">
+                                        <a href="#" class="navListItemLink text-capitalize navListItemLink--parentLink">visitors & patients 
+                                            <i class="fa-solid fa-caret-down"></i></a> 
+                                        
+                                        <ul class="dropdownList">
+                                            <li class="dropDownItems">
+                                                <a href="#" class="navListItemLink text-capitalize navListItemLink--childLink">services</a>
+                                            </li>
+                                            <li class="dropDownItems">
+                                                <a href="#" class="navListItemLink text-capitalize navListItemLink--childLink">failities</a>
+                                            </li>
+                                            <li class="dropDownItems">
+                                                <a href="#" class="navListItemLink text-capitalize navListItemLink--childLink">health checkup</a>
+                                            </li>
+                                            <li class="dropDownItems">
+                                                <a href="#" class="navListItemLink text-capitalize navListItemLink--childLink">packages</a>
+                                            </li>
+                                            <li class="dropDownItems">
+                                                <a href="#" class="navListItemLink text-capitalize navListItemLink--childLink">room rent</a>
+                                            </li>
+                                            <li class="dropDownItems">
+                                                <a href="#" class="navListItemLink text-capitalize navListItemLink--childLink">equipments</a>
+                                            </li>
+                                            <li class="dropDownItems">
+                                                <a href="#" class="navListItemLink text-capitalize navListItemLink--childLink">health tips</a>
+                                            </li>
+                                            <li class="dropDownItems">
+                                                <a href="#" class="navListItemLink text-capitalize navListItemLink--childLink">visitors' policy</a>
+                                            </li>
+                                        </ul>
+                                        <!-- dropdown for about ends here -->
+                                    </li>
+                                    <li class="navListItem">
+                                        <a href="contact.html" class="navListItemLink text-capitalize navListItemLink--parentLink">contact</a>
+                                    </li>
+                                </ul>
+                                     <!-- beef burger starts here-->
+                                    <div class="beefBurger">
+                                        <span class="bar"></span>
+                                        <span class="bar"></span>
+                                        <span class="bar"></span>
+                                    </div>
+                                </nav>                      
+                    </div>
+                <!-- nav containere ends here -->
+                    </div>
+                </div>
+            </div>
+            <!-- secondary header ends here -->
+        </header>
+        <!-- header ends here -->
+    <!-- *****====== slider starts here ======****** -->
+    <section id="slider" class="bannerSlider">  
+        <div class="bannerContainer">
+            <div class="slideContainer active" style="background-image:url(./images/banner/doctorAppointment/BGappointment.jpg) ;">
+                <div class="mainContent">
+                    <div class="slide">
+                        <div id="mainElement" class="contentElement">
+                            <div class="slideHeading">
+                            <h2 class="sliderTitle">check doctors' profiles & make an appointment</h2>
+                            </div>
+                            <div class="slideBrief">
+                            <p class="slideDetail">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim id nulla labore doloremque et facilis? thingko xinalo fdod uni lkojhh.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                        <!--*** slider one done ****-->
+        </div>    
+    </section>
+    <!-- ** Slider ends here ** -->
+    <!-- **doctor appointment section starts here  -->
+    <!-- ***===Appointment section starts here===*** -->
+    <section id="Appointment" class="appointment">
+                <div class="mainContent">
+                    <div class="appointmentContent">
+                        <h3 id="appointmentTitle" class="wow fadeInUp"  data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;" ><span class="lineSpan">make an appointment</span></h3>
+                        <p class="wow fadeInUp"  data-wow-delay="0.75s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed eius repellat magnam sequi voluptatum fugiat inventore nesciunt alias itaque magni.</p>
+                    </div>
+                </div>
+                <!-- appointmrnt tittle completed here -->
+                    <div class="doctorContainer">                   
+                        <div class="mainContainer">
+                            <!-- * doctor One started here -->
+                            <div class="doctor wow fadeInUp" data-wow-delay="0.4s" data-name="DoctorOne" data-tilt>
+                                <div class="doctorImage">
+                                    <img src="images/doctor/DoctorOne.svg" alt="Doctor Image">
+                                </div>
+                                <div class="doctorDetails">
+                                    <h4 class="doctorName"> Assoc professor dr abdus salam</h4>
+                                    <h5 class="expertise">internal medicine</h5>
+                                    <span class="qualifications">MBBS(Raj), DDV, MCPS, FACP(USA), FCPS(Dermatology)FRCP, Higher Training(Thailand)</span>
+                                </div>
+                            </div>
+                            <!-- * doctor One completed here -->
+                            <!-- * doctor two started here -->
+                            <div class="doctor wow fadeInUp" data-wow-delay="0.57s" data-name="DoctorTwo" data-tilt>
+                                <div class="doctorImage">
+                                    <img src="images/doctor/DoctorOne.svg" alt="Doctor Image">
+                                </div>
+                                <div class="doctorDetails">
+                                    <h4 class="doctorName"> Assoc professor dr abdus salam</h4>
+                                    <h5 class="expertise">internal medicine</h5>
+                                    <span class="qualifications">MBBS (Raj), DDV, MCPS, FACP (USA), FCPS (Dermatology)FRCP, Higher Training (Thailand)</span>
+                                </div>
+                            </div>
+                            <!-- * doctor two completed here -->
+                            <!-- * doctor three started here -->
+                            <div class="doctor wow fadeInUp" data-wow-delay="0.68s" data-name="DoctorThree" data-tilt>
+                                <div class="doctorImage">
+                                    <img src="images/doctor/DoctorOne.svg" alt="Doctor Image">
+                                </div>
+                                <div class="doctorDetails">
+                                    <h4 class="doctorName"> Assoc professor dr abdus salam</h4>
+                                    <h5 class="expertise">internal medicine</h5>
+                                    <span class="qualifications">MBBS (Raj), DDV, MCPS, FACP (USA), FCPS (Dermatology)FRCP, Higher Training (Thailand)</span>
+                                </div>
+                            </div>
+                            <!-- * doctor three completed here -->
+                            <!-- * doctor four started here -->
+                            <div class="doctor wow fadeInUp" data-wow-delay="0.75s" data-name="DoctorFour" data-tilt>
+                                <div class="doctorImage">
+                                    <img src="images/doctor/DoctorOne.svg" alt="Doctor Image">
+                                </div>
+                                <div class="doctorDetails">
+                                    <h4 class="doctorName"> Assoc professor dr abdus salam</h4>
+                                    <h5 class="expertise">internal medicine</h5>
+                                    <span class="qualifications">MBBS (Raj), DDV, MCPS, FACP (USA), FCPS (Dermatology)FRCP, Higher Training (Thailand)</span>
+                                </div>
+                            </div>
+                            <!-- * doctor four completed here -->
+                            <!-- * doctor five started here -->
+                            <div class="doctor wow fadeInUp" data-wow-delay="0.75s" data-name="DoctorFive" data-tilt>
+                                <div class="doctorImage">
+                                    <img src="images/doctor/DoctorOne.svg" alt="Doctor Image">
+                                </div>
+                                <div class="doctorDetails">
+                                    <h4 class="doctorName"> Assoc professor dr abdus salam</h4>
+                                    <h5 class="expertise">internal medicine</h5>
+                                    <span class="qualifications">MBBS (Raj), DDV, MCPS, FACP (USA), FCPS (Dermatology)FRCP, Higher Training (Thailand)</span>
+                                </div>
+                            </div>
+                            <!-- * doctor five completed here -->
+                            <!-- * doctor six started here -->
+                            <div class="doctor wow fadeInUp" data-wow-delay="0.68s"  data-name="DoctorSix" data-tilt>
+                                <div class="doctorImage">
+                                    <img src="images/doctor/DoctorOne.svg" alt="Doctor Image">
+                                </div>
+                                <div class="doctorDetails">
+                                    <h4 class="doctorName"> Assoc professor dr abdus salam</h4>
+                                    <h5 class="expertise">internal medicine</h5>
+                                    <span class="qualifications">MBBS (Raj), DDV, MCPS, FACP (USA), FCPS (Dermatology)FRCP, Higher Training (Thailand)</span>
+                                </div>
+                            </div>
+                            <!-- * doctor six completed here -->
+                            <!-- * doctor seven started here -->
+                            <div class="doctor wow fadeInUp" data-wow-delay="0.58s" data-name="DoctorSeven" data-tilt>
+                                <div class="doctorImage">
+                                    <img src="images/doctor/DoctorOne.svg" alt="Doctor Image">
+                                </div>
+                                <div class="doctorDetails">
+                                    <h4 class="doctorName"> Assoc professor dr abdus salam</h4>
+                                    <h5 class="expertise">internal medicine</h5>
+                                    <span class="qualifications">MBBS (Raj), DDV, MCPS, FACP (USA), FCPS (Dermatology)FRCP, Higher Training (Thailand)</span>
+                                </div>
+                            </div>
+                            <!-- * doctor seven completed here -->
+                            <!-- * doctor eight started here -->
+                            <div class="doctor wow fadeInUp" data-wow-delay="0.45s" data-name="DoctorEight" data-tilt>
+                                <div class="doctorImage">
+                                    <img src="images/doctor/DoctorOne.svg" alt="Doctor Image">
+                                </div>
+                                <div class="doctorDetails">
+                                    <h4 class="doctorName"> Assoc professor dr abdus salam</h4>
+                                    <h5 class="expertise">internal medicine</h5>
+                                    <span class="qualifications">MBBS (Raj), DDV, MCPS, FACP (USA), FCPS (Dermatology)FRCP, Higher Training (Thailand)</span>
+                                </div>
+                            </div>
+                            <!-- * doctor eight completed here -->
+                            <!-- * doctor nine started here -->
+                            <div class="doctor wow fadeInUp" data-wow-delay="0.45s" data-name="DoctorNine" data-tilt>
+                                <div class="doctorImage">
+                                    <img src="images/doctor/DoctorOne.svg" alt="Doctor Image">
+                                </div>
+                                <div class="doctorDetails">
+                                    <h4 class="doctorName"> Assoc professor dr abdus salam</h4>
+                                    <h5 class="expertise">internal medicine</h5>
+                                    <span class="qualifications">MBBS (Raj), DDV, MCPS, FACP (USA), FCPS (Dermatology)FRCP, Higher Training (Thailand)</span>
+                                </div>
+                            </div>
+                            <!-- * doctor nine completed here -->
+                            <!-- * doctor ten started here -->
+                            <div class="doctor wow fadeInUp" data-wow-delay="0.5s" data-name="DoctorTen" data-tilt>
+                                <div class="doctorImage">
+                                    <img src="images/doctor/DoctorOne.svg" alt="Doctor Image">
+                                </div>
+                                <div class="doctorDetails">
+                                    <h4 class="doctorName"> Assoc professor dr abdus salam</h4>
+                                    <h5 class="expertise">internal medicine</h5>
+                                    <span class="qualifications">MBBS (Raj), DDV, MCPS, FACP (USA), FCPS (Dermatology)FRCP, Higher Training (Thailand)</span>
+                                </div>
+                            </div>
+                            <!-- * doctor ten completed here -->
+                            <!-- * doctor eleven started here -->
+                            <div class="doctor wow fadeInUp" data-wow-delay="0.6s" data-name="DoctorEleven" data-tilt>
+                                <div class="doctorImage">
+                                    <img src="images/doctor/DoctorOne.svg" alt="Doctor Image">
+                                </div>
+                                <div class="doctorDetails">
+                                    <h4 class="doctorName"> Assoc professor dr abdus salam</h4>
+                                    <h5 class="expertise">internal medicine</h5>
+                                    <span class="qualifications">MBBS (Raj), DDV, MCPS, FACP (USA), FCPS (Dermatology)FRCP, Higher Training (Thailand)</span>
+                                </div>
+                            </div>
+                            <!-- * doctor eleven completed here -->
+                            <!-- * doctor twelve started here -->
+                            <div class="doctor wow fadeInUp" data-wow-delay="0.7s" data-name="DoctorTwelve" data-tilt>
+                                <div class="doctorImage">
+                                    <img src="images/doctor/DoctorOne.svg" alt="Doctor Image">
+                                </div>
+                                <div class="doctorDetails">
+                                    <h4 class="doctorName"> Assoc professor dr abdus salam</h4>
+                                    <h5 class="expertise">internal medicine</h5>
+                                    <span class="qualifications">MBBS (Raj), DDV, MCPS, FACP (USA), FCPS (Dermatology)FRCP, Higher Training (Thailand)</span>
+                                </div>
+                            </div>
+                            <!-- * doctor twelve completed here -->
+                            <!-- * doctor thirteen started here -->
+                            <div class="doctor wow fadeInUp" data-wow-delay="0.8s" data-name="DoctorThirteen" data-tilt>
+                                <div class="doctorImage">
+                                    <img src="images/doctor/DoctorOne.svg" alt="Doctor Image">
+                                </div>
+                                <div class="doctorDetails">
+                                    <h4 class="doctorName"> Assoc professor dr abdus salam</h4>
+                                    <h5 class="expertise">internal medicine</h5>
+                                    <span class="qualifications">MBBS (Raj), DDV, MCPS, FACP (USA), FCPS (Dermatology)FRCP, Higher Training (Thailand)</span>
+                                </div>
+                            </div>
+                            <!-- * doctor thirteen completed here -->
+                            <!-- * doctor fourteen started here -->
+                            <div class="doctor wow fadeInUp" data-wow-delay="0.5s" data-name="DoctorFourteen" data-tilt>
+                                <div class="doctorImage">
+                                    <img src="images/doctor/DoctorOne.svg" alt="Doctor Image">
+                                </div>
+                                <div class="doctorDetails">
+                                    <h4 class="doctorName"> Assoc professor dr abdus salam</h4>
+                                    <h5 class="expertise">internal medicine</h5>
+                                    <span class="qualifications">MBBS (Raj), DDV, MCPS, FACP (USA), FCPS (Dermatology)FRCP, Higher Training (Thailand)</span>
+                                </div>
+                            </div>
+                            <!-- * doctor fourteen completed here -->
+                            <!-- * doctor fifteen started here -->
+                            <div class="doctor wow fadeInUp" data-wow-delay="0.6s" data-name="DoctorFifteen" data-tilt>
+                                <div class="doctorImage">
+                                    <img src="images/doctor/DoctorOne.svg" alt="Doctor Image">
+                                </div>
+                                <div class="doctorDetails">
+                                    <h4 class="doctorName"> Assoc professor dr abdus salam</h4>
+                                    <h5 class="expertise">internal medicine</h5>
+                                    <span class="qualifications">MBBS (Raj), DDV, MCPS, FACP (USA), FCPS (Dermatology)FRCP, Higher Training (Thailand)</span>
+                                </div>
+                            </div>
+                            <!-- * doctor fifteen completed here -->
+                            <!-- * doctor sixteen started here -->
+                            <div class="doctor wow fadeInUp" data-wow-delay="0.45s" data-name="DoctorSixteen" data-tilt>
+                                <div class="doctorImage">
+                                    <img src="images/doctor/DoctorOne.svg" alt="Doctor Image">
+                                </div>
+                                <div class="doctorDetails">
+                                    <h4 class="doctorName"> Assoc professor dr abdus salam</h4>
+                                    <h5 class="expertise">internal medicine</h5>
+                                    <span class="qualifications">MBBS (Raj), DDV, MCPS, FACP (USA), FCPS (Dermatology)FRCP, Higher Training (Thailand)</span>
+                                </div>
+                            </div>
+                            <!-- * doctor Sixteen completed here -->
+                            <!-- * doctor seventeen started here -->
+                            <div class="doctor wow fadeInUp" data-wow-delay="0.57s" data-name="DoctorSeventeen" data-tilt>
+                                <div class="doctorImage">
+                                    <img src="images/doctor/DoctorOne.svg" alt="Doctor Image">
+                                </div>
+                                <div class="doctorDetails">
+                                    <h4 class="doctorName"> Assoc professor dr abdus salam</h4>
+                                    <h5 class="expertise">internal medicine</h5>
+                                    <span class="qualifications">MBBS (Raj), DDV, MCPS, FACP (USA), FCPS (Dermatology)FRCP, Higher Training (Thailand)</span>
+                                </div>
+                            </div>
+                            <!-- * doctor seventeen completed here -->
+                            <!-- * doctor eighteen started here -->
+                            <div class="doctor wow fadeInUp" data-wow-delay="0.65s" data-name="DoctorEighteen" data-tilt>
+                                <div class="doctorImage">
+                                    <img src="images/doctor/DoctorOne.svg" alt="Doctor Image">
+                                </div>
+                                <div class="doctorDetails">
+                                    <h4 class="doctorName"> Assoc professor dr abdus salam</h4>
+                                    <h5 class="expertise">internal medicine</h5>
+                                    <span class="qualifications">MBBS (Raj), DDV, MCPS, FACP (USA), FCPS (Dermatology)FRCP, Higher Training (Thailand)</span>
+                                </div>
+                            </div>
+                            <!-- * doctor eighteen completed here -->
+                            <!-- * doctor nineteen started here -->
+                            <div class="doctor wow fadeInUp" data-wow-delay="0.76s" data-name="DoctorNineteen" data-tilt>
+                                <div class="doctorImage">
+                                    <img src="images/doctor/DoctorOne.svg" alt="Doctor Image">
+                                </div>
+                                <div class="doctorDetails">
+                                    <h4 class="doctorName"> Assoc professor dr abdus salam</h4>
+                                    <h5 class="expertise">internal medicine</h5>
+                                    <span class="qualifications">MBBS (Raj), DDV, MCPS, FACP (USA), FCPS (Dermatology)FRCP, Higher Training (Thailand)</span>
+                                </div>
+                            </div>
+                            <!-- * doctor nineteen completed here -->
+                            <!-- * doctor twenty started here -->
+                            <div class="doctor wow fadeInUp" data-wow-delay="0.86s" data-name="DoctorTwenty" data-tilt>
+                                <div class="doctorImage">
+                                    <img src="images/doctor/DoctorOne.svg" alt="Doctor Image">
+                                </div>
+                                <div class="doctorDetails">
+                                    <h4 class="doctorName"> Assoc professor dr abdus salam</h4>
+                                    <h5 class="expertise">internal medicine</h5>
+                                    <span class="qualifications">MBBS (Raj), DDV, MCPS, FACP (USA), FCPS (Dermatology)FRCP, Higher Training (Thailand)</span>
+                                </div>
+                            </div>
+                            <!-- * doctor twenty completed here -->
+                            <!-- * doctor twentyone started here -->
+                            <div class="doctor wow fadeInUp" data-wow-delay="0.46s" data-name="DoctorTwentyOne" data-tilt>
+                                <div class="doctorImage">
+                                    <img src="images/doctor/DoctorOne.svg" alt="Doctor Image">
+                                </div>
+                                <div class="doctorDetails">
+                                    <h4 class="doctorName"> Assoc professor dr abdus salam</h4>
+                                    <h5 class="expertise">internal medicine</h5>
+                                    <span class="qualifications">MBBS (Raj), DDV, MCPS, FACP (USA), FCPS (Dermatology)FRCP, Higher Training (Thailand)</span>
+                                </div>
+                            </div>
+                            <!-- * doctor twentyone completed here -->
+                        </div>
+                        <div id="loadMore">load more</div>
+                    </div>
+                <div class="doctorsPreview">
+                    <!-- * first preview completed here -->
+                    <div class="preview" data-target="DoctorOne">
+                        <i class="fa-solid fa-xmark"></i>
+                        <div class="firstDrobe">
+                            <div class="imageBox">
+                                <img src="images/doctor/DoctorOne.svg" alt="doctor Image">
+                            </div>
+                            <div class="expertiseDetails">
+                                <h4 class="department">internal Medicine</h4>
+                                <h4 class="name">dr md abdus salam</h4>
+                                <h6 class="degree">MBBS (Raj), DDV, MCPS, FACP (USA), FCPS (Dermatology)FRCP, Higher Training (Thailand)</h6>
+                                <h6 class="doctorPosition">assoc. professor</h6>
+                                <a href="submission.html" target="_blank" class="appointmentFixedBtn">make an appointment</a>
+                            </div>
+                        </div>
+                        <div class="secondDrobe">
+                            <p>He passed MBBS in 2003 from Shaheed Ziaur Rahman Medical College and Hospital, Bogra under University of Rajshahi. He has done his MCPS (Otolaryngology) from Bangladesh College of Physician & Surgeon in 2012 and Diploma in Otolaryngology from BSMMU in the same year.</p>
+
+                            <p>He has expertise in managing all kinds of ENT & head neck surgery including Tonsillectomy/ Adenotonsillectomy,polyp & papilloma by CO₂ LASER, Functional Endoscopic Sinus Surgery( FESS).</p>
+                            <p>He has publication in Bangladesh Journal of Otorhinolaryngology.</p>
+                            <h6>Education & Qualifications:</h6>
+                            <p><span>1.</span> MBBS - Shaheed Ziaur Rahman Medical College & Hospital - 2003</p>
+                            <p><span>2.</span>MCPS (ENT) - Bangladesh College of Physician & Surgeon - 2012</p>
+                            <p><span>3.</span> DLO - Bangabandhu Sheikh Mujib Medical University - 2012</p>
+                            <h6>Experience:</h6>
+                            <p><span>1.</span>Junior Consultant & Resident Surgeon In the Department of ENT & Head Neck Surgery at Delta Medical College & Hospital from April 2012 to January 2014.</p>
+                            <p><span>2.</span>Junior Consultant in the Department of ENT & Head Neck Surgery at United Hospital Limited from February 2014 to December 2020.</p>
+                        </div>
+                    </div>
+                    <!-- * doctor preview two statrted-->
+                    <div class="preview" data-target="DoctorTwo">
+                        <i class="fa-solid fa-xmark"></i>
+                        <div class="firstDrobe">
+                            <div class="imageBox">
+                                <img src="images/doctor/DoctorOne.svg" alt="doctor Image">
+                            </div>
+                            <div class="expertiseDetails">
+                                <h4 class="department">internal Medicine</h4>
+                                <h4 class="name">dr md abdus salam</h4>
+                                <h6 class="degree">MBBS (Raj), DDV, MCPS, FACP (USA), FCPS (Dermatology)FRCP, Higher Training (Thailand)</h6>
+                                <h6 class="doctorPosition">assoc. professor</h6>
+                                <a href="submission.html" target="_blank" class="appointmentFixedBtn">make an appointment</a>
+                            </div>
+                        </div>
+                        <div class="secondDrobe">
+                            <p>He passed MBBS in 2003 from Shaheed Ziaur Rahman Medical College and Hospital, Bogra under University of Rajshahi. He has done his MCPS (Otolaryngology) from Bangladesh College of Physician & Surgeon in 2012 and Diploma in Otolaryngology from BSMMU in the same year.</p>
+
+                            <p>He has expertise in managing all kinds of ENT & head neck surgery including Tonsillectomy/ Adenotonsillectomy,polyp & papilloma by CO₂ LASER, Functional Endoscopic Sinus Surgery( FESS).</p>
+                            <p>He has publication in Bangladesh Journal of Otorhinolaryngology.</p>
+                            <h6>Education & Qualifications:</h6>
+                            <p><span>1.</span> MBBS - Shaheed Ziaur Rahman Medical College & Hospital - 2003</p>
+                            <p><span>2.</span>MCPS (ENT) - Bangladesh College of Physician & Surgeon - 2012</p>
+                            <p><span>3.</span> DLO - Bangabandhu Sheikh Mujib Medical University - 2012</p>
+                            <h6>Experience:</h6>
+                            <p><span>1.</span>Junior Consultant & Resident Surgeon In the Department of ENT & Head Neck Surgery at Delta Medical College & Hospital from April 2012 to January 2014.</p>
+                            <p><span>2.</span>Junior Consultant in the Department of ENT & Head Neck Surgery at United Hospital Limited from February 2014 to December 2020.</p>
+                        </div>
+                    </div>
+                    <!-- * doctor preview three started -->
+                    <div class="preview" data-target="DoctorThree">
+                        <i class="fa-solid fa-xmark"></i>
+                        <div class="firstDrobe">
+                            <div class="imageBox">
+                                <img src="images/doctor/DoctorOne.svg" alt="doctor Image">
+                            </div>
+                            <div class="expertiseDetails">
+                                <h4 class="department">internal Medicine</h4>
+                                <h4 class="name">dr md abdus salam</h4>
+                                <h6 class="degree">MBBS (Raj), DDV, MCPS, FACP (USA), FCPS (Dermatology)FRCP, Higher Training (Thailand)</h6>
+                                <h6 class="doctorPosition">assoc. professor</h6>
+                                <a href="submission.html" target="_blank" class="appointmentFixedBtn">make an appointment</a>
+                            </div>
+                        </div>
+                        <div class="secondDrobe">
+                            <p>He passed MBBS in 2003 from Shaheed Ziaur Rahman Medical College and Hospital, Bogra under University of Rajshahi. He has done his MCPS (Otolaryngology) from Bangladesh College of Physician & Surgeon in 2012 and Diploma in Otolaryngology from BSMMU in the same year.</p>
+
+                            <p>He has expertise in managing all kinds of ENT & head neck surgery including Tonsillectomy/ Adenotonsillectomy,polyp & papilloma by CO₂ LASER, Functional Endoscopic Sinus Surgery( FESS).</p>
+                            <p>He has publication in Bangladesh Journal of Otorhinolaryngology.</p>
+                            <h6>Education & Qualifications:</h6>
+                            <p><span>1.</span> MBBS - Shaheed Ziaur Rahman Medical College & Hospital - 2003</p>
+                            <p><span>2.</span>MCPS (ENT) - Bangladesh College of Physician & Surgeon - 2012</p>
+                            <p><span>3.</span> DLO - Bangabandhu Sheikh Mujib Medical University - 2012</p>
+                            <h6>Experience:</h6>
+                            <p><span>1.</span>Junior Consultant & Resident Surgeon In the Department of ENT & Head Neck Surgery at Delta Medical College & Hospital from April 2012 to January 2014.</p>
+                            <p><span>2.</span>Junior Consultant in the Department of ENT & Head Neck Surgery at United Hospital Limited from February 2014 to December 2020.</p>
+                        </div>
+                    </div>
+                    <!-- * doctor preview four started -->
+                    <div class="preview" data-target="DoctorFour">
+                        <i class="fa-solid fa-xmark"></i>
+                        <div class="firstDrobe">
+                            <div class="imageBox">
+                                <img src="images/doctor/DoctorOne.svg" alt="doctor Image">
+                            </div>
+                            <div class="expertiseDetails">
+                                <h4 class="department">internal Medicine</h4>
+                                <h4 class="name">dr md abdus salam</h4>
+                                <h6 class="degree">MBBS (Raj), DDV, MCPS, FACP (USA), FCPS (Dermatology)FRCP, Higher Training (Thailand)</h6>
+                                <h6 class="doctorPosition">assoc. professor</h6>
+                                <a href="submission.html" target="_blank" class="appointmentFixedBtn">make an appointment</a>
+                            </div>
+                        </div>
+                        <div class="secondDrobe">
+                            <p>He passed MBBS in 2003 from Shaheed Ziaur Rahman Medical College and Hospital, Bogra under University of Rajshahi. He has done his MCPS (Otolaryngology) from Bangladesh College of Physician & Surgeon in 2012 and Diploma in Otolaryngology from BSMMU in the same year.</p>
+
+                            <p>He has expertise in managing all kinds of ENT & head neck surgery including Tonsillectomy/ Adenotonsillectomy,polyp & papilloma by CO₂ LASER, Functional Endoscopic Sinus Surgery( FESS).</p>
+                            <p>He has publication in Bangladesh Journal of Otorhinolaryngology.</p>
+                            <h6>Education & Qualifications:</h6>
+                            <p><span>1.</span> MBBS - Shaheed Ziaur Rahman Medical College & Hospital - 2003</p>
+                            <p><span>2.</span>MCPS (ENT) - Bangladesh College of Physician & Surgeon - 2012</p>
+                            <p><span>3.</span> DLO - Bangabandhu Sheikh Mujib Medical University - 2012</p>
+                            <h6>Experience:</h6>
+                            <p><span>1.</span>Junior Consultant & Resident Surgeon In the Department of ENT & Head Neck Surgery at Delta Medical College & Hospital from April 2012 to January 2014.</p>
+                            <p><span>2.</span>Junior Consultant in the Department of ENT & Head Neck Surgery at United Hospital Limited from February 2014 to December 2020.</p>
+                        </div>
+                    </div>
+                    <!-- * doctor preview five statrted -->
+                    <div class="preview" data-target="DoctorFive">
+                        <i class="fa-solid fa-xmark"></i>
+                        <div class="firstDrobe">
+                            <div class="imageBox">
+                                <img src="images/doctor/DoctorOne.svg" alt="doctor Image">
+                            </div>
+                            <div class="expertiseDetails">
+                                <h4 class="department">internal Medicine</h4>
+                                <h4 class="name">dr md abdus salam</h4>
+                                <h6 class="degree">MBBS (Raj), DDV, MCPS, FACP (USA), FCPS (Dermatology)FRCP, Higher Training (Thailand)</h6>
+                                <h6 class="doctorPosition">assoc. professor</h6>
+                                <a href="submission.html" target="_blank" class="appointmentFixedBtn">make an appointment</a>
+                            </div>
+                        </div>
+                        <div class="secondDrobe">
+                            <p>He passed MBBS in 2003 from Shaheed Ziaur Rahman Medical College and Hospital, Bogra under University of Rajshahi. He has done his MCPS (Otolaryngology) from Bangladesh College of Physician & Surgeon in 2012 and Diploma in Otolaryngology from BSMMU in the same year.</p>
+
+                            <p>He has expertise in managing all kinds of ENT & head neck surgery including Tonsillectomy/ Adenotonsillectomy,polyp & papilloma by CO₂ LASER, Functional Endoscopic Sinus Surgery( FESS).</p>
+                            <p>He has publication in Bangladesh Journal of Otorhinolaryngology.</p>
+                            <h6>Education & Qualifications:</h6>
+                            <p><span>1.</span> MBBS - Shaheed Ziaur Rahman Medical College & Hospital - 2003</p>
+                            <p><span>2.</span>MCPS (ENT) - Bangladesh College of Physician & Surgeon - 2012</p>
+                            <p><span>3.</span> DLO - Bangabandhu Sheikh Mujib Medical University - 2012</p>
+                            <h6>Experience:</h6>
+                            <p><span>1.</span>Junior Consultant & Resident Surgeon In the Department of ENT & Head Neck Surgery at Delta Medical College & Hospital from April 2012 to January 2014.</p>
+                            <p><span>2.</span>Junior Consultant in the Department of ENT & Head Neck Surgery at United Hospital Limited from February 2014 to December 2020.</p>
+                        </div>
+                    </div>
+                    <!-- * doctor preview six started -->
+                    <div class="preview" data-target="DoctorSix">
+                        <i class="fa-solid fa-xmark"></i>
+                        <div class="firstDrobe">
+                            <div class="imageBox">
+                                <img src="images/doctor/DoctorOne.svg" alt="doctor Image">
+                            </div>
+                            <div class="expertiseDetails">
+                                <h4 class="department">internal Medicine</h4>
+                                <h4 class="name">dr md abdus salam</h4>
+                                <h6 class="degree">MBBS (Raj), DDV, MCPS, FACP (USA), FCPS (Dermatology)FRCP, Higher Training (Thailand)</h6>
+                                <h6 class="doctorPosition">assoc. professor</h6>
+                                <a href="submission.html" target="_blank" class="appointmentFixedBtn">make an appointment</a>
+                            </div>
+                        </div>
+                        <div class="secondDrobe">
+                            <p>He passed MBBS in 2003 from Shaheed Ziaur Rahman Medical College and Hospital, Bogra under University of Rajshahi. He has done his MCPS (Otolaryngology) from Bangladesh College of Physician & Surgeon in 2012 and Diploma in Otolaryngology from BSMMU in the same year.</p>
+
+                            <p>He has expertise in managing all kinds of ENT & head neck surgery including Tonsillectomy/ Adenotonsillectomy,polyp & papilloma by CO₂ LASER, Functional Endoscopic Sinus Surgery( FESS).</p>
+                            <p>He has publication in Bangladesh Journal of Otorhinolaryngology.</p>
+                            <h6>Education & Qualifications:</h6>
+                            <p><span>1.</span> MBBS - Shaheed Ziaur Rahman Medical College & Hospital - 2003</p>
+                            <p><span>2.</span>MCPS (ENT) - Bangladesh College of Physician & Surgeon - 2012</p>
+                            <p><span>3.</span> DLO - Bangabandhu Sheikh Mujib Medical University - 2012</p>
+                            <h6>Experience:</h6>
+                            <p><span>1.</span>Junior Consultant & Resident Surgeon In the Department of ENT & Head Neck Surgery at Delta Medical College & Hospital from April 2012 to January 2014.</p>
+                            <p><span>2.</span>Junior Consultant in the Department of ENT & Head Neck Surgery at United Hospital Limited from February 2014 to December 2020.</p>
+                        </div>
+                    </div>
+                    <!-- * doctor preview seven started -->
+                    <div class="preview" data-target="DoctorSeven">
+                        <i class="fa-solid fa-xmark"></i>
+                        <div class="firstDrobe">
+                            <div class="imageBox">
+                                <img src="images/doctor/DoctorOne.svg" alt="doctor Image">
+                            </div>
+                            <div class="expertiseDetails">
+                                <h4 class="department">internal Medicine</h4>
+                                <h4 class="name">dr md abdus salam</h4>
+                                <h6 class="degree">MBBS (Raj), DDV, MCPS, FACP (USA), FCPS (Dermatology)FRCP, Higher Training (Thailand)</h6>
+                                <h6 class="doctorPosition">assoc. professor</h6>
+                                <a href="submission.html" target="_blank" class="appointmentFixedBtn">make an appointment</a>
+                            </div>
+                        </div>
+                        <div class="secondDrobe">
+                            <p>He passed MBBS in 2003 from Shaheed Ziaur Rahman Medical College and Hospital, Bogra under University of Rajshahi. He has done his MCPS (Otolaryngology) from Bangladesh College of Physician & Surgeon in 2012 and Diploma in Otolaryngology from BSMMU in the same year.</p>
+
+                            <p>He has expertise in managing all kinds of ENT & head neck surgery including Tonsillectomy/ Adenotonsillectomy,polyp & papilloma by CO₂ LASER, Functional Endoscopic Sinus Surgery( FESS).</p>
+                            <p>He has publication in Bangladesh Journal of Otorhinolaryngology.</p>
+                            <h6>Education & Qualifications:</h6>
+                            <p><span>1.</span> MBBS - Shaheed Ziaur Rahman Medical College & Hospital - 2003</p>
+                            <p><span>2.</span>MCPS (ENT) - Bangladesh College of Physician & Surgeon - 2012</p>
+                            <p><span>3.</span> DLO - Bangabandhu Sheikh Mujib Medical University - 2012</p>
+                            <h6>Experience:</h6>
+                            <p><span>1.</span>Junior Consultant & Resident Surgeon In the Department of ENT & Head Neck Surgery at Delta Medical College & Hospital from April 2012 to January 2014.</p>
+                            <p><span>2.</span>Junior Consultant in the Department of ENT & Head Neck Surgery at United Hospital Limited from February 2014 to December 2020.</p>
+                        </div>
+                    </div>
+                    <!-- * doctor preview eight started -->
+                    <div class="preview" data-target="DoctorEight">
+                        <i class="fa-solid fa-xmark"></i>
+                        <div class="firstDrobe">
+                            <div class="imageBox">
+                                <img src="images/doctor/DoctorOne.svg" alt="doctor Image">
+                            </div>
+                            <div class="expertiseDetails">
+                                <h4 class="department">internal Medicine</h4>
+                                <h4 class="name">dr md abdus salam</h4>
+                                <h6 class="degree">MBBS (Raj), DDV, MCPS, FACP (USA), FCPS (Dermatology)FRCP, Higher Training (Thailand)</h6>
+                                <h6 class="doctorPosition">assoc. professor</h6>
+                                <a href="submission.html" target="_blank" class="appointmentFixedBtn">make an appointment</a>
+                            </div>
+                        </div>
+                        <div class="secondDrobe">
+                            <p>He passed MBBS in 2003 from Shaheed Ziaur Rahman Medical College and Hospital, Bogra under University of Rajshahi. He has done his MCPS (Otolaryngology) from Bangladesh College of Physician & Surgeon in 2012 and Diploma in Otolaryngology from BSMMU in the same year.</p>
+
+                            <p>He has expertise in managing all kinds of ENT & head neck surgery including Tonsillectomy/ Adenotonsillectomy,polyp & papilloma by CO₂ LASER, Functional Endoscopic Sinus Surgery( FESS).</p>
+                            <p>He has publication in Bangladesh Journal of Otorhinolaryngology.</p>
+                            <h6>Education & Qualifications:</h6>
+                            <p><span>1.</span> MBBS - Shaheed Ziaur Rahman Medical College & Hospital - 2003</p>
+                            <p><span>2.</span>MCPS (ENT) - Bangladesh College of Physician & Surgeon - 2012</p>
+                            <p><span>3.</span> DLO - Bangabandhu Sheikh Mujib Medical University - 2012</p>
+                            <h6>Experience:</h6>
+                            <p><span>1.</span>Junior Consultant & Resident Surgeon In the Department of ENT & Head Neck Surgery at Delta Medical College & Hospital from April 2012 to January 2014.</p>
+                            <p><span>2.</span>Junior Consultant in the Department of ENT & Head Neck Surgery at United Hospital Limited from February 2014 to December 2020.</p>
+                        </div>
+                    </div>
+                    <!-- * doctor preview nine started -->
+                    <div class="preview" data-target="DoctorNine">
+                        <i class="fa-solid fa-xmark"></i>
+                        <div class="firstDrobe">
+                            <div class="imageBox">
+                                <img src="images/doctor/DoctorOne.svg" alt="doctor Image">
+                            </div>
+                            <div class="expertiseDetails">
+                                <h4 class="department">internal Medicine</h4>
+                                <h4 class="name">dr md abdus salam</h4>
+                                <h6 class="degree">MBBS (Raj), DDV, MCPS, FACP (USA), FCPS (Dermatology)FRCP, Higher Training (Thailand)</h6>
+                                <h6 class="doctorPosition">assoc. professor</h6>
+                                <a href="submission.html" target="_blank" class="appointmentFixedBtn">make an appointment</a>
+                            </div>
+                        </div>
+                        <div class="secondDrobe">
+                            <p>He passed MBBS in 2003 from Shaheed Ziaur Rahman Medical College and Hospital, Bogra under University of Rajshahi. He has done his MCPS (Otolaryngology) from Bangladesh College of Physician & Surgeon in 2012 and Diploma in Otolaryngology from BSMMU in the same year.</p>
+
+                            <p>He has expertise in managing all kinds of ENT & head neck surgery including Tonsillectomy/ Adenotonsillectomy,polyp & papilloma by CO₂ LASER, Functional Endoscopic Sinus Surgery( FESS).</p>
+                            <p>He has publication in Bangladesh Journal of Otorhinolaryngology.</p>
+                            <h6>Education & Qualifications:</h6>
+                            <p><span>1.</span> MBBS - Shaheed Ziaur Rahman Medical College & Hospital - 2003</p>
+                            <p><span>2.</span>MCPS (ENT) - Bangladesh College of Physician & Surgeon - 2012</p>
+                            <p><span>3.</span> DLO - Bangabandhu Sheikh Mujib Medical University - 2012</p>
+                            <h6>Experience:</h6>
+                            <p><span>1.</span>Junior Consultant & Resident Surgeon In the Department of ENT & Head Neck Surgery at Delta Medical College & Hospital from April 2012 to January 2014.</p>
+                            <p><span>2.</span>Junior Consultant in the Department of ENT & Head Neck Surgery at United Hospital Limited from February 2014 to December 2020.</p>
+                        </div>
+                    </div>
+                    <!-- * doctor preview ten started -->
+                    <div class="preview" data-target="DoctorTen">
+                        <i class="fa-solid fa-xmark"></i>
+                        <div class="firstDrobe">
+                            <div class="imageBox">
+                                <img src="images/doctor/DoctorOne.svg" alt="doctor Image">
+                            </div>
+                            <div class="expertiseDetails">
+                                <h4 class="department">internal Medicine</h4>
+                                <h4 class="name">dr md abdus salam</h4>
+                                <h6 class="degree">MBBS (Raj), DDV, MCPS, FACP (USA), FCPS (Dermatology)FRCP, Higher Training (Thailand)</h6>
+                                <h6 class="doctorPosition">assoc. professor</h6>
+                                <a href="submission.html" target="_blank" class="appointmentFixedBtn">make an appointment</a>
+                            </div>
+                        </div>
+                        <div class="secondDrobe">
+                            <p>He passed MBBS in 2003 from Shaheed Ziaur Rahman Medical College and Hospital, Bogra under University of Rajshahi. He has done his MCPS (Otolaryngology) from Bangladesh College of Physician & Surgeon in 2012 and Diploma in Otolaryngology from BSMMU in the same year.</p>
+
+                            <p>He has expertise in managing all kinds of ENT & head neck surgery including Tonsillectomy/ Adenotonsillectomy,polyp & papilloma by CO₂ LASER, Functional Endoscopic Sinus Surgery( FESS).</p>
+                            <p>He has publication in Bangladesh Journal of Otorhinolaryngology.</p>
+                            <h6>Education & Qualifications:</h6>
+                            <p><span>1.</span> MBBS - Shaheed Ziaur Rahman Medical College & Hospital - 2003</p>
+                            <p><span>2.</span>MCPS (ENT) - Bangladesh College of Physician & Surgeon - 2012</p>
+                            <p><span>3.</span> DLO - Bangabandhu Sheikh Mujib Medical University - 2012</p>
+                            <h6>Experience:</h6>
+                            <p><span>1.</span>Junior Consultant & Resident Surgeon In the Department of ENT & Head Neck Surgery at Delta Medical College & Hospital from April 2012 to January 2014.</p>
+                            <p><span>2.</span>Junior Consultant in the Department of ENT & Head Neck Surgery at United Hospital Limited from February 2014 to December 2020.</p>
+                        </div>
+                    </div>
+                    <!-- * doctor preview eleven started -->
+                    <div class="preview" data-target="DoctorEleven">
+                        <i class="fa-solid fa-xmark"></i>
+                        <div class="firstDrobe">
+                            <div class="imageBox">
+                                <img src="images/doctor/DoctorOne.svg" alt="doctor Image">
+                            </div>
+                            <div class="expertiseDetails">
+                                <h4 class="department">internal Medicine</h4>
+                                <h4 class="name">dr md abdus salam</h4>
+                                <h6 class="degree">MBBS (Raj), DDV, MCPS, FACP (USA), FCPS (Dermatology)FRCP, Higher Training (Thailand)</h6>
+                                <h6 class="doctorPosition">assoc. professor</h6>
+                                <a href="submission.html" target="_blank" class="appointmentFixedBtn">make an appointment</a>
+                            </div>
+                        </div>
+                        <div class="secondDrobe">
+                            <p>He passed MBBS in 2003 from Shaheed Ziaur Rahman Medical College and Hospital, Bogra under University of Rajshahi. He has done his MCPS (Otolaryngology) from Bangladesh College of Physician & Surgeon in 2012 and Diploma in Otolaryngology from BSMMU in the same year.</p>
+
+                            <p>He has expertise in managing all kinds of ENT & head neck surgery including Tonsillectomy/ Adenotonsillectomy,polyp & papilloma by CO₂ LASER, Functional Endoscopic Sinus Surgery( FESS).</p>
+                            <p>He has publication in Bangladesh Journal of Otorhinolaryngology.</p>
+                            <h6>Education & Qualifications:</h6>
+                            <p><span>1.</span> MBBS - Shaheed Ziaur Rahman Medical College & Hospital - 2003</p>
+                            <p><span>2.</span>MCPS (ENT) - Bangladesh College of Physician & Surgeon - 2012</p>
+                            <p><span>3.</span> DLO - Bangabandhu Sheikh Mujib Medical University - 2012</p>
+                            <h6>Experience:</h6>
+                            <p><span>1.</span>Junior Consultant & Resident Surgeon In the Department of ENT & Head Neck Surgery at Delta Medical College & Hospital from April 2012 to January 2014.</p>
+                            <p><span>2.</span>Junior Consultant in the Department of ENT & Head Neck Surgery at United Hospital Limited from February 2014 to December 2020.</p>
+                        </div>
+                    </div>
+                    <!-- * doctor preview twelve started -->
+                    <div class="preview" data-target="DoctorTwelve">
+                        <i class="fa-solid fa-xmark"></i>
+                        <div class="firstDrobe">
+                            <div class="imageBox">
+                                <img src="images/doctor/DoctorOne.svg" alt="doctor Image">
+                            </div>
+                            <div class="expertiseDetails">
+                                <h4 class="department">internal Medicine</h4>
+                                <h4 class="name">dr md abdus salam</h4>
+                                <h6 class="degree">MBBS (Raj), DDV, MCPS, FACP (USA), FCPS (Dermatology)FRCP, Higher Training (Thailand)</h6>
+                                <h6 class="doctorPosition">assoc. professor</h6>
+                                <a href="submission.html" target="_blank" class="appointmentFixedBtn">make an appointment</a>
+                            </div>
+                        </div>
+                        <div class="secondDrobe">
+                            <p>He passed MBBS in 2003 from Shaheed Ziaur Rahman Medical College and Hospital, Bogra under University of Rajshahi. He has done his MCPS (Otolaryngology) from Bangladesh College of Physician & Surgeon in 2012 and Diploma in Otolaryngology from BSMMU in the same year.</p>
+
+                            <p>He has expertise in managing all kinds of ENT & head neck surgery including Tonsillectomy/ Adenotonsillectomy,polyp & papilloma by CO₂ LASER, Functional Endoscopic Sinus Surgery( FESS).</p>
+                            <p>He has publication in Bangladesh Journal of Otorhinolaryngology.</p>
+                            <h6>Education & Qualifications:</h6>
+                            <p><span>1.</span> MBBS - Shaheed Ziaur Rahman Medical College & Hospital - 2003</p>
+                            <p><span>2.</span>MCPS (ENT) - Bangladesh College of Physician & Surgeon - 2012</p>
+                            <p><span>3.</span> DLO - Bangabandhu Sheikh Mujib Medical University - 2012</p>
+                            <h6>Experience:</h6>
+                            <p><span>1.</span>Junior Consultant & Resident Surgeon In the Department of ENT & Head Neck Surgery at Delta Medical College & Hospital from April 2012 to January 2014.</p>
+                            <p><span>2.</span>Junior Consultant in the Department of ENT & Head Neck Surgery at United Hospital Limited from February 2014 to December 2020.</p>
+                        </div>
+                    </div>
+                    <!-- * doctor preview thirteen started here -->
+                    <!-- * doctor preview twelve started -->
+                    <div class="preview" data-target="DoctorTwelve">
+                        <i class="fa-solid fa-xmark"></i>
+                        <div class="firstDrobe">
+                            <div class="imageBox">
+                                <img src="images/doctor/DoctorOne.svg" alt="doctor Image">
+                            </div>
+                            <div class="expertiseDetails">
+                                <h4 class="department">internal Medicine</h4>
+                                <h4 class="name">dr md abdus salam</h4>
+                                <h6 class="degree">MBBS (Raj), DDV, MCPS, FACP (USA), FCPS (Dermatology)FRCP, Higher Training (Thailand)</h6>
+                                <h6 class="doctorPosition">assoc. professor</h6>
+                                <a href="submission.html" target="_blank" class="appointmentFixedBtn">make an appointment</a>
+                            </div>
+                        </div>
+                        <div class="secondDrobe">
+                            <p>He passed MBBS in 2003 from Shaheed Ziaur Rahman Medical College and Hospital, Bogra under University of Rajshahi. He has done his MCPS (Otolaryngology) from Bangladesh College of Physician & Surgeon in 2012 and Diploma in Otolaryngology from BSMMU in the same year.</p>
+
+                            <p>He has expertise in managing all kinds of ENT & head neck surgery including Tonsillectomy/ Adenotonsillectomy,polyp & papilloma by CO₂ LASER, Functional Endoscopic Sinus Surgery( FESS).</p>
+                            <p>He has publication in Bangladesh Journal of Otorhinolaryngology.</p>
+                            <h6>Education & Qualifications:</h6>
+                            <p><span>1.</span> MBBS - Shaheed Ziaur Rahman Medical College & Hospital - 2003</p>
+                            <p><span>2.</span>MCPS (ENT) - Bangladesh College of Physician & Surgeon - 2012</p>
+                            <p><span>3.</span> DLO - Bangabandhu Sheikh Mujib Medical University - 2012</p>
+                            <h6>Experience:</h6>
+                            <p><span>1.</span>Junior Consultant & Resident Surgeon In the Department of ENT & Head Neck Surgery at Delta Medical College & Hospital from April 2012 to January 2014.</p>
+                            <p><span>2.</span>Junior Consultant in the Department of ENT & Head Neck Surgery at United Hospital Limited from February 2014 to December 2020.</p>
+                        </div>
+                    </div>
+                    <!-- * doctor preview thirteen started -->
+                    <div class="preview" data-target="DoctorThirteen">
+                        <i class="fa-solid fa-xmark"></i>
+                        <div class="firstDrobe">
+                            <div class="imageBox">
+                                <img src="images/doctor/DoctorOne.svg" alt="doctor Image">
+                            </div>
+                            <div class="expertiseDetails">
+                                <h4 class="department">internal Medicine</h4>
+                                <h4 class="name">dr md abdus salam</h4>
+                                <h6 class="degree">MBBS (Raj), DDV, MCPS, FACP (USA), FCPS (Dermatology)FRCP, Higher Training (Thailand)</h6>
+                                <h6 class="doctorPosition">assoc. professor</h6>
+                                <a href="submission.html" target="_blank" class="appointmentFixedBtn">make an appointment</a>
+                            </div>
+                        </div>
+                        <div class="secondDrobe">
+                            <p>He passed MBBS in 2003 from Shaheed Ziaur Rahman Medical College and Hospital, Bogra under University of Rajshahi. He has done his MCPS (Otolaryngology) from Bangladesh College of Physician & Surgeon in 2012 and Diploma in Otolaryngology from BSMMU in the same year.</p>
+
+                            <p>He has expertise in managing all kinds of ENT & head neck surgery including Tonsillectomy/ Adenotonsillectomy,polyp & papilloma by CO₂ LASER, Functional Endoscopic Sinus Surgery( FESS).</p>
+                            <p>He has publication in Bangladesh Journal of Otorhinolaryngology.</p>
+                            <h6>Education & Qualifications:</h6>
+                            <p><span>1.</span> MBBS - Shaheed Ziaur Rahman Medical College & Hospital - 2003</p>
+                            <p><span>2.</span>MCPS (ENT) - Bangladesh College of Physician & Surgeon - 2012</p>
+                            <p><span>3.</span> DLO - Bangabandhu Sheikh Mujib Medical University - 2012</p>
+                            <h6>Experience:</h6>
+                            <p><span>1.</span>Junior Consultant & Resident Surgeon In the Department of ENT & Head Neck Surgery at Delta Medical College & Hospital from April 2012 to January 2014.</p>
+                            <p><span>2.</span>Junior Consultant in the Department of ENT & Head Neck Surgery at United Hospital Limited from February 2014 to December 2020.</p>
+                        </div>
+                    </div>
+                    <!-- * doctor preview fourteen started here -->
+                    <div class="preview" data-target="DoctorFourteen">
+                        <i class="fa-solid fa-xmark"></i>
+                        <div class="firstDrobe">
+                            <div class="imageBox">
+                                <img src="images/doctor/DoctorOne.svg" alt="doctor Image">
+                            </div>
+                            <div class="expertiseDetails">
+                                <h4 class="department">internal Medicine</h4>
+                                <h4 class="name">dr md abdus salam</h4>
+                                <h6 class="degree">MBBS (Raj), DDV, MCPS, FACP (USA), FCPS (Dermatology)FRCP, Higher Training (Thailand)</h6>
+                                <h6 class="doctorPosition">assoc. professor</h6>
+                                <a href="submission.html" target="_blank" class="appointmentFixedBtn">make an appointment</a>
+                            </div>
+                        </div>
+                        <div class="secondDrobe">
+                            <p>He passed MBBS in 2003 from Shaheed Ziaur Rahman Medical College and Hospital, Bogra under University of Rajshahi. He has done his MCPS (Otolaryngology) from Bangladesh College of Physician & Surgeon in 2012 and Diploma in Otolaryngology from BSMMU in the same year.</p>
+
+                            <p>He has expertise in managing all kinds of ENT & head neck surgery including Tonsillectomy/ Adenotonsillectomy,polyp & papilloma by CO₂ LASER, Functional Endoscopic Sinus Surgery( FESS).</p>
+                            <p>He has publication in Bangladesh Journal of Otorhinolaryngology.</p>
+                            <h6>Education & Qualifications:</h6>
+                            <p><span>1.</span> MBBS - Shaheed Ziaur Rahman Medical College & Hospital - 2003</p>
+                            <p><span>2.</span>MCPS (ENT) - Bangladesh College of Physician & Surgeon - 2012</p>
+                            <p><span>3.</span> DLO - Bangabandhu Sheikh Mujib Medical University - 2012</p>
+                            <h6>Experience:</h6>
+                            <p><span>1.</span>Junior Consultant & Resident Surgeon In the Department of ENT & Head Neck Surgery at Delta Medical College & Hospital from April 2012 to January 2014.</p>
+                            <p><span>2.</span>Junior Consultant in the Department of ENT & Head Neck Surgery at United Hospital Limited from February 2014 to December 2020.</p>
+                        </div>
+                    </div>
+                    <!-- * doctor preview fifteen started here -->
+                    <div class="preview" data-target="DoctorFifteen">
+                        <i class="fa-solid fa-xmark"></i>
+                        <div class="firstDrobe">
+                            <div class="imageBox">
+                                <img src="images/doctor/DoctorOne.svg" alt="doctor Image">
+                            </div>
+                            <div class="expertiseDetails">
+                                <h4 class="department">internal Medicine</h4>
+                                <h4 class="name">dr md abdus salam</h4>
+                                <h6 class="degree">MBBS (Raj), DDV, MCPS, FACP (USA), FCPS (Dermatology)FRCP, Higher Training (Thailand)</h6>
+                                <h6 class="doctorPosition">assoc. professor</h6>
+                                <a href="submission.html" target="_blank" class="appointmentFixedBtn">make an appointment</a>
+                            </div>
+                        </div>
+                        <div class="secondDrobe">
+                            <p>He passed MBBS in 2003 from Shaheed Ziaur Rahman Medical College and Hospital, Bogra under University of Rajshahi. He has done his MCPS (Otolaryngology) from Bangladesh College of Physician & Surgeon in 2012 and Diploma in Otolaryngology from BSMMU in the same year.</p>
+
+                            <p>He has expertise in managing all kinds of ENT & head neck surgery including Tonsillectomy/ Adenotonsillectomy,polyp & papilloma by CO₂ LASER, Functional Endoscopic Sinus Surgery( FESS).</p>
+                            <p>He has publication in Bangladesh Journal of Otorhinolaryngology.</p>
+                            <h6>Education & Qualifications:</h6>
+                            <p><span>1.</span> MBBS - Shaheed Ziaur Rahman Medical College & Hospital - 2003</p>
+                            <p><span>2.</span>MCPS (ENT) - Bangladesh College of Physician & Surgeon - 2012</p>
+                            <p><span>3.</span> DLO - Bangabandhu Sheikh Mujib Medical University - 2012</p>
+                            <h6>Experience:</h6>
+                            <p><span>1.</span>Junior Consultant & Resident Surgeon In the Department of ENT & Head Neck Surgery at Delta Medical College & Hospital from April 2012 to January 2014.</p>
+                            <p><span>2.</span>Junior Consultant in the Department of ENT & Head Neck Surgery at United Hospital Limited from February 2014 to December 2020.</p>
+                        </div>
+                    </div>
+                    <!-- * doctor preview sixteen started here -->
+                    <div class="preview" data-target="DoctorSixteen">
+                        <i class="fa-solid fa-xmark"></i>
+                        <div class="firstDrobe">
+                            <div class="imageBox">
+                                <img src="images/doctor/DoctorOne.svg" alt="doctor Image">
+                            </div>
+                            <div class="expertiseDetails">
+                                <h4 class="department">internal Medicine</h4>
+                                <h4 class="name">dr md abdus salam</h4>
+                                <h6 class="degree">MBBS (Raj), DDV, MCPS, FACP (USA), FCPS (Dermatology)FRCP, Higher Training (Thailand)</h6>
+                                <h6 class="doctorPosition">assoc. professor</h6>
+                                <a href="submission.html" target="_blank" class="appointmentFixedBtn">make an appointment</a>
+                            </div>
+                        </div>
+                        <div class="secondDrobe">
+                            <p>He passed MBBS in 2003 from Shaheed Ziaur Rahman Medical College and Hospital, Bogra under University of Rajshahi. He has done his MCPS (Otolaryngology) from Bangladesh College of Physician & Surgeon in 2012 and Diploma in Otolaryngology from BSMMU in the same year.</p>
+
+                            <p>He has expertise in managing all kinds of ENT & head neck surgery including Tonsillectomy/ Adenotonsillectomy,polyp & papilloma by CO₂ LASER, Functional Endoscopic Sinus Surgery( FESS).</p>
+                            <p>He has publication in Bangladesh Journal of Otorhinolaryngology.</p>
+                            <h6>Education & Qualifications:</h6>
+                            <p><span>1.</span> MBBS - Shaheed Ziaur Rahman Medical College & Hospital - 2003</p>
+                            <p><span>2.</span>MCPS (ENT) - Bangladesh College of Physician & Surgeon - 2012</p>
+                            <p><span>3.</span> DLO - Bangabandhu Sheikh Mujib Medical University - 2012</p>
+                            <h6>Experience:</h6>
+                            <p><span>1.</span>Junior Consultant & Resident Surgeon In the Department of ENT & Head Neck Surgery at Delta Medical College & Hospital from April 2012 to January 2014.</p>
+                            <p><span>2.</span>Junior Consultant in the Department of ENT & Head Neck Surgery at United Hospital Limited from February 2014 to December 2020.</p>
+                        </div>
+                    </div>
+                    <!-- * doctor preview seventeen started here -->
+                    <div class="preview" data-target="DoctorSeventeen">
+                        <i class="fa-solid fa-xmark"></i>
+                        <div class="firstDrobe">
+                            <div class="imageBox">
+                                <img src="images/doctor/DoctorOne.svg" alt="doctor Image">
+                            </div>
+                            <div class="expertiseDetails">
+                                <h4 class="department">internal Medicine</h4>
+                                <h4 class="name">dr md abdus salam</h4>
+                                <h6 class="degree">MBBS (Raj), DDV, MCPS, FACP (USA), FCPS (Dermatology)FRCP, Higher Training (Thailand)</h6>
+                                <h6 class="doctorPosition">assoc. professor</h6>
+                                <a href="submission.html" target="_blank" class="appointmentFixedBtn">make an appointment</a>
+                            </div>
+                        </div>
+                        <div class="secondDrobe">
+                            <p>He passed MBBS in 2003 from Shaheed Ziaur Rahman Medical College and Hospital, Bogra under University of Rajshahi. He has done his MCPS (Otolaryngology) from Bangladesh College of Physician & Surgeon in 2012 and Diploma in Otolaryngology from BSMMU in the same year.</p>
+
+                            <p>He has expertise in managing all kinds of ENT & head neck surgery including Tonsillectomy/ Adenotonsillectomy,polyp & papilloma by CO₂ LASER, Functional Endoscopic Sinus Surgery( FESS).</p>
+                            <p>He has publication in Bangladesh Journal of Otorhinolaryngology.</p>
+                            <h6>Education & Qualifications:</h6>
+                            <p><span>1.</span> MBBS - Shaheed Ziaur Rahman Medical College & Hospital - 2003</p>
+                            <p><span>2.</span>MCPS (ENT) - Bangladesh College of Physician & Surgeon - 2012</p>
+                            <p><span>3.</span> DLO - Bangabandhu Sheikh Mujib Medical University - 2012</p>
+                            <h6>Experience:</h6>
+                            <p><span>1.</span>Junior Consultant & Resident Surgeon In the Department of ENT & Head Neck Surgery at Delta Medical College & Hospital from April 2012 to January 2014.</p>
+                            <p><span>2.</span>Junior Consultant in the Department of ENT & Head Neck Surgery at United Hospital Limited from February 2014 to December 2020.</p>
+                        </div>
+                    </div>
+                    <!-- * doctor preview eighteen started here -->
+                    <div class="preview" data-target="DoctorEighteen">
+                        <i class="fa-solid fa-xmark"></i>
+                        <div class="firstDrobe">
+                            <div class="imageBox">
+                                <img src="images/doctor/DoctorOne.svg" alt="doctor Image">
+                            </div>
+                            <div class="expertiseDetails">
+                                <h4 class="department">internal Medicine</h4>
+                                <h4 class="name">dr md abdus salam</h4>
+                                <h6 class="degree">MBBS (Raj), DDV, MCPS, FACP (USA), FCPS (Dermatology)FRCP, Higher Training (Thailand)</h6>
+                                <h6 class="doctorPosition">assoc. professor</h6>
+                                <a href="submission.html" target="_blank" class="appointmentFixedBtn">make an appointment</a>
+                            </div>
+                        </div>
+                        <div class="secondDrobe">
+                            <p>He passed MBBS in 2003 from Shaheed Ziaur Rahman Medical College and Hospital, Bogra under University of Rajshahi. He has done his MCPS (Otolaryngology) from Bangladesh College of Physician & Surgeon in 2012 and Diploma in Otolaryngology from BSMMU in the same year.</p>
+
+                            <p>He has expertise in managing all kinds of ENT & head neck surgery including Tonsillectomy/ Adenotonsillectomy,polyp & papilloma by CO₂ LASER, Functional Endoscopic Sinus Surgery( FESS).</p>
+                            <p>He has publication in Bangladesh Journal of Otorhinolaryngology.</p>
+                            <h6>Education & Qualifications:</h6>
+                            <p><span>1.</span> MBBS - Shaheed Ziaur Rahman Medical College & Hospital - 2003</p>
+                            <p><span>2.</span>MCPS (ENT) - Bangladesh College of Physician & Surgeon - 2012</p>
+                            <p><span>3.</span> DLO - Bangabandhu Sheikh Mujib Medical University - 2012</p>
+                            <h6>Experience:</h6>
+                            <p><span>1.</span>Junior Consultant & Resident Surgeon In the Department of ENT & Head Neck Surgery at Delta Medical College & Hospital from April 2012 to January 2014.</p>
+                            <p><span>2.</span>Junior Consultant in the Department of ENT & Head Neck Surgery at United Hospital Limited from February 2014 to December 2020.</p>
+                        </div>
+                    </div>
+                    <!-- * doctor preview nineteen statrted here -->
+                    <div class="preview" data-target="DoctorNineteen">
+                        <i class="fa-solid fa-xmark"></i>
+                        <div class="firstDrobe">
+                            <div class="imageBox">
+                                <img src="images/doctor/DoctorOne.svg" alt="doctor Image">
+                            </div>
+                            <div class="expertiseDetails">
+                                <h4 class="department">internal Medicine</h4>
+                                <h4 class="name">dr md abdus salam</h4>
+                                <h6 class="degree">MBBS (Raj), DDV, MCPS, FACP (USA), FCPS (Dermatology)FRCP, Higher Training (Thailand)</h6>
+                                <h6 class="doctorPosition">assoc. professor</h6>
+                                <a href="submission.html" target="_blank" class="appointmentFixedBtn">make an appointment</a>
+                            </div>
+                        </div>
+                        <div class="secondDrobe">
+                            <p>He passed MBBS in 2003 from Shaheed Ziaur Rahman Medical College and Hospital, Bogra under University of Rajshahi. He has done his MCPS (Otolaryngology) from Bangladesh College of Physician & Surgeon in 2012 and Diploma in Otolaryngology from BSMMU in the same year.</p>
+
+                            <p>He has expertise in managing all kinds of ENT & head neck surgery including Tonsillectomy/ Adenotonsillectomy,polyp & papilloma by CO₂ LASER, Functional Endoscopic Sinus Surgery( FESS).</p>
+                            <p>He has publication in Bangladesh Journal of Otorhinolaryngology.</p>
+                            <h6>Education & Qualifications:</h6>
+                            <p><span>1.</span> MBBS - Shaheed Ziaur Rahman Medical College & Hospital - 2003</p>
+                            <p><span>2.</span>MCPS (ENT) - Bangladesh College of Physician & Surgeon - 2012</p>
+                            <p><span>3.</span> DLO - Bangabandhu Sheikh Mujib Medical University - 2012</p>
+                            <h6>Experience:</h6>
+                            <p><span>1.</span>Junior Consultant & Resident Surgeon In the Department of ENT & Head Neck Surgery at Delta Medical College & Hospital from April 2012 to January 2014.</p>
+                            <p><span>2.</span>Junior Consultant in the Department of ENT & Head Neck Surgery at United Hospital Limited from February 2014 to December 2020.</p>
+                        </div>
+                    </div>
+                    <!-- * doctor preview twenty started here -->
+                    <div class="preview" data-target="DoctorTwenty">
+                        <i class="fa-solid fa-xmark"></i>
+                        <div class="firstDrobe">
+                            <div class="imageBox">
+                                <img src="images/doctor/DoctorOne.svg" alt="doctor Image">
+                            </div>
+                            <div class="expertiseDetails">
+                                <h4 class="department">internal Medicine</h4>
+                                <h4 class="name">dr md abdus salam</h4>
+                                <h6 class="degree">MBBS (Raj), DDV, MCPS, FACP (USA), FCPS (Dermatology)FRCP, Higher Training (Thailand)</h6>
+                                <h6 class="doctorPosition">assoc. professor</h6>
+                                <a href="submission.html" target="_blank" class="appointmentFixedBtn">make an appointment</a>
+                            </div>
+                        </div>
+                        <div class="secondDrobe">
+                            <p>He passed MBBS in 2003 from Shaheed Ziaur Rahman Medical College and Hospital, Bogra under University of Rajshahi. He has done his MCPS (Otolaryngology) from Bangladesh College of Physician & Surgeon in 2012 and Diploma in Otolaryngology from BSMMU in the same year.</p>
+
+                            <p>He has expertise in managing all kinds of ENT & head neck surgery including Tonsillectomy/ Adenotonsillectomy,polyp & papilloma by CO₂ LASER, Functional Endoscopic Sinus Surgery( FESS).</p>
+                            <p>He has publication in Bangladesh Journal of Otorhinolaryngology.</p>
+                            <h6>Education & Qualifications:</h6>
+                            <p><span>1.</span> MBBS - Shaheed Ziaur Rahman Medical College & Hospital - 2003</p>
+                            <p><span>2.</span>MCPS (ENT) - Bangladesh College of Physician & Surgeon - 2012</p>
+                            <p><span>3.</span> DLO - Bangabandhu Sheikh Mujib Medical University - 2012</p>
+                            <h6>Experience:</h6>
+                            <p><span>1.</span>Junior Consultant & Resident Surgeon In the Department of ENT & Head Neck Surgery at Delta Medical College & Hospital from April 2012 to January 2014.</p>
+                            <p><span>2.</span>Junior Consultant in the Department of ENT & Head Neck Surgery at United Hospital Limited from February 2014 to December 2020.</p>
+                        </div>
+                    </div>
+                    <!-- * doctor preview twentyone started here -->
+                    <div class="preview" data-target="DoctorTwentyOne">
+                        <i class="fa-solid fa-xmark"></i>
+                        <div class="firstDrobe">
+                            <div class="imageBox">
+                                <img src="images/doctor/DoctorOne.svg" alt="doctor Image">
+                            </div>
+                            <div class="expertiseDetails">
+                                <h4 class="department">internal Medicine</h4>
+                                <h4 class="name">dr md abdus salam</h4>
+                                <h6 class="degree">MBBS (Raj), DDV, MCPS, FACP (USA), FCPS (Dermatology)FRCP, Higher Training (Thailand)</h6>
+                                <h6 class="doctorPosition">assoc. professor</h6>
+                                <a href="submission.html" target="_blank" class="appointmentFixedBtn">make an appointment</a>
+                            </div>
+                        </div>
+                        <div class="secondDrobe">
+                            <p>He passed MBBS in 2003 from Shaheed Ziaur Rahman Medical College and Hospital, Bogra under University of Rajshahi. He has done his MCPS (Otolaryngology) from Bangladesh College of Physician & Surgeon in 2012 and Diploma in Otolaryngology from BSMMU in the same year.</p>
+
+                            <p>He has expertise in managing all kinds of ENT & head neck surgery including Tonsillectomy/ Adenotonsillectomy,polyp & papilloma by CO₂ LASER, Functional Endoscopic Sinus Surgery( FESS).</p>
+                            <p>He has publication in Bangladesh Journal of Otorhinolaryngology.</p>
+                            <h6>Education & Qualifications:</h6>
+                            <p><span>1.</span> MBBS - Shaheed Ziaur Rahman Medical College & Hospital - 2003</p>
+                            <p><span>2.</span>MCPS (ENT) - Bangladesh College of Physician & Surgeon - 2012</p>
+                            <p><span>3.</span> DLO - Bangabandhu Sheikh Mujib Medical University - 2012</p>
+                            <h6>Experience:</h6>
+                            <p><span>1.</span>Junior Consultant & Resident Surgeon In the Department of ENT & Head Neck Surgery at Delta Medical College & Hospital from April 2012 to January 2014.</p>
+                            <p><span>2.</span>Junior Consultant in the Department of ENT & Head Neck Surgery at United Hospital Limited from February 2014 to December 2020.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="appointmentContent pt-80 pb-60">
+                    <h3><span class="autoTypped">....</span></h3>
+                </div>
+                <div class="appointmentContainer overflow" style="background-image: url('./images/appointment/appointmentFormBG.jpg');">
+                    <div class="mainContent">
+                        <div class="appointmentField wow fadeInUp" data-wow-delay="0.75s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">
+                            <h4 class="appointmentSectionTitle wow swing" data-wow-delay="0.95s" style="visibility:visible; animation-delay: 0.95s; animation-name:swing;">book your appointment</h4>
+                            <form action="#" class="appointmentForm wow fadeInUp" data-wow-delay="1.5s">
+                                  <div class="visitorInfo">
+                                    <label for="name"></label>
+                                    <span class="labelSpan"><i class="fa-solid fa-user"></i></span>
+                                   <input type="text" id="name" class="appointmentInput"  required placeholder="visitor's name">
+                                  </div>
+                                <div class="credential">
+                                    <div class="credentialPhone">
+                                    <label for="phone"></label>
+                                    <span class="labelSpan"><i class="fa-solid fa-phone"> </i></span>
+                                    <input type="tel" id="phone" class="appointmentInput"  name="phone" placeholder="+8801234567890" pattern="[+,' '][\d]{7}[-,$,' ',][\d]{0,6}|[+,' '][\d]{3}[,-,$,' ',][\d]{4}[-,$,' ',][\d]{0,6}|[(][(+,' '][\d]{3}[)][-,$,' '][\d]{4}\b[-,$,' ',][\d]{0,6}|[[+,' '][\d]{3}[-,$,' ',][\d]{4}[-,$,' ',][\d]{0,6}|[(][(+,' '][\d]{3}[)][-,$,' '][\d]{4}\b[-,$,' ',][\d]{0,6}|[+' '][\d]{0,13}|[+,' '][\d]{0,7}[-,$,' ',][\d]{0,6}" required>
+                                    </div>
+                                    <div class="credentialEmail">
+                                        <label for="appointmentMail"></label>
+                                        <span class="labelSpan"><i class="fa-solid fa-envelope"></i></span>
+                                        <input type="email" id="appointmentMail" class="appointmentInput"  name="email" placeholder="xampale@example.com" required>
+                                    </div>
+
+                                </div>
+                                <div class="departmentSelection">
+                                    <label for="department"></label>
+                                    <span class="labelSpan"><i class="fa-solid fa-briefcase-medical"></i></span>
+                                <select name="department" id="department" class="appointmentInput"  required>
+                                    <option value="undefined:undefined" selected="selected">Select A Department</option>
+                                    <option value="number:01">GenSurgery</option>
+                                    <option value="number:02">Cardiology</option>
+                                    <option value="number:03">Plastic & Aesthetic Surgery</option>
+                                    <option value="number:04">Oncology</option>
+                                    <option value="number:05">Urology</option>
+                                    <option value="number:06">Pediatric & Neonatology</option>
+                                    <option value="number:07">Gastroenterology & Hepatology</option>
+                                    <option value="number:08">Nephrology</option>
+                                    <option value="number:09">Obstetrics & Gynecology</option>
+                                    <option value="number:10">MRD SERVICES</option>
+                                    <option value="number:11">Dermatology</option>
+                                    <option value="number:12">Dermatology</option>
+                                    <option value="number:13">Diabetes & Endocrinology</option>
+                                    <option value="number:14">Cardiac surgery</option>
+                                    <option value="number:15">ENT, Head & Neck Surgery</option>
+                                    <option value="number:16">Neurosurgery</option>
+                                    <option value="number:17">Vascular Surgery</option>
+                                    <option value="number:18">Orthopedics, Arthoscopy & Joint Replacement</option>
+                                    <option value="number:19">Thoracic Surgery</option>
+                                    <option value="number:20">Internal Medicine</option>
+                                    <option value="number:21">Respiratory Medicine</option>
+                                    <option value="number:22">Clinical Hematology</option>
+                                    <option value="number:23">ICU</option>
+                                    <option value="number:24">Radiology & Imaging</option>
+                                    <option value="number:25">Colorectal Surgery</option>
+                                    <option value="number:26">NICU</option>
+                                    <option value="number:27">Laboratory Medicine</option>
+                                    <option value="number:28">Psychiatry</option>
+                                    <option value="number:29">Dental and Maxillofacial Surgery</option>
+                                    <option value="number:30">Blood Bank</option>
+                                    <option value="number:31">Corporate Affairs Department</option>
+                                    <option value="number:32">Vaccination Center</option>
+                                    <option value="number:33">Nutrition & Dietetic Department</option>
+                                    <option value="number:34">EMERGENCY</option>
+                                    <option value="number:35">Pediatric Surgery</option>
+                                    <option value="number:36">Health Check Up</option>
+                                    <option value="number:37">Rheumatology</option>
+                                    <option value="number:38">Surgical Oncology</option>
+                                    <option value="number:39">Hepatobiliary & Pancreatic Surgery</option>
+                                    <option value="number:40">Breast, Colorectal & Laparoscopic Surgery</option>
+                                    <option value="number:41">Anaesthesia</option>
+                                    <option value="number:42">Others</option>
+                                </select>
+                                </div>
+                                <!-- department selection completed here -->
+                                <div class="physicianName">
+                                    <label for="doctorName"></label>
+                                    <span class="labelSpan"><i class="fa-solid fa-user-doctor"></i></span>
+                                    <input type="text" id="doctorName" class="appointmentInput"  name="doctorName" placeholder="Doctor's Name(optional)">
+                                </div>
+                                <div class="appointmentTiming">
+                                    <div class="appointmentDate">
+                                        <label for="date"></label>
+                                        <span class="labelSpan"><i class="fa-solid fa-calendar-days"></i></span>
+                                        <input type="date" class="appointmentInput"  name="date" id="date">
+                                    </div>
+                                    <div class="appointmentTime">
+                                        <label for="visitSchedule"></label>
+                                        <span class="labelSpan"><i class="fa-solid fa-calendar-check"></i></span>
+                                        <select name="visitSchedule" id="visitSchedule" class="appointmentInput">
+                                            <option value="undefined:undefined" selected="selected">Select Visiting Timeslot</option>
+                                            <option value="timeSlot:01">Early Morning</option>
+                                            <option value="timeSlot:02">Late Morning</option>
+                                            <option value="timeSlot:03">Noon</option>
+                                            <option value="timeSlot:04">Afternoon</option>
+                                            <option value="timeSlot:05">Evening</option>
+                                            <option value="timeSlot:06">Night</option>
+                                            <option value="timeSlot:07">Random Time</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="appointmentSubmission">
+                                    <input type="submit" value="send us" id="appointmentButton" class="appointmentBtn">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+            </div>        
+    </section>
+    <!-- ***===Appointment section completes here===*** -->
+    <!-- ***Ambulance Hiring section starts here*** -->
+    <section id="ambulanceHiring" class="ambulanceHiring">
+        <div class="mainContent">
+            <div class="ambulanceContainer">
+                <div class="ambulanceImage wow fadeInUp" data-wow-delay="0.75s">
+                    <img src="images/ambulance/FR-pick-up-thumb-nail.jpg" alt="ambulanceThumb">
+                </div>
+                <div class="ambulanceInformation wow fadeInUp" data-wow-delay="0.85s">
+                    <h3 class="ambulanceTitle wow swing" data-wow-delay="0.75s">hire an ambulance!</h3>
+                    <p class="ambulanceBrief">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur aliquam, ipsum doloribus impedit doloremque placeat molestias.just <a href="#" target="_blank">Click here</a> or dial</p>
+                    <span class="ambulanceNumber wow bounceInUp"   data-wow-delay="0.85s" >+880-1890-198-958.</span>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***Ambulance Hiring section starts here*** -->
+    <section id="subscribe" class="subscribe overflow">
+        <div class="subscribeContainer" style="background-image: url('./images/subscribe/emailBanner.jpeg');">
+            <div class="mainContent">
+                <div class="subscribeContentBox overflow">
+                    <div class="subscribeContent">
+                        <h3 class="subscribeTitle wow fadeInUp" data-wow-delay="0.75s">subscribe us</h3>
+                        <p class="subscribeText wow fadeInUp" data-wow-delay="0.95s">subscribe us to get latest upadate, discount offer & newsletter.</p>
+                        
+                    </div>
+                    <div class="subscribeForm">
+                         <form action="#" class="subscriptionForm wow pulse" data-wow-delay="0.5s">
+                            <label for="subscriptionMail"></label>
+                            <input type="email" name="email" id="subscriptionMail" placeholder="exampple@xample.com">
+                            <label for="subscriptionBtn"></label>
+                            <input type="submit" id="subscriptionBtn" value="subscribe">
+                         </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+ <!-- *** ===== footer statrts here ===== *** -->
+ <footer id="FooterSection" class="footerSection overflow">
+    <div class="footerContainer overflow" style="background-image:url('./images/footer/footerBgImage.jpeg') ;">
+        <div class="mainContent">
+            <div class="footerOrganizationDetails" >
+                <div class="footerLogoBox wow fadeInUp" data-wow-delay="0.47s">
+                    <div class="footerLogo">
+                        <a href="#"><img src="images/logo/RoyalHospitalLogo.png" alt="CompanyLogo"></a>
+                    </div>
+                    <div class="footerHospitalDescription">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur a corrupti molestiae?</p>
+                    </div>
+                    <div class="footerSocialMedia">
+                        <div class="singleIcon">
+                            <a class="socialLink" href=""><i class="fa-brands fa-facebook-f media"></i></a>
+                        </div>
+                        <div class="singleIcon">
+                            <a class="socialLink" href=""><i class="fa-brands fa-linkedin-in media"></i></a>
+                        </div>                            
+                        <div class="singleIcon">
+                            <a class="socialLink" href=""><i class="fa-brands fa-twitter media"></i></a>
+                        </div>
+                        <div class="singleIcon">
+                            <a class="socialLink" href=""><i class="fa-brands fa-youtube media"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footerServiceBox wow fadeInUp" data-wow-delay="0.67s">
+                    <div class="footerServiceHighlight">
+                        <h3>our services</h3>
+                        <a href="#" class="footerServiceLink">disease checkup & consultancy</a>
+                        <a href="#" class="footerServiceLink">diagonastic tests</a>
+                        <a href="#ambulanceHiring" class="footerServiceLink">emergency ambulance</a>
+                    </div>
+                    <div class="footerPrivacy">
+                        <h3>other links</h3>
+                        <a href="#" class="footerServiceLink">terms & conditions</a>
+                        <a href="#" class="footerServiceLink">privacy policy</a>
+                        <a href="#" class="footerServiceLink">condition of uses</a>
+                        <a href="#" class="footerServiceLink">treatment policy</a>
+                    </div>
+                </div>
+                <div class="footerOtherBox wow fadeInUp" data-wow-delay="0.87s" >
+                    <div class="footerImportantLinks">
+                        <h3>important links</h3>
+                    <a href="#" class="footerServiceLink">gallery</a>
+                    <a href="contact.html" class="footerServiceLink">find doctors</a>
+                    <a href="appointment.html" class="footerServiceLink">appointment</a>
+                    </div>
+                    <div class="footerWorkingTimeHighlight">
+                        <h3>working hour</h3>
+                        <p class="footerServiceLink">Sat - Sun - 9:00 AM - 6:00 PM</p>
+                        <p class="footerServiceLink">Mon - Wed - 9:00 AM - 7:00 PM</p>
+                        <p class="footerServiceLink">Thursday - 9:00 AM - 6:30 PM </p>
+                        <p class="footerServiceLink">Friday - Closed</p>
+                    </div>
+                </div>
+                <div class="footerAddressBox wow fadeInUp" data-wow-delay="0.97s">
+                    <div class="officeLocation">
+                        <h3>office location</h3>
+                        <address class="footerServiceLink"><i class="fa-solid fa-location-dot"></i> 121 King Street, Melbourne,Victoria 3000 Australia</address>
+                    </div>
+                    <div class="hospitalMail">
+                        <h3>Email Address</h3>
+                        <p class="footerServiceLink"><i class="fa-solid fa-envelope"></i> royalaidhospital@gmail.com</p>
+                    </div>
+                    <div class="contactNumber">
+                        <h3>contact number</h3>
+                        <p class="footerServiceLink"><i class="fa-solid fa-phone"></i>01876543289</p>
+                        <p class="footerServiceLink"><i class="fa-solid fa-phone"></i>01876543289</p>
+                        <p class="footerServiceLink"><i class="fa-solid fa-phone"></i>1123 hotline</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footerDivider"></div>
+            <div class="footerCopyRight">
+                <span id="siteRights" class="siteRights">&copy;2022 all the rights reserves @ <span>Royal Hospital Ltd.</span></span>
+                <span class="footerCreator">developed by <a href="https://web.facebook.com/Ppitter78" target="_blank" rel="noopener noreferrer">Rakib Hasan</a> from <a href="https://www.facebook.com/hunterit.bd" target="_blank" rel="noopener noreferrer">Hunter IT.</a></span>
+            </div>
+        </div>
+    </div>
+ </footer>
+ <!-- *** =====footer ends here=====*** -->
+    </main>
+    <script src="theme/jquery-3.6.0.min.js"></script>
+    <script src="theme/owl.carousel.min.js"></script>
+    <script src="plaguin/plugins/wowJS/wow.min.js"></script>
+    <script src="js/vanilla-tilt.js"></script>
+    <script src="theme/swiper/swiper-bundle.min.js"></script>
+    <script src="js/productSlide.js"></script>
+    <script src="theme/magnific/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/sticky-header.js"></script>
+    <script src="js/plauginRunner.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="js/app.js"></script>
+    <script src="js/nav.js"></script>
+</body>
+</html>

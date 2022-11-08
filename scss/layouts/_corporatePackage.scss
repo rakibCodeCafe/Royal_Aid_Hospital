@@ -1,0 +1,58 @@
+.corporatePackage{
+    width: $defaultWidth;
+    height: $defaultHeight;
+    background-color:$globalGoldenWhite;
+    padding:4% 0;
+
+    .corporatePackageContainer{
+        padding: 130px 0;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        position: relative;
+        z-index: 3;
+
+        .corporateContent{
+            width: 90%;
+            height: $defaultHeight;
+            margin: 0 auto;
+            text-transform: $textUppercase;
+            
+            .corporateTitle{
+                text-align: $textCenter;
+                font-size: $fontMonster;
+                font-style: $fontStyle;
+                text-shadow: 1px 2px 1px rgba(10,10,10,0.6);
+                color: $globalWhite;
+                padding: 0px 0px 0px 0px;
+                background-color: $transparent;
+                font-weight:$fontEight;
+            }
+            .corporateMessage{
+                @extend .corporateTitle;
+                font-size: $standardThree;
+                font-weight: $fontSeven;
+            }
+            .corporateNumber{
+                @extend .corporateTitle;
+                font-size: $globalLargeFont;
+                letter-spacing: 8px;
+                font-weight: $fontNine;
+
+            }
+        }
+        &::before{
+            position: absolute;
+            content: " ";
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-color: $globalCadetColor;
+            z-index: -4;
+            opacity: .6;
+        }
+    }
+
+}

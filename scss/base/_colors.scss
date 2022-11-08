@@ -1,0 +1,55 @@
+$transparent: transparent;
+$black: rgba(12, 11, 11, 0.89);
+$globalLightBlack:rgba(0,0,0,0.1);
+$titleShadow:rgb(0, 163, 200);
+$titleColor:rgb(66, 141, 158);
+$subTitleColor:rgb(0, 174, 239);
+$SubTitleShadow:rgb(66, 128, 158);
+$globalSelectColor:rgb(1, 140, 176);
+
+// **
+$elementShadow:rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+// title shadows
+$globalTitleShadow:1px 2px 1px rgba(10,10, 10, 0.641);
+$mainTitleShadow:1px 2px 1px $titleShadow;
+$subTitleShadow:1px 1px 0px $SubTitleShadow;
+$TitleParagraphShadow:1px 1px 3px $SubTitleShadow;
+$globalSmallDeviceTitleShadow:1px 2px 1px rgb(169, 39, 118);
+$globalSmaillDeviceSectionTitleShadow: 3px 2px 5px rgb(0, 163, 200);
+$globalSmallDeviceInfoShadow: 1px 2px 9px rgb(66, 128, 158);
+$globalAboutSmallDeviceShadow: 1px 2px 10px rgba(10, 10, 10, 0.641);
+$globalSmallDevicesSubscribeBtn: 4px -1px 10px 3px rgba(30, 30, 30, 0.4);
+
+// section color
+
+$sectionPrimaryColor:rgb(232, 235, 240);
+$advertiseSectionBgColor:rgb(229, 231, 234);
+$expertSectionColor: linear-gradient(-45deg, rgb(203, 209, 219), rgb(219, 222, 227));
+$globalSecondaryHeaderColor:linear-gradient(-45deg, rgb(242, 232, 232), rgba(255, 253, 253, 0.78));
+
+
+// colors
+
+$globalCrimson:rgb(220, 20, 60);
+$globalMagenta:rgb(169, 39, 118);
+$globalSemiDeepMagenta:rgb(123, 11, 123);
+$globalWhite:rgb(255, 255, 255);
+$globalGhostWhite:rgb(245,245,245);
+$globalPinkWhite:rgb(240, 232, 237);
+$globalRedMixedWhite:rgb(239, 222, 222);
+$globalBlueDarkGrey:rgb(203, 209, 219);
+$globalLightBlueGrey:rgb(219, 222, 227);
+$globalCadetColor:rgba(141, 185, 196, 0.993);
+$globalBlue:rgb(39, 151, 197);
+$globalPrimaryBlue:rgb(54, 168, 235);
+$globalMarineBlue:rgb(15, 76, 138);
+$globalGreenMix:rgb(1, 158, 199);
+$globalDarkBlue:rgb(0, 72, 97);
+$globalLightGrey:rgb(87, 88, 98);
+$globalGoldenWhite:rgb(249, 243, 238);
+$globalSoftWhite:rgb(241,244,242);
+$globalLightShadow:rgb(221, 221, 221);
+$globalAwesomeBlue:rgb(63, 177, 212);
+$globalDocHoverColor:rgb(60,69,151);
+$globalLightTeal:rgb(0, 164, 203);
+$globalGlowWhite: rgb(242,232,232);

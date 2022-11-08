@@ -1,0 +1,99 @@
+// fonts
+$fontFamily:'Poppins', sans-serif;
+// font weight starts
+$fontOne:100;
+$fontTwo:200;
+$fontThree:300;
+$fontFour:400;
+$fontFive:500;
+$fontSix:600;
+$fontSeven:700;
+$fontEight:800;
+$fontNine:900;
+// font weight ends
+// font size starts
+// font-size:10px;
+$globalTinyFont:0.625rem;
+$tinyFont:0.69rem;
+// font-size 11px
+$globalmorelittleFont:.6rem;
+$globalLittleFont:.7rem;
+// font size 12px
+$fontMoreLittle:0.75rem;
+// font size 12.8px
+$fontLittle:.8rem;
+$fontLittleEight:.85rem;
+$globalFontNine:.9rem;
+// font-size:15px
+$globalFontFifteen:0.938rem;
+// font size 14px
+$globalFontFourteen:0.875rem;
+// font size 16px 
+$standard:1rem;
+$globalFooterFont:1.088rem;
+$standardZeroNine:1.09rem;
+// font size 17.6px
+$standardOne:1.1rem;
+// font size 19.2px
+$standardTwo:1.2rem;
+// font size 20.8px
+$standardThree:1.3rem;
+// font size 22.4px 
+$standardFour:1.4rem;
+// font size 24px
+$standardFive:1.5rem;
+// font size 25.6px
+$standardSix:1.6rem;
+// font size 27.2px
+$standardSeven:1.7rem;
+// font size 28.8px
+$standardEight:1.8rem;
+// font size 30.4px
+$standardNine:1.9rem;
+
+// font size 32px
+$fontBig:2rem;
+$fontGiant:2.4rem;
+// font size 36.096px
+$fontBigger:2.256rem;
+// font size 40px
+$fontMonster:2.5rem;
+$globalHeaderTextFont:2.82rem;
+$globalSemiLarge:3rem;
+$globalLargeFont:4rem;
+
+// font style
+$fontStyle:italic;
+
+
+// text align variables 
+$textLeft:left;
+$textRight:right;
+$textCenter:center;
+
+// text cases
+$textUppercase:uppercase;
+$textCapitalize:capitalize;
+$textLowercase:lowercase;
+
+// length variables
+
+ $defaultWidth:100%;
+ $defaultHeight:auto;
+
+
+//  boxshadows 
+$advertiseBoxShadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+$advertiseBtnShadow:rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+$globalBoxShadow:rgba(50, 50, 93, 0.05) 0px 13px 27px -5px, rgba(0, 0, 0, 0.03) 0px 8px 16px -8px;
+
+// global text shadow
+$globalCardTextShadow:2px 1px 1px #a85252;
+
+// border radius 
+
+$advertiseRadius: 11px 11px 11px 11px;
+$adBtnRadius:8px 8px 8px 8px !important;
+$formBorderRadius:2px 2px 6px 4px rgba(30,30,30,0.4);
+$formBtnRadius: 4px 0px 6px -1px rgba(30,30,30,0.4);

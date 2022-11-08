@@ -1,0 +1,437 @@
+.appointment{
+    width: $defaultWidth;
+    height: $defaultHeight;
+    padding-top: 4%;
+    background-color:$globalGoldenWhite;
+
+    .appointmentContent{
+
+        width: 90%;
+        height: $defaultHeight;
+        margin: 0 auto;
+
+        h3{
+            @include SectionHeading;
+            text-align: $textCenter;
+            text-transform: $textCapitalize;
+        }
+
+        p{
+            @include SectionInfo;
+            @include SectionDescription;
+            text-shadow:$TitleParagraphShadow;
+            width: 90%;
+            margin: 0 auto;
+            padding-top: 2%;
+            padding-bottom: 3%;
+        }
+    }
+    // ** appointment content completed here
+
+    .appointmentContainer{
+        width: $defaultWidth;
+        height: $defaultHeight;
+        padding: 55px 0;
+        background-origin: border-box;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        position: relative;
+        z-index: 1;
+        overflow:hidden;
+        &::before{
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-color: $globalLightBlack;
+            z-index: -2;
+        }
+
+        .appointmentField{
+            width: 700px;
+            height: $defaultHeight;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            align-content: center;
+            align-self: center;
+            background-color: $globalWhite;
+            border: none;
+            outline: none;
+            padding: 2% 0;
+            border-radius: 9px 9px 9px 9px;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+
+            .appointmentSectionTitle{
+                width: 90%;
+                height: $defaultHeight;
+                padding: 2% 0;
+                margin-bottom: 2%;
+                margin: 0 auto;
+                text-align: $textCenter;
+                text-transform: $textCapitalize;
+                font-size: $standardTwo;
+                font-style: $fontStyle;
+                font-weight: $fontSix;
+                overflow: hidden;
+                color:$globalGreenMix;
+            }
+            .appointmentForm{
+                width: 90%;
+                height: $defaultHeight;
+                margin-top: 2%;
+                padding: 2% 0;
+
+                .visitorInfo{
+                    width: 90%;
+                    height: $defaultHeight;
+                    margin: 0 auto;
+
+                    .labelSpan{
+                        @include labelMix;
+                    }
+
+                    .appointmentInput{
+                        @include appointmentFormFieldPrimary;
+                        width: 90%;
+                        height:$defaultHeight;
+                        position: relative;
+                        font-size:$standardOne;
+                    }
+                }
+
+                .credential{
+                    @extend .visitorInfo;
+                    margin-top:2%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    .credentialPhone{
+                        flex-basis: 45%;
+                        height: $defaultHeight;
+                        flex-wrap: wrap;
+
+                        .labelSpan{
+                            @include labelMix;
+                        }
+                        .appointmentInput{
+                            @include appointmentFormFieldPrimary;
+                            width: 90%;
+                            height:$defaultHeight;
+                            position: relative;
+                            font-size:$standardOne;
+                        }
+
+                    }
+
+                    .credentialEmail{
+                        flex-basis: 50%;
+                        height: auto;
+                        flex-wrap: wrap;
+                        display: flex;
+                        margin-right: 27px;
+                        overflow: hidden;
+
+                        .labelSpan{
+                            @include labelMix;
+                            left:46%;
+                        }
+                        .appointmentInput{
+                            @include appointmentFormFieldPrimary;
+                            width: 90%;
+                            height:$defaultHeight;
+                            position: relative;
+                            font-size:$standardOne;
+                            text-transform: $textLowercase;
+                        }
+                    }
+
+                }
+                
+                .departmentSelection{
+
+                    @extend .visitorInfo;
+                    margin-top:2%;
+                }
+
+                .physicianName{
+                    @extend .visitorInfo;
+                    margin-top:2%;
+                }
+                .appointmentTiming{
+                    @extend .visitorInfo;
+                    margin-top:2%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    .appointmentDate{
+                        @extend .credentialPhone;
+                        flex-basis: 47%;
+                    }
+
+                    .appointmentTime{
+                        flex-basis: 47%;
+                        margin-right: 5%;
+
+                        .labelSpan{
+                            @include labelMix;
+                            left: 48%;
+                        }
+                    }
+                }
+
+                .appointmentSubmission{
+                    width: 40%;
+                    margin-top:1.7%;
+
+                    span{
+                        padding:7px 7px 6px 7px;
+                        font-size: $standardOne;
+                        margin-top: 0 !important;
+                        font-size: $standardTwo;
+                        transform: translate(84px ,2px);
+                        position: absolute;
+                        z-index: 9;
+                        color:$globalGreenMix;
+                        font-style:$fontStyle;
+                        cursor: pointer;
+                        transition: 450ms all ease;
+                    }
+                    .appointmentBtn{
+                        width: 250px;
+                        padding: 13px 13px 13px 20px;
+                        transform: translateX(31px);
+                        font-size: $standardOne;
+                        text-transform: $textUppercase;
+                        font-style: $fontStyle;
+                        border-radius: 8px 8px 8px 8px;
+                        cursor: pointer;
+                        transition: 450ms all ease;
+                        background-color:$globalWhite;
+                        border: 1px solid $globalGreenMix;
+                        color: $globalGreenMix;
+                        &:hover{
+                            background-color:$globalSemiDeepMagenta;
+                            border: 1px solid $globalSemiDeepMagenta;
+                            color: $globalWhite;
+
+                            span{
+                                color: $globalWhite;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+        
+    .doctorContainer{
+        padding-bottom: 2%;
+            .mainContainer{
+                width: $defaultWidth;
+                height: $defaultHeight;
+                display: flex;
+                justify-content: space-around;
+                flex-wrap: wrap;
+                flex-direction:row;
+                .doctor{
+                    display: none;
+                    flex-basis: 22%;
+                    flex-wrap: wrap;
+                    height: 410px;
+                    background-color: $globalGreenMix;
+                    overflow: hidden;
+                    border-radius: 6px 6px 6px 6px;
+                    margin-top: 1%;
+                    cursor: pointer;
+                    .doctorImage{
+                        width: $defaultWidth;
+                        height: 240px;
+                        overflow: hidden;
+                        img{
+                            border-radius: 6px 6px 0 0;
+                            transition: all 300ms linear;
+                            &:hover{
+                                transform: scale(1.06);
+                            }
+                        }
+                    }
+                    .doctorDetails{
+                        width: $defaultWidth;
+                        height: $defaultHeight;
+                        .doctorName{
+                            @include doctorName;
+                            padding: 2% 1%;
+                            padding-bottom: 0.5%;
+                            font-size: $standardOne;
+                            font-weight: $fontFive;
+                        }
+                        .expertise{
+                            @include doctorName;
+                            padding: 0 2%;
+                            font-weight: $fontFour;
+                            font-size: $standard;
+    
+                        }
+                        .qualifications {
+                            width:$defaultWidth;
+                            @include doctorName;
+                            display: inline-block;
+                            font-size: $globalFontNine;
+                            font-weight: $fontFour;
+                            padding: 0 9%;
+                        }
+                    }
+                    &:nth-child(1),
+                    &:nth-child(2), 
+                    &:nth-child(3),
+                    &:nth-child(4),
+                    &:nth-child(5),
+                    &:nth-child(6), 
+                    &:nth-child(7),
+                    &:nth-child(8){
+                        display: inline-block;
+                    }
+                    &--teamMember{
+                        display: inline-block !important;
+                    }
+                }
+            }
+            #loadMore{
+                width: 20%;
+                padding: 16px 20px;
+                border-radius: 7px 7px 7px 7px;
+                margin: 0 auto;
+                background-color:$globalMagenta;
+                text-align: $textCenter;
+                text-transform: $textCapitalize;
+                color: $globalGhostWhite;
+                font-size: $standardOne;
+                font-weight: $fontTwo;
+                margin-top: 2%;
+                cursor: pointer;
+                transition: all 390ms ease-in-out;
+                &:hover{
+                    background-color: #7b0b7b;
+                    color: $globalPinkWhite;
+                    font-style: $fontStyle;
+                }
+            }
+    }
+       
+    .doctorsPreview{
+        width:100%;
+        min-height: 100vh;
+        background: rgba(0,0,0,.8);
+        position: fixed;
+        left: 0;
+        top: 0;
+        display:none;
+        align-items: center;
+        justify-content: center;
+        z-index:999999999;
+        .preview{
+            position: relative;
+            background-color:$globalWhite;
+            width: 550px;
+            .firstDrobe{
+                width: $defaultWidth;
+                height: $defaultHeight;
+                display: flex;
+                align-items: flex-start;
+                justify-content: space-between;
+                padding: 2%;
+                .imageBox{
+                    width: 30%;
+                }
+                .expertiseDetails{
+                    width:65%;
+                    height: $defaultHeight;
+                    .department{
+                        color:$globalSemiDeepMagenta;
+                        font-size: $standardFour;
+                        text-transform: $textUppercase;
+                        font-weight: $fontFive;
+                    }
+                    .name{
+                        color: #3926269c;
+                        text-transform: $textCapitalize;
+                        font-size: $standardOne;
+                        font-style: $fontStyle;
+                    }
+                    .degree{
+                        width: 220px;
+                        padding: 1% 0;
+                        color: rgba(91, 66, 66, 0.68);
+                    }
+                    .doctorPosition{
+                        font-size: $fontLittle;
+                        font-weight: $fontFive;
+                        text-transform: $textUppercase;
+                        color: #3926269c;
+                        font-style: $fontStyle;
+
+                    }
+                    .appointmentFixedBtn{
+                        background-color: $SubTitleShadow;
+                        padding: 8px 20px;
+                        color:$globalWhite;
+                        outline: 0;
+                        border: 0;
+                        text-transform: $textCapitalize;
+                        cursor: pointer;
+                        position: relative;
+                        top: 10px;
+                        font-size: $fontLittle;
+                    }
+                }
+            }
+            .secondDrobe{
+                padding: 2%;
+                width: $defaultWidth;
+                height: $defaultHeight;
+                p{
+                    padding: 1% 0;
+                    text-transform: $textCapitalize;
+                    font-size: $fontLittle;
+                    span{
+                        margin-right: 15px;
+                        margin-bottom: 5px;
+                    }
+                }
+                h6{
+                    color: $black;
+                    font-weight: $fontSix;
+                    font-size: $fontLittle;
+                }
+            }
+        }
+
+    }
+    .doctorsPreview .preview .fa-xmark{
+        position: absolute;
+        right: 13px;
+        top: 13px;
+        font-size: $standardFour;
+        font-weight: $fontEight;
+        transition: all 350ms ease-in-out;
+        cursor: pointer;
+        &:hover{
+            transform: rotate(90deg);
+        }
+    }
+    .doctorsPreview .preview{
+        display: none;
+    }
+    .doctorsPreview .preview.active{
+        display: inline-block;
+    }
+}

@@ -1,0 +1,149 @@
+.navContainer{
+    width: 100%;
+    height: auto;
+    .navBar{
+        width: 84%;
+        height: auto;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        .navList {
+            display: flex;
+            gap:0;
+            flex-direction: row;
+            justify-items: center;
+            align-items: baseline;
+            margin: auto 65px;
+            
+            .navListItem {
+                display: flex;
+                position: relative;
+                .navListItemLink {
+                    padding: 17px 13px;
+                    font-size: 1rem;
+                    font-weight: 300;
+                    position: relative;
+                    color:#00aeef ;
+                    transition: all .3s ease;
+                    cursor: pointer;
+                    i{
+                        transition: all 450ms ease-in-out;
+                    }
+                    &:hover{
+                        color:$globalMagenta;
+                        i{
+                            transform: rotate(180deg);
+                        }
+                    }
+                    &--parentLink{
+                        font-weight: $fontSix !important;
+                    }
+                }
+            }
+          }
+        //   menubar ends here
+        // beef burger starts here
+
+        .beefBurger{
+            display: none;
+            cursor: pointer;
+            .bar{
+                display: block;
+                width: 30px;
+                height: 4px;
+                background-color: #2f2626;
+                margin: 5px auto;
+                transition: all 0.3s ease-in-out;
+                -webkit-transition: all 0.3s ease-in-out;
+                &:nth-child(2){
+                    width: 20px;
+                    margin-right: 9px;
+                    transform: translateX(4px);
+                }
+                &:last-child{
+                    width: 28px;
+                }
+            }
+        }
+     }
+}
+// dropdown style
+.dropdownList {
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+	padding: 10px 0;
+	width: 270px;
+	box-shadow: none;
+	display: none;
+	border: 1px solid  #895ebd;
+    border-top: none;
+	padding: 20px;
+	text-align: center;
+	text-transform: capitalize;
+	box-shadow: 2px 2px 1px rgba(157, 134, 134, 0.4);
+	border-radius: 12px 12px 12px 12px;
+	transition: 0.47s all ease;
+    background: rgb(255,255,255);
+    background-image: linear-gradient(-45deg, rgb(242, 232, 232), rgba(255, 253, 253, 0.78));
+    &:hover{
+        border:1px solid #00aeef;
+    }
+    .dropDownItems{
+        width: 94%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+        padding: 8px 10px;
+        transition: .3s all ease;
+        border-bottom: 1px dashed red;
+        &:hover{
+            border-bottom: 1px dashed #00aeef;
+        }
+        &:hover .navListItemLink{
+            left: 3%;
+            cursor:crosshair;
+        }
+    }
+}
+.clicked_menu .dropdownList{
+    display:flex;
+    position: absolute;
+    flex-direction: column;
+}
+.clicked_menu .largeDropdownList{
+    display: flex;
+    flex-flow: row wrap;
+    position: absolute;
+}
+
+//** large dropdown 
+
+
+.largeDropdownList{
+    @extend .dropdownList;
+    width: 95vw;
+    height: 460px;
+    margin: 0 auto;
+    transform: translateX(-47%);
+    .largeDropdownItems{
+        @extend .dropDownItems;
+        width: 15%;
+        justify-content: space-around;
+        align-content: space-around;
+        align-items: center;
+        display: flex;
+        flex-flow: row wrap;
+        transition: .47s all ease;
+        padding:0;
+
+        .navListItemLink{
+            &--childLink{
+                padding: 4px 2px !important;
+                cursor: pointer !important;
+            }
+        }
+      }
+}

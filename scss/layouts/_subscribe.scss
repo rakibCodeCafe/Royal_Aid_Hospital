@@ -1,0 +1,86 @@
+.subscribe{
+    width: $defaultWidth;
+    height: $defaultHeight;
+    background-color: $sectionPrimaryColor;
+    padding: 3% 0;
+    .subscribeContainer{
+        padding: 66px 0;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+
+        .subscribeContentBox{
+            width: $defaultWidth;
+            height: $defaultHeight;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: row;
+            .subscribeContent{
+                flex-basis: 51%;
+                flex-wrap: nowrap;
+                height: $defaultHeight;
+                .subscribeTitle{
+                    font-size: $globalSemiLarge;
+                    font-weight: $fontOne;
+                    font-style: $fontStyle;
+                    padding: 5% 0;
+                    text-transform: $textCapitalize;
+                    color: $globalGhostWhite;
+                }
+                .subscribeText{
+                    font-size: $standardTwo;
+                    font-weight: $fontTwo;
+                    font-style: $fontStyle;
+                    padding-bottom: 3%;
+                    color: $globalWhite;
+                    text-transform: $textCapitalize;
+                }
+            }
+            .subscribeForm{
+                display: flex;
+                flex-basis: 44%;
+                flex-wrap: nowrap;
+                flex-direction: row;
+                height: $defaultHeight;
+                
+                .subscriptionForm{
+                    position: relative;
+                    #subscriptionMail{
+                        padding: 14px 94px 14px 94px;
+                        text-align: center;
+                        font-size: 1rem;
+                        font-weight: $fontOne;
+                        font-style: italic;
+                        border-radius: 7px 7px 7px 7px;
+                        background-color: $globalWhite;
+                        outline: none;
+                        border: none;
+                        position: relative;
+                        box-shadow: $formBorderRadius;
+                    }
+                    #subscriptionBtn{
+                        padding: 13.2px 37px;
+                        background:$globalSemiDeepMagenta;
+                        border: none;
+                        outline: none;
+                        border-radius: 0px 7px 7px 0px;
+                        position: absolute;
+                        top: 0;
+                        left: 352px;
+                        z-index: 1000;
+                        color: white;
+                        font-size: 1.2rem;
+                        font-weight: 400;
+                        text-align: center;
+                        text-transform: capitalize;
+                        font-style: italic;
+                        cursor: pointer;
+                        box-shadow: $formBtnRadius;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,43 @@
+.advertise{
+    width: $defaultWidth;
+    height: $defaultHeight;
+    padding: 10% 0;
+    background-color: $advertiseSectionBgColor;
+    overflow: hidden;
+
+    .advertiseContainer{
+        width: 728px;
+        height: 200px;
+        margin: 0 auto;
+        overflow: hidden;
+        transition: .5s all ease;
+        border-radius: $advertiseRadius;
+        box-shadow: $advertiseBoxShadow;
+
+        .advertiseContent{
+            width: $defaultWidth;
+            height: $defaultHeight;
+            position: relative;
+            opacity: 0.8;
+
+            .advertiseImage{
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+            .advertiseBtn{
+                position: absolute;
+                left: 42%;
+                top: 218px;
+                transition: .6s all ease;
+                transform: translateY(-68px);
+                @include advertiseBtn;
+                
+                &:hover{
+                    opacity: 1;
+                }
+            }
+        }
+
+    }
+}

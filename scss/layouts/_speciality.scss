@@ -1,0 +1,113 @@
+.speciality{
+    width: $defaultWidth;
+    height: $defaultHeight;
+    padding-top: 60px;
+    padding-bottom: 80px;
+    display: flex;
+    background-color: $sectionPrimaryColor;
+    
+    .sectionDetails{
+        overflow: hidden;
+        @include SectionTitle;
+        padding-bottom: 5%;
+        .sectionTitle{
+            @include SectionTitle ;
+            padding: 2% 0;
+            .sectionHeading{
+                @include SectionHeading;
+                width: 90%;
+                margin: 0 auto;
+            }
+            .sectionInfo{
+                @include SectionInfo;
+                width: 90%;
+                margin: 0 auto;
+                padding-top: 2%;
+            }
+        }
+        .sectionBrief{
+            @extend .sectionTitle;
+            padding-top: 0;
+            padding-bottom: 0;
+
+        .sectionDescription{
+            @include SectionDescription; 
+            @extend.sectionInfo;
+            text-shadow:$TitleParagraphShadow;
+        }
+
+        }
+    }
+    .specialFeatures {
+        width: $defaultWidth;
+        height:$defaultHeight;
+        .displayFeature{
+            width: 96%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid #e8e8e8;
+            padding: 2%;
+            border-radius: 13px 13px 13px 13px;
+            box-shadow: 6px 0px 4px 0px #f0f0fd;
+            background: $globalWhite;
+            margin: 0 auto;
+           
+            
+            .imagePart {
+                width: 20%;
+                height: auto;
+                margin: 0 auto;
+              }
+              .displayContent {
+                width: 100%;
+                height: auto;
+                padding: 2%;
+
+                .displayTitle {
+                    text-align: center;
+                    font-size: 1.2rem;
+                    font-weight: 500;
+                    text-transform: uppercase;
+                    color: rgb(66, 141, 158);
+                    background-color: transparent;
+                    padding: 0px 0px 0px 0px;
+                  }
+                
+                .featureDetail {
+                    text-align: center;
+                    padding: 2%;
+                    font-weight: 200;
+                    font-style: italic;
+                  }  
+                
+              }
+            .buttonPart {
+                width: 60%;
+                height: auto;
+                margin: 0 auto;
+                background-color: rgb(0, 174, 239);
+                border-radius: 7px 7px 7px 7px;
+                margin-bottom: 3%;
+                transition: all 450ms ease-in-out;
+                .featureBtn {
+                    text-align: center;
+                    display: block;
+                    padding: 10px 15px;
+                    color: white;
+                  }
+                  &:hover{
+                    background-color: $globalSemiDeepMagenta;
+                  }
+              }  
+        }
+    }
+
+}
+
+@keyframes slidingText {
+    0%{
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+}

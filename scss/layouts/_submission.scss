@@ -1,0 +1,121 @@
+.submissionFrom{
+    width: $defaultWidth;
+    height: $defaultHeight;
+    padding: 4% 0;
+    background-color: $globalGoldenWhite;
+    .submissionField{
+        width: 650px;
+        height: $defaultHeight;
+        margin: 0 auto;
+        padding: 3% 0;
+
+        .inputForm{
+            width: 450px;
+            height: $defaultHeight;
+            padding: 3% 0;
+            margin: 0 auto;
+            background-color:$globalWhite;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+            border-radius: 10px 10px 10px 10px;
+            .submissionFormTitle{
+                width: $defaultWidth;
+                height: $defaultHeight;
+                padding: 2% 0;
+                text-align: $textCenter;
+                text-transform: $textCapitalize;
+                color: $globalSemiDeepMagenta;
+            }
+            .patitent{
+                @include submissioningForm;
+                .iconSpan{
+                    @include submissioningSpan;
+                }
+                .submissionInput{
+                    width: 90%;
+                    @include submissioningInput;
+                }
+            }
+            .patitentEmail{
+                @include submissioningForm;
+                .iconSpan{
+                    @include submissioningSpan;
+                }
+                .submissionInput{
+                    width: 90%;
+                    @include submissioningInput;
+                    text-transform: $textLowercase;
+                }
+            }
+            .patitentPhone{
+                @include submissioningForm;
+                .iconSpan{
+                    @include submissioningSpan;
+                }
+                .submissionInput{
+                    width: 90%;
+                    @include submissioningInput;
+                    text-transform: $textLowercase;
+                }
+            }
+            .department{
+                @include submissioningForm;
+                .iconSpan{
+                    @include submissioningSpan;
+                }
+                .submissionInput{
+                    width: 90%;
+                    @include submissioningInput;
+                }
+            }
+            .consultant{
+                @include submissioningForm;
+                .iconSpan{
+                    @include submissioningSpan;
+                }
+                .submissionInput{
+                    width: 90%;
+                    @include submissioningInput;
+                }
+            }
+            .appointmentDate{
+                @include submissioningForm;
+                .iconSpan{
+                    @include submissioningSpan;
+                }
+                .submissionInput{
+                    width: 90%;
+                    @include submissioningInput;
+                }
+            }
+            .message{
+                @include submissioningForm;
+                .submissionInput{
+                    width: 90%;
+                    @include submissioningInput;
+                    text-align: $textLeft;
+                }
+            }
+            .SubmissionBtn{
+                @include submissioningForm;
+                background-color: $transparent;
+                .submissionInput{
+                    width: 30%;
+                    @include submissioningInput;
+                    text-align: $textCenter;
+                    text-transform: $textUppercase;
+                    background-color: $globalMagenta;
+                    color: $globalWhite;
+                    font-weight: $fontTwo;
+                    margin-left: 1%;
+                    padding: 12px 10px 12px 4px;
+                    border-radius: 6px 6px 6px 6px;
+                    cursor: pointer;
+                    transition: all 340ms ease-in-out;
+                    &:hover{
+                        background-color: $globalSemiDeepMagenta;
+                    }
+                }
+            }
+        }
+    }
+}

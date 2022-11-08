@@ -1,0 +1,31 @@
+.location{
+    width: $defaultWidth;
+    height: $defaultHeight;
+    .locationContent{
+        width: $defaultWidth;
+        height: $defaultHeight;
+        background-color: $sectionPrimaryColor;
+        padding: 2% 0;
+        padding-bottom:5%;
+        .locationDetails{
+            width: $defaultWidth;
+            height: $defaultHeight;
+            padding: 3% 0;
+            h3{
+                @include SectionHeading;
+                text-align: $textCenter;
+                padding-bottom: 20px;
+                text-transform: $textCapitalize;
+            }
+            p{
+                @include SectionDescription;
+                text-shadow:$TitleParagraphShadow;
+                font-style: $fontStyle;
+                text-align: $textCenter;
+                padding-bottom: 20px;
+            }
+        }
+
+    }
+
+}

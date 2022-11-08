@@ -1,0 +1,289 @@
+.header{
+    width: $defaultWidth;
+    height: $defaultHeight;
+    position: relative;
+    z-index: 1000;
+}
+.primaryHeader {
+    width: $defaultWidth;
+    height: $defaultHeight;
+    box-shadow: 0px 2px 3px 1px rgb(102,102,102);
+    .headerBasic{
+        width: $defaultWidth;
+        height: $defaultHeight;
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        align-items: center;
+        padding-top: 1%;
+        padding-bottom:1%;
+        background-color: #36096d;
+        background-image: linear-gradient(315deg, #36096d 0%, #37d5d6 74%);
+        .LoginInformation{
+            width: 20%;
+            height: $defaultHeight;
+            font-size: 1rem;
+            font-style: italic;
+            text-shadow: 0 0 2px #6c757d;
+            font-weight: 300;
+            .loginLink{
+                cursor: pointer;
+                color: rgb(240, 248, 255);
+            }
+            .loginFormBox{
+                width: 26%;
+                max-width: 300px;
+                height: 490px;
+                position: relative;
+                margin: 4.9% auto;
+                padding-bottom: 1.5%;
+                background-color: aquamarine;
+                z-index:99100;
+                overflow: hidden;
+                position: fixed;
+                left: -100%;
+                transition:all 340ms  ease;
+                background-image: linear-gradient(315deg, rgb(33, 134, 241) 0%, #37d5d6 74%);
+                opacity: 1.8;
+                box-shadow: 1px 2px 3px 2px #ddd;
+                transform: translateX(21%);
+                border-radius: 17px 18px 15px 17px;
+                .buttonBox{
+                    width: 225px;
+                    position: relative;
+                    margin: 35px auto;
+                    box-shadow: 0 0 20px 9px rgba(255, 98, 97, 0.1411764706);
+                    border-radius: 30px;
+                    #btn{
+                        top: 0;
+                        left: 0;
+                        position: absolute;
+                        width: 110px;
+                        height: 100%;
+                        border-radius: 30px;
+                        transition: 0.6s;
+                        background-image:linear-gradient(-45deg, rgb(242, 232, 232), rgba(255, 253, 253, 0.78));
+
+                    }
+                    .toggleBtn{
+                        padding: 9px 27px;
+                        cursor: pointer;
+                        background: transparent;
+                        border: 0;
+                        outline: none;
+                        position: relative;
+                        color: rgb(55,55,55);
+                        text-transform: capitalize;
+                        font-weight: 400;
+                        font-style: italic;
+                    }
+                }
+                #login{
+                    left: 50px;
+                }
+                #register{
+                    left: 450px;
+                }
+                .inputGroup{
+                    top: 85px;
+                    width: 220px;
+                    position: absolute;
+                    transition: .5s;
+                    .inputField{
+                        width: $defaultWidth;
+                        padding: 10px 0;
+                        margin: 5px 0;
+                        border: none;
+                        outline: none;
+                        background: transparent;
+                        border-bottom: 2px solid #999;
+                    }
+                    .password{
+                        position: relative;
+                        .inputField{
+                            position: relative;
+                        }
+                        #show{
+                            position: absolute;
+                            left: 200px;
+                            top: 20px;
+                            color:#776262;
+                            cursor: pointer;
+                        }
+                        #hide{
+                            position: absolute;
+                            left: 200px;
+                            top: 20px;
+                            color:#776262;
+                            cursor: pointer;
+                            display: none;
+                        }
+                    }
+                    .respassword{
+                        position: relative;
+                        .inputField{
+                            position: relative;
+                        }
+                        #Show{
+                            position: absolute;
+                            left: 200px;
+                            top: 20px;
+                            color:#776262;
+                            cursor: pointer;
+                        }
+                        #Hide{
+                            position: absolute;
+                            left: 200px;
+                            top: 20px;
+                            color:#776262;
+                            cursor: pointer;
+                            display: none;
+                        }
+                    }
+                    .checkBox{
+                        margin: 30px 10px 30px 0;
+                        accent-color: $globalSemiDeepMagenta;
+                        border: 1px solid $globalSemiDeepMagenta;
+                    }
+                    .checkBox:is(:focus, :valid){
+                        border: 1px solid $globalSemiDeepMagenta;
+                    }
+                    span{
+                        color: rgb(60, 60, 60);
+                        font-size: 12px;
+                        position: absolute;
+                        bottom: 64px;
+                        text-transform: capitalize;
+                        font-style: italic;
+                        font-weight: $fontFive;
+                    }
+                    .passwordLink {
+                        position: absolute;
+                        font-size:$fontMoreLittle;
+                        left: -3px;
+                        text-transform:$textCapitalize;
+                      }
+                    .submitBtn{
+                        width: 85%;
+                        padding: 10px 30px;
+                        cursor: pointer;
+                        margin: auto;
+                        display: block;
+                        background: linear-gradient(-45deg, rgb(242, 232, 232), rgba(255, 253, 253, 0.78));
+                        border: 0;
+                        outline: none;
+                        border-radius: 30px;
+                    }
+                }
+                .inputGroup input:is(:focus, :valid){
+                    border-bottom-color:$globalSemiDeepMagenta;
+                } 
+            }
+            .loginFormBox.active{
+                left: -50px;
+            }
+        }
+        .headerContactNumbers{
+            width: 58%;
+            height: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            .headerNumber {
+                color: aliceblue;
+                text-shadow: 0 0 3px #2f2626;
+                font-size: .8rem;
+                font-weight: 500;
+                text-transform: capitalize;
+              }
+        }
+        .headerSocialMedia{
+            width: 20%;
+            height: $defaultHeight;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-content: center;
+            align-items: center;
+            .singleIcon{
+                cursor: pointer;
+                .socialLink{
+                    padding:0 3px ;
+                    .media{
+                        transition: all .3s ease;
+                        text-shadow: 1px 2px 1px rgba(102, 102, 102, .82);
+                        color: white;
+                        &:hover{
+                            transform: rotate(360deg);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+//header basic ends here******
+
+// scrolling header starts here****
+.headerScrolling{
+    width: $defaultWidth;
+    height: $defaultHeight;
+    background-color: #36096d;
+    background-image: linear-gradient(233deg, #36096d 0%, #37d5d6 75%);
+    padding-top: .5%;
+    padding-bottom: 1%;
+    .scrollinglink {
+        font-size: 1.2rem;
+        color: white;
+        text-shadow: 1px 2px 1px rgba(102, 102, 102, 0.85);
+        font-style: italic;
+        transition: all .3s ease;
+        font-weight: $fontThree;
+        &:hover{
+            text-decoration:underline;
+        }
+      }
+}
+// primary header ends here
+
+// seconadry header stats here***
+.secondaryHeader {
+    width: 100%;
+    height: auto;
+    background:$globalSecondaryHeaderColor;
+    z-index: 9999 !important;
+    .logoContainer {
+        width: 100%;
+        height:auto;
+        display:flex;
+        justify-content:space-between;
+        align-content:center;
+        align-items:center;
+        .logoPart {
+            width: 20%;
+            height: auto;
+            transform: translateY(27px);
+            img{
+                width: 70%;
+                height: $defaultHeight;
+            }
+          }
+          .logoTextPart {
+            width: 70%;
+            height: auto;
+            transform: translateX(-13%);
+            .CompanyName {
+                text-align: left;
+                word-spacing: 12px;
+                letter-spacing: 6px;
+                text-transform: capitalize;
+                font-style: italic;
+                text-shadow: 1px 2px 1px #8e8d8d;
+                color: rgba(32, 29, 29, 0.7);
+                font-size: 3.5rem;
+              }
+          }
+      }
+    //   navContainer starts here
+
+}

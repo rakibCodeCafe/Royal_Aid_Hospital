@@ -1,0 +1,495 @@
+// rest coding ****
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family:$fontFamily;
+    font-size:$standard;
+    font-weight: $fontTwo;
+    color: $black;
+    background-color: $transparent;
+}
+::-moz-selection { /* Code for Firefox */
+    color: $globalGhostWhite;
+    background:$globalSelectColor;
+    ;
+  }
+  
+  ::selection {
+    color: $globalGhostWhite;
+    background: $globalSelectColor;
+    ;
+  }
+main{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+.mainContent{
+    width: 90%;
+    // height: auto;
+    margin: 0 auto;
+    // overflow: hidden;
+}
+.mainContentSection{
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    align-content: space-between;
+
+}
+.overflow::after,.overflow::before{
+    content: ' ';
+    clear: both;
+    display: table;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+img{
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+    object-fit: cover;
+}
+
+.trBorder{
+    border-bottom: none !important;
+}
+.text-weight{
+    font-weight: 500 !important;
+}
+
+.lineSpan{
+    width: $defaultWidth;
+    height: $defaultHeight;
+    position: relative;
+    z-index: 2;
+    &::before{
+        position: absolute;
+        content: "";
+        background:$globalSemiDeepMagenta;
+        width: 160px;
+        height: 5px;
+        top: 64px;
+        left: 67px;
+
+    }
+}
+
+// dropdown ends here
+
+// Slider arrow starts here
+
+@mixin arrowBtn {
+
+    position: absolute;
+    color: white;
+    z-index: 3;
+    background-color: teal;
+    transform: .3s all ease;
+    &:hover{
+      opacity: 1;
+    }
+  } 
+
+// Slider arrow ends here
+
+// eachLoops for title starts here **
+
+$map: (h1, $fontEight, $fontMonster, $textLeft, $black), (h2, $fontFive, $standardOne, $textLeft, $black), (h3, $fontFive, $standardOne, $textLeft, $black), (h4, $fontFour, $standard , $textLeft, $black), (h5, $fontThree, $fontLittle , $textLeft, $black),(h6, $fontThree, $fontMoreLittle , $textLeft, $black);
+@each $name,$fontWeight, $fontSize, $align, $color in $map {
+    #{$name}{
+        font-weight: $fontWeight;
+        font-size: $fontSize;
+        text-align: $align;
+        color: $color;
+    }
+}
+//  eachLoop for title ends here **
+
+// eachLoop for text align starts here **
+
+$list:(left, right, center);
+@each $tA in $list {
+    .text-#{$tA}{
+        text-align: $tA;
+    }
+}
+
+
+// eachLoop for text align ends here **
+
+.text-right-important{
+    text-align: right !important;
+}
+.text-left-important{
+    text-align: left !important;
+}
+.text-center-important{
+    text-align: center !important;
+}
+// eachLoop for text tarnsformation starts here **
+
+$list:(uppercase, lowercase, capitalize);
+@each $tT in $list {
+    .text-#{$tT}{
+        text-transform:$tT;
+    }
+}
+
+// eachLoop for text tarnsformation ends here **
+
+// forLoop for padding top starts **
+
+@for $pt from 1 through 250 {
+    .pt-#{$pt}{
+        padding-top: $pt+px;
+    }
+}
+
+// forLoop for padding top ends **
+
+// forLoop for padding bottom starts **
+
+@for $pb from 1 through 250 {
+    .pb-#{$pb}{
+        padding-bottom: $pb+px;
+    }
+}
+
+// forLoop for padding bottom ends **
+
+// forLoop for margin top starts **
+
+@for $mt from 1 through 250 {
+    .mt-#{$mt}{
+        margin-top: $mt+px;
+    }
+}
+
+// forLoop for margin top ends **
+
+// forLoop for margin bottom starts **
+
+@for $mb from 1 through 250 {
+    .mb-#{$mb}{
+        margin-bottom: $mb+px;
+    }
+}
+
+// forLoop for margin bottom ends **
+
+@mixin advertiseBtn {
+    padding: 7px 17px;
+    background: $globalCrimson;
+    opacity: 0.8;
+    font-size: $standardOne;
+    color: $globalWhite;
+    text-transform: capitalize;
+    border-radius: $adBtnRadius;
+    box-shadow: $advertiseBtnShadow;
+}
+
+@mixin SectionTitle {
+    
+    width: $defaultWidth;
+    height: $defaultHeight;
+}
+
+@mixin SectionHeading {
+    height: $defaultHeight;
+    font-size:$fontMonster;
+    text-shadow:$mainTitleShadow;
+    color: $titleColor;
+    font-style: $fontStyle;
+    
+}
+
+@mixin SectionInfo {
+    height: $defaultHeight;
+    color:$subTitleColor;
+    font-size:$standardThree;
+    font-style: $fontStyle;
+    text-shadow:$subTitleShadow;
+    text-align: center;
+    font-weight: $fontFour;
+}
+@mixin SectionDescription {
+    font-weight: $fontTwo;
+    color:$black;
+    font-size:$standardZeroNine;
+    padding-top: 0;
+}
+
+// ** label span mixin
+
+@mixin labelMix {
+    background:$globalGreenMix;
+    padding: 10px;
+    position: absolute;
+    left: 139px;
+    z-index: 8;
+    font-size:$standardOne;
+    cursor: pointer;
+    color: $globalWhite;
+    border-radius: 8px 0 0 8px;
+}
+
+@mixin appointmentFormFieldPrimary {
+    
+    text-align:$textCenter;
+    border: none;
+    outline: none;
+    background-color:$globalSoftWhite;
+    color: $globalLightGrey;
+    font-style:$fontStyle;
+    text-transform:$textCapitalize;
+    padding: 13px 13px 13px 20px;
+    border-radius: 8px 8px 8px 8px;
+}
+
+@mixin doctorName {
+    text-align: $textCenter;
+    text-transform: $textCapitalize;
+    color: $globalPinkWhite;
+    font-style: $fontStyle;
+    text-shadow:$globalTitleShadow;
+    transition: all 350ms linear;
+    &:hover{
+        color:$globalDocHoverColor;
+        text-shadow: none;
+    }
+}
+
+@mixin submissioningForm {
+    width: 90%;
+    height:$defaultHeight;
+    margin: 0 auto;
+    background-color:$globalGhostWhite;
+    padding: 1% 0;
+    position: relative;
+    border-radius: 6px 6px 6px 6px;
+    margin-bottom: 2%;
+    margin-top: 1%;
+}
+@mixin submissioningSpan {
+    position: absolute;
+    left: 10px;
+    font-size:$standardThree;
+    color: $globalMarineBlue;
+    top: 8px;
+    cursor: pointer;
+}
+@mixin submissioningInput {
+    margin-left: 34px;
+    padding: 8px 10px 7px 4px;
+    text-align:$textLeft;
+    font-size:$standard;
+    font-style:$fontStyle;
+    text-transform:$textCapitalize;
+    background-color:$transparent;
+    outline: 0;
+    border: 0;
+}
+
+@mixin GeneralBannerHeading {
+    width: 85%;
+    height: auto;
+    padding: 2%;
+    margin: 0 auto;
+}
+@mixin GeneralBannerTitle {
+    font-size: $globalSemiLarge;
+    font-weight: $fontNine;
+    text-align: $textCenter;
+    font-style: $fontStyle;
+    text-transform:$textCapitalize;
+    text-shadow: 1px 3px 1px $globalMagenta;
+    color: $globalRedMixedWhite; 
+    padding: 2%;
+    padding-top: 1%;
+    line-height: 54px;
+    padding-bottom: 1%;
+}
+@mixin detailSection {
+    width: 90%;
+    height: $defaultHeight;
+    margin: 0 auto;
+}
+@mixin bannerBrief {
+    font-size:$standardThree;
+    font-weight:$fontTwo;
+    font-style: $fontStyle;
+    text-align: $textCenter;
+    text-transform:$textCapitalize;
+    text-shadow: 1px 2px 3px teal;
+    color:$globalWhite;
+}
+
+// about page 
+//  for large devices
+@mixin tinyTitle {
+    font-size:$globalFontFourteen;
+    font-weight: $fontEight;
+    font-style: $fontStyle;
+    text-transform: $textUppercase;
+    color: rgb(0, 164, 203);
+}
+
+@mixin sectiionTitle {
+    padding: 4% 0;
+    font-size: $standardSeven;
+    text-transform: $textCapitalize;
+    font-weight: $fontSeven;
+    text-shadow:$globalTitleShadow;
+    font-style: $fontStyle;
+    color: $globalDarkBlue;
+}
+@mixin sectionBrief {
+    font-size: $standardTwo;
+    font-weight: $fontTwo;
+    font-style: $fontStyle;
+    padding: 4% 0%;
+}
+@mixin aboutBtn {
+    display: inline-block;
+    width: 200px;
+    height: auto;
+    background-color: $globalMagenta;
+    color: $globalWhite;
+    cursor: pointer;
+    padding: 3% 3%;
+    border: none;
+    outline: none;
+    border-radius: 11px 11px 11px 11px;
+    text-align: $textCenter;
+    text-transform: $textCapitalize;
+    position: relative;
+    transition: .3s all ease;
+    &:hover{
+        background-color: $globalSemiDeepMagenta;
+    }
+}
+
+// ** contact form mixin
+@mixin contactFormTitle {
+    width: $defaultWidth;
+    height: $defaultHeight;
+    padding: 3% 0;
+    text-align: $textCenter;
+    text-transform: $textUppercase;
+    font-weight: $fontFive;
+    font-style: $fontStyle;
+    color: $globalSemiDeepMagenta;
+    .contactTitleSpan{
+        padding: 0 1%;
+        i{
+            font-size: $standardThree;
+            color:$globalMarineBlue;
+        }
+    }
+}
+@mixin contactBox {
+    width: 95%;
+    height: $defaultHeight;
+    margin: 0 auto;
+    padding: 2%;
+    margin: 1% 0;
+}
+@mixin contactBoxContent {
+    width: 95%;
+    height: $defaultHeight;
+    margin: 0 auto;
+    text-align:$textCenter;
+    padding: 1% 0;
+    font-size:$standardThree;
+    text-transform:$textCapitalize;
+    font-weight:$fontFour;
+    font-style: $fontStyle;
+    color:$globalMarineBlue;
+    .addressBoxSpan{
+        padding: 0 2%;
+        i{
+            font-size: $standardThree;
+            color: $globalSemiDeepMagenta;
+        }
+    }
+}
+@mixin contactDiv {
+    width: 95%;
+    height:$defaultHeight;
+    margin: 0 auto;
+    position: relative;
+}
+@mixin contactSpan {
+    position: absolute;
+    z-index: 27;
+    top: 17px;
+    left: 14px;
+    font-size: $standardTwo;
+    background: $globalGhostWhite;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+@mixin contactIconStyle {
+    position: inherit;
+    top: 6px;
+    left: 8px;
+    color: $globalMarineBlue;
+}
+@mixin contactInputStyle {
+    padding: 15px 15px 15px 15px;
+    width: 100%;
+    text-align: $textCenter;
+    background: $globalWhite;
+    outline: none;
+    border: none;
+    color: #286384;
+    border-radius: 10px 10px 10px 10px;
+    margin: 1% 0;
+    position: relative;
+    font-size:$standardZeroNine;
+    text-transform:$textCapitalize;
+    font-style:$fontStyle;
+    cursor: pointer;
+}
+// **contact responsive 
+@mixin miniIcon {
+    top: 8px !important;
+    font-size: $standard !important;
+
+}
+// ** for 375 
+@mixin miniMicroIcon {
+    top: 11px !important;
+    font-size:$fontLittle !important;
+}
+@mixin inputStyle {
+    font-size: $fontLittle !important;
+}
+
+// ** submission form related small device mixin
+
+@mixin IconSize {
+    font-size:$globalLittleFont;
+}
+@mixin smallInput {
+    padding: 5px 5px 7px 4px;
+    font-size: $fontLittle;
+}
+@mixin smallBtn{
+    width: 40%;
+    font-size: $fontLittle;
+    padding: 4px 8px 7px 2px;
+}

@@ -1,0 +1,205 @@
+.footerSection {
+    width: $defaultWidth;
+    height: $defaultHeight;
+    padding-top: 3%;
+
+    .footerContainer{
+        width:$defaultWidth;
+        height: $defaultHeight;
+        background-position: bottom;
+        background-size: cover;
+        background-repeat: no-repeat;
+        
+
+
+        .footerOrganizationDetails{
+            width: $defaultWidth;
+            height: $defaultHeight;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between; 
+            
+            .footerLogoBox{
+                flex-basis: 24%;
+                max-width: 24%;
+                height: $defaultHeight;
+                flex-direction: column;
+                align-content: space-between;
+                .footerLogo{
+                    width: 58%;
+                    height: auto;
+                    padding: 3% 0;
+                }
+
+                .footerHospitalDescription {
+                    width:$defaultWidth;
+                    height:$defaultHeight;
+                    padding: 5%;
+            
+                    p {
+                        color:$globalWhite;
+                        font-size: $globalFooterFont;
+                        text-align:$textLeft;
+                        text-transform:$textCapitalize;
+                        font-style:$fontStyle;
+                        font-weight:$fontTwo;
+                        text-shadow:$TitleParagraphShadow;
+
+                    }
+            }
+            .footerSocialMedia {
+                width: 40%;
+                height:$defaultHeight;
+                display: flex;
+                padding: 2% 0;
+                justify-content: space-between;
+                align-self: baseline;
+                margin-left: 10px;
+                font-size:$standard;
+                text-shadow:$TitleParagraphShadow;
+                transition: 450ms all ease;
+                .singleIcon{
+                    cursor: pointer;
+                    .socialLink{
+                        transition: 450ms all ease;
+                        .media{
+                            color: $globalGhostWhite;
+                            transition: 450ms all ease;
+
+                            &:hover{
+                                color: $globalMagenta;
+                                transform: rotate(360deg);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        // footer logo box completed here
+        .footerServiceBox{
+            width: 24%;
+            height:$defaultHeight;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-self: center;
+
+            .footerServiceHighlight{
+                width:$defaultWidth;
+                height:$defaultHeight;
+                padding: 2%;
+
+                h3{
+                    font-size:$standardFour;
+                    text-transform:$textCapitalize;
+                    font-style:$fontStyle;
+                    font-weight:$fontSix;
+                    color: $globalWhite;
+                    padding: 3% 0;
+                    text-shadow:$TitleParagraphShadow;
+                }
+                .footerServiceLink {
+                    display: inline-block;
+                    width:$defaultWidth;
+                    height:$defaultHeight;
+                    color: $globalPinkWhite;
+                    font-weight:$fontFive;
+                    text-transform:$textCapitalize;
+                    font-style: $fontStyle;
+                    font-size:$globalFontFifteen;
+                    padding: 1% 0;
+                    text-shadow: $TitleParagraphShadow;
+                    transition: 450ms all ease-in-out;
+
+                    &:hover{
+                        color:$globalMagenta;
+                    }
+                }
+            }
+
+            .footerPrivacy{
+                @extend .footerServiceHighlight;
+            }
+        }
+        .footerOtherBox{
+            @extend .footerServiceBox;
+
+            .footerImportantLinks{
+                @extend .footerServiceHighlight;
+            }
+            .footerWorkingTimeHighlight{
+                @extend .footerServiceHighlight;
+            }
+        }
+
+        .footerAddressBox{
+            @extend .footerServiceBox;
+
+            .officeLocation{
+                @extend .footerServiceHighlight;
+            }
+            .hospitalMail{
+                @extend .footerServiceHighlight;
+                h3{
+                    padding: 1% 0;
+                }
+                .footerServiceLink{
+                    text-transform: $textLowercase !important;
+                }
+            }
+            .contactNumber{
+                @extend .footerServiceHighlight;
+                h3{
+                    padding: 0;
+                }
+                p{
+                    i{
+                        margin-right:3% ;
+                    }
+                }
+            }
+        }
+    }
+    .footerDivider{
+        width: $defaultWidth;
+        height: 1.5px;
+        background-color: $globalLightShadow;
+        margin-top: 18px;
+    }
+    .footerCopyRight{
+        width: $defaultWidth;
+        height: $defaultHeight;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        .siteRights{
+            padding: 2% 0;
+            font-size:$globalFontFourteen;
+            text-transform:$textCapitalize;
+            font-weight: $fontFive;
+            color: $globalGhostWhite;
+            text-shadow:$TitleParagraphShadow;
+            span{
+                color: $globalMagenta;
+                font-style: $fontStyle;
+            }
+        }
+        .footerCreator{
+            @extend .siteRights;
+            a{
+                color:$globalMagenta;
+                font-style: $fontStyle;
+                transition: 450ms all ease;
+
+                &:hover{
+                    text-decoration:underline;
+                }
+            }
+        }
+    }
+  }
+}

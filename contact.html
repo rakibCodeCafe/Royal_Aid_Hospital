@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="write here company description in a short">
+    <meta name="Subject" content="Accident &amp; Cardiac Surgery,Cardiology,Critical Care, Dentistry,Dermatology,Diabetes &amp; Endocrinology,Dietetics &amp; Nutrition,ENT &amp; Head Neck Surgery,Family Medicine, Gastroenterology &amp; Hepatology,General Surgery,Health Screening,Hemodialysis,Internal Medicine,Laboratory, Laparoscopic Surgery,Neurology, Medicine,Oncology,Plastic Surgery,Physical Medicine &amp; Rehabilitation,Vaccination Centre,Vascular Surgery ,Emergency,Anesthesiology,Cancer Surgery (OncoSurgery),CARDIAC ANESTHESIA">
+    <meta name="description" content="Md Rakibul Hasan From Hunter Contributed Front-end Development -To built Royal Aid Hospital Website">
+    <meta name="description" content="Md Ashraful Haque From Hunter Contributed Graphic Design Support -To built Royal Aid Hospital Website">
+    <meta name="description" content="- Nazmul Alom - Saifullah Sifat From Hunter IT contributed back-end development to built Royal Aid Hospital Ltd.">
+    <meta name="Abstract" content="one-stop healthcare in Bangladesh">
+    <meta name="Googlebot" content="all">
+    <meta name="robots" content="index, follow">
+    <meta name="copyright" content="Copyright © Royal Aid Hospital">
+    <meta name="owner" content="Royal Aid Hospital">
+    <meta name="author" content="mother company">
+    <meta name="Rating" content="General">
+    <meta name="distribution" content="Global">
+    <meta name="classification" content="Patient info,For Physicians,Departments,Services,Gallery,News &amp; Events,Publication etc.">
+    <title>Contact Us</title>
+    <!-- font awesome css file -->
+    <link rel="stylesheet" href="plaguin/plugins/fontawesome/css/all.min.css">
+    <!-- owl css -->
+    <link rel="stylesheet" href="theme/owl.carousel.min.css">
+    <link rel="stylesheet" href="theme/owl.theme.default.min.css">
+    <!-- owl css ends here -->
+    <!-- swiper js starts here -->
+    <link rel="stylesheet" href="theme/swiper/swiper-bundle.min.css">
+    <!-- swiper js ends here -->
+    <!-- wow css starts here -->
+    <link rel="stylesheet" href="plaguin/plugins/wow/animate.css">
+    <!-- wow css ends here -->
+    <!-- magnific css starts here -->
+    <link rel="stylesheet" href="theme/magnific/magnific-popup.css">
+    <!-- magnific css starts here -->
+    <!-- ico logo css link -->
+    <link rel="shortcut icon" href="images/logo/favicon.ico" type="image/x-icon">    
+    <!-- customized css file -->
+    <link rel="stylesheet" href="scss/style.css">
+</head>
+<body>
+    <main>
+        <!-- ** preloader started here -->
+        <div class="loader-container">
+            <img src="images/preloader/loadingGif.gif" alt="">
+        </div>
+        <!-- ** preloader comleted here -->
+
+        <!-- header starts -->
+        <header id="header" class="header">
+            <div class="primaryHeader">
+                    <div class="headerBasic">
+                         <div class="mainContent mainContentSection"> 
+                        <!-- website account login starts here -->
+                        <div class="LoginInformation">
+                            <!-- logging object strats here -->
+                            <span class="loginLink text-capitalize"><span class="loginIcon"><i class="fa-solid fa-user"></i></span><span></span> login or register</span>
+                            <!-- login object ends here -->
+                            <!-- login/registration container  starts here-->
+                            <div class="loginFormBox loginFormBox--SmloginFormBox">
+                                <!-- login & registration button starts here -->
+                                <div class="buttonBox buttonBox--smallBtnBox">
+                                    <div id="btn"></div>
+                                    <button type="button" class="toggleBtn" onclick="login()">log in</button>
+                                    <button type="button" class="toggleBtn" onclick="register()">registration</button>
+                                </div>
+                                <!-- login & registration button starts here -->
+                                <!-- login form starts here -->
+                                <form id="login" action="#" class="inputGroup inputGroup--smallInputGroup">
+                                    <input type="text" id="userId" name="#" class="inputField" placeholder="user ID" required>
+                                    <input type="email" name="mail" id="email" class="inputField" required placeholder="enter registared email">
+                                    <div class="password">
+                                        <input type="password" name="pwd" id="myInput" class="inputField" required placeholder="enter password">
+                                        <i class="fa-solid fa-eye" id="show" onclick="myFunction()"></i>
+                                        <i class="fa-solid fa-eye-slash" id="hide" onclick="myFunction()"></i>
+                                    </div>
+                                    <input type="checkbox" class="checkBox">
+                                    <span class="checkText">remember password</span>
+                                    <a href="#" class="passwordLink">forget your password ?</a>
+                                    <button type="submit" class="submitBtn text-capitalize">log in</button>
+                                </form>
+                                <!-- login form ends here -->
+                                <!-- registration form  starts here-->
+                                <form id="register" action="#" class="inputGroup inputGroup--smallInputGroup">
+                                    <input type="text" id="userName" name="#" class="inputField" placeholder="your name" required>
+                                    <input type="text" id="CompanyId" name="#" class="inputField" placeholder="your company ID Nummber" required>
+                                    <input type="tel" id="phoneNumber" class="inputField"  name="phone" placeholder="+8801234567890" pattern="[+,' '][\d]{7}[-,$,' ',][\d]{0,6}|[+,' '][\d]{3}[,-,$,' ',][\d]{4}[-,$,' ',][\d]{0,6}|[(][(+,' '][\d]{3}[)][-,$,' '][\d]{4}\b[-,$,' ',][\d]{0,6}|[[+,' '][\d]{3}[-,$,' ',][\d]{4}[-,$,' ',][\d]{0,6}|[(][(+,' '][\d]{3}[)][-,$,' '][\d]{4}\b[-,$,' ',][\d]{0,6}|[+' '][\d]{0,13}|[+,' '][\d]{0,7}[-,$,' ',][\d]{0,6}" required>
+                                    <input type="email" name="mail" id="mailAddress" class="inputField" required placeholder="enter registared email">
+                                    <div class="respassword">
+                                        <input type="password" name="pwd" id="resInput" class="inputField" required placeholder="enter password">
+                                        <i class="fa-solid fa-eye" id="Show" onclick="resFunction()"></i>
+                                        <i class="fa-solid fa-eye-slash" id="Hide" onclick="resFunction()"></i>
+                                    </div>
+                                    <input type="checkbox" id="CheckBox" class="checkBox checkBox--littleDevice"><span class="checkText">remember password</span>
+                                    <button type="submit" class="submitBtn text-capitalize">registration</button>
+                                </form>
+                                <!-- registration form  starts here-->
+                            </div>
+                            <!-- login/registration container  starts here-->
+                        </div>
+                        <!-- website account login starts here -->
+                        <!-- header contact numbers start here -->
+                        <div class="headerContactNumbers">
+                            <span class="headerNumber"> emergency contact <span></span><span></span> <i class="fa-solid fa-phone-flip"></i> <span></span><span></span> +880-000-000-000</span>
+                            <span class="headerNumber"> doctor's appointment <span></span><span><span><span></span></span></span><span></span><i class="fa-solid fa-phone-flip"></i> <span></span><span></span>+880-000-000-000</span>
+                        </div>
+                        <!-- header contact numbers end here -->
+                        <div class="headerSocialMedia">
+                            <div class="singleIcon">
+                                <a class="socialLink" href=""><i class="fa-brands fa-facebook-f media"></i></a>
+                            </div>
+                            <div class="singleIcon">
+                                <a class="socialLink" href=""><i class="fa-brands fa-linkedin-in media"></i></a>
+                            </div>                            
+                            <div class="singleIcon">
+                                <a class="socialLink" href=""><i class="fa-brands fa-twitter media"></i></a>
+                            </div>
+                            <div class="singleIcon">
+                                <a class="socialLink" href=""><i class="fa-brands fa-youtube media"></i></a>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="headerScrolling">
+                        <div class="mainContent">
+                            <marquee behavior="scroll" direction="left" scrollamount="5" onmouseover="this.stop();" onmouseout="this.start();">
+                                <a href="#" class="scrollinglink" style="margin-right: 15px;">welcome to Royal aid hospital.</a>
+                                <a href="#" class="scrollinglink" style="margin-right: 15px;"> we provide quality services at a minimal cost</a>
+                                <a href="#" class="scrollinglink"  style="margin-right: 15px;">Lorem ipsum dolor sit amet consectetur.</a>
+                                <a href="#" class="scrollinglink"  style="margin-right: 15px;">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a>
+                                <a href="#" class="scrollinglink"  style="margin-right: 15px;">Lorem ipsum dolor sit amet consectetur.</a>
+                                <a href="#" class="scrollinglink"  style="margin-right: 15px;">Lorem, ipsum dolor sit amet consectetur adipisicing.</a>
+                            </marquee>
+                        </div>
+                    </div>
+                 </div>
+            
+            <!-- primary header ends here -->
+            <!-- secondary header starts here -->
+            <div class="secondaryHeader">
+                <div class="mainContent">
+                    <div class="mainContainers">
+                    <div class="logoContainer">
+                        <!-- logo conbtainer starts here -->
+                        <div class="logoPart">
+                            <a href="index.html">
+                                <img src="images/logo/RoyalHospitalLogo.png" alt="companyLogo">
+                            </a>
+                        </div>
+                        <div class="logoTextPart">
+                            <h1 class="CompanyName">
+                                royal aid hospital ltd.
+                            </h1>
+                        </div>
+                    </div>
+                
+                <!-- logo container ends here -->
+                     <!-- nav containere starts here -->
+                     <div class="navContainer">
+                            <nav id="navBar" class="navBar">
+                                <ul class="navList navList--SmDevice">
+                                    <li class="navListItem parent_menu">
+                                        <a href="#about-menu" class="navListItemLink text-capitalize navListItemLink--parentLink">about <i class="fa-solid fa-caret-down"></i>
+                                        </a>
+                                        <!-- dropdown menu starts here -->
+                                        <ul class="dropdownList">
+                                            <li class="dropDownItems">
+                                                <a href="about.html" class="navListItemLink text-capitalize navListItemLink--childLink">about royal aid</a>
+                                            </li>
+                                            <li class="dropDownItems">
+                                                <a href="appointment.html" class="navListItemLink text-capitalize navListItemLink--childLink">our doctors</a>
+                                            </li>
+                                            <li class="dropDownItems">
+                                                <a href="Gallery.html" class="navListItemLink text-capitalize navListItemLink--childLink">gallery</a>
+                                            </li>
+                                            <li class="dropDownItems">
+                                                <a href="#" class="navListItemLink text-capitalize navListItemLink--childLink">patients' Review</a>
+                                            </li>
+                                            <li class="dropDownItems">
+                                                <a href="#" class="navListItemLink text-capitalize navListItemLink--childLink">career</a>
+                                            </li>
+                                            <li class="dropDownItems">
+                                                <a href="#" class="navListItemLink text-capitalize navListItemLink--childLink">FAQ</a>
+                                            </li>
+                                        </ul>
+                                        <!-- dropdown for about ends here -->
+                                    </li>
+                                    <li class="navListItem">
+                                        <a href="appointment.html" class="navListItemLink text-capitalize navListItemLink--parentLink">doctors' appointment</a>
+                                    </li>
+                                    <li class="navListItem parent_menu">
+                                        <a href="#" class="navListItemLink text-capitalize navListItemLink--parentLink">departments
+                                            <i class="fa-solid fa-caret-down"></i>
+                                        </a>
+                                        <!-- large dropdown starts here -->
+                                        <ul class="largeDropdownList">
+                                            <li class="largeDropdownItems">
+                                                <a href="#" class="navListItemLink text-capitalize navListItemLink--childLink">General & Laparoscopic Surgery</a>
+                                            </li>
+                                            <li class="largeDropdownItems">
+                                                <a href="#" class="navListItemLink text-capitalize navListItemLink--childLink">Cardiology</a>
+                                            </li>
+                                            <li class="largeDropdownItems">
+                                                <a href="#" class="navListItemLink text-capitalize navListItemLink--childLink">Oncology</a>
+                                            </li>
+                                            <li class="largeDropdownItems">
+                                                <a href="#" class="navListItemLink text-capitalize navListItemLink--childLink">Plastic & Aesthetic Surgery</a>
+                                            </li>
+                                            <li class="largeDropdownItems">
+                                                <a href="#" class="navListItemLink text-capitalize navListItemLink--childLink">Urology</a>
+                                            </li>
+                                            <li class="largeDropdownItems">
+                                                <a href="#" class="navListItemLink text-capitalize navListItemLink--childLink">Pediatric & Neonatology</a>
+                                            </li>
+                                            <li class="largeDropdownItems">
+                                                <a href="#" class="navListItemLink text-capitalize navListItemLink--childLink">Gastroenterology & Hepatology</a>
+                                            </li>
+                                            <li class="largeDropdownItems">
+                                                <a href="#" class="navListItemLink text-capitalize navListItemLink--childLink">Nephrology</a>
+                                            </li>
+                                            <li class="largeDropdownItems">
+                                                <a href="#" class="navListItemLink text-capitalize navListItemLink--childLink">Obstetrics & Gynecology</a>
+                                            </li>
+                                            <li class="largeDropdownItems">
+                                                <a href="#" class="navListItemLink text-capitalize navListItemLink--childLink">MRD SERVICES</a>
+                                            </li>
+                                            <li class="largeDropdownItems">
+                                                <a href="#" class="navListItemLink text-capitalize navListItemLink--childLink">Diabetes & Endocrinology</a>
+                                            </li>
+                                            <li class="largeDropdownItems">
+                                                <a href="#" class="navListItemLink text-capitalize navListItemLink--childLink">Cardiac surgery</a>
+                                            </li>
+                                            <li class="largeDropdownItems">
+                                                <a href="#" class="navListItemLink text-capitalize navListItemLink--childLink">ENT, Head & Neck Surgery</a>
+                                            </li>
+                                            <li class="largeDropdownItems">
+                                                <a href="#" class="navListItemLink text-capitalize navListItemLink--childLink">Neurosurgery</a>
+                                            </li>
+                                            <li class="largeDropdownItems">
+                                                <a href="#" class="navListItemLink text-capitalize navListItemLink--childLink">Vascular Surgery</a>
+                                            </li>
+                                            <li class="largeDropdownItems">
+                                                <a href="#" class="navListItemLink text-capitalize navListItemLink--childLink">Orthopedics </a>
+                                            </li>
+                                            <li class="largeDropdownItems">
+                                                <a href="#" class="navListItemLink text-capitalize navListItemLink--childLink">Arthoscopy & Joint Replacement</a>
+                                            </li>
+                                            <li class="largeDropdownItems">
+                                                <a href="#" class="navListItemLink text-capitalize navListItemLink--childLink">Thoracic Surgery</a>
+                                            </li>
+                                            <li class="largeDropdownItems">
+                                                <a href="#" class="navListItemLink text-capitalize navListItemLink--childLink">Internal Medicine</a>
+                                            </li>
+                                            <li class="largeDropdownItems">
+                                                <a href="#" class="navListItemLink text-capitalize navListItemLink--childLink">Respiratory Medicine</a>
+                                            </li>
+                                            <li class="largeDropdownItems">
+                                                <a href="#" class="navListItemLink text-capitalize navListItemLink--childLink">Clinical Hematology</a>
+                                            </li>
+                                            <li class="largeDropdownItems">
+                                                <a href="#" class="navListItemLink text-capitalize navListItemLink--childLink">ICU</a>
+                                            </li>
+                                            <li class="largeDropdownItems">
+                                                <a href="#" class="navListItemLink text-capitalize navListItemLink--childLink">Radiology & Imaging</a>
+                                            </li>
+                                            <li class="largeDropdownItems">
+                                                <a href="#" class="navListItemLink text-capitalize navListItemLink--childLink">Colorectal Surgery</a>
+                                            </li>
+                                            <li class="largeDropdownItems">
+                                                <a href="#" class="navListItemLink text-capitalize navListItemLink--childLink">NICU</a>
+                                            </li>
+                                            <li class="largeDropdownItems">
+                                                <a href="#" class="navListItemLink text-capitalize navListItemLink--childLink">Laboratory Medicine</a>
+                                            </li>
+                                            <li class="largeDropdownItems">
+                                                <a href="#" class="navListItemLink text-capitalize navListItemLink--childLink">Psychiatry</a>
+                                            </li>
+                                            <li class="largeDropdownItems">
+                                                <a href="#" class="navListItemLink text-capitalize navListItemLink--childLink">Dental and Maxillofacial Surgery</a>
+                                            </li>
+                                            <li class="largeDropdownItems">
+                                                <a href="#" class="navListItemLink text-capitalize navListItemLink--childLink">Blood Bank</a>
+                                            </li>
+                                            <li class="largeDropdownItems">
+                                                <a href="#" class="navListItemLink text-capitalize navListItemLink--childLink">Corporate Affairs Department</a>
+                                            </li>
+                                            <li class="largeDropdownItems">
+                                                <a href="#" class="navListItemLink text-capitalize navListItemLink--childLink">Vaccination Center</a>
+                                            </li>
+                                            <li class="largeDropdownItems">
+                                                <a href="#" class="navListItemLink text-capitalize navListItemLink--childLink">Nutrition & Dietetic Department</a>
+                                            </li>
+                                            <li class="largeDropdownItems">
+                                                <a href="#" class="navListItemLink text-capitalize navListItemLink--childLink">EMERGENCY</a>
+                                            </li>
+                                            <li class="largeDropdownItems">
+                                                <a href="#" class="navListItemLink text-capitalize navListItemLink--childLink">Health Check Up</a>
+                                            </li>
+                                            <li class="largeDropdownItems">
+                                                <a href="#" class="navListItemLink text-capitalize navListItemLink--childLink">Rheumatology</a>
+                                            </li>
+                                            <li class="largeDropdownItems">
+                                                <a href="#" class="navListItemLink text-capitalize navListItemLink--childLink">Surgical Oncology</a>
+                                            </li>
+                                            <li class="largeDropdownItems">
+                                                <a href="#" class="navListItemLink text-capitalize navListItemLink--childLink">Breast, Colorectal & Laparoscopic Surgery</a>
+                                            </li>
+                                            <li class="largeDropdownItems">
+                                                <a href="#" class="navListItemLink text-capitalize navListItemLink--childLink">Anaesthesia</a>
+                                            </li>
+                                            <li class="largeDropdownItems">
+                                                <a href="#" class="navListItemLink text-capitalize navListItemLink--childLink">Others</a>
+                                            </li>
+                                        </ul>
+                                        <!-- large drpdown ends here -->
+                                    </li>
+                                    <li class="navListItem">
+                                        <a href="#ambulanceHiring" class="navListItemLink text-capitalize navListItemLink--parentLink"> ambulance</a>
+                                    </li>
+                                    <li class="navListItem parent_menu">
+                                        <a href="#" class="navListItemLink text-capitalize navListItemLink--parentLink">visitors & patients 
+                                            <i class="fa-solid fa-caret-down"></i></a> 
+                                        
+                                        <ul class="dropdownList">
+                                            <li class="dropDownItems">
+                                                <a href="#" class="navListItemLink text-capitalize navListItemLink--childLink">services</a>
+                                            </li>
+                                            <li class="dropDownItems">
+                                                <a href="#" class="navListItemLink text-capitalize navListItemLink--childLink">failities</a>
+                                            </li>
+                                            <li class="dropDownItems">
+                                                <a href="#" class="navListItemLink text-capitalize navListItemLink--childLink">health checkup</a>
+                                            </li>
+                                            <li class="dropDownItems">
+                                                <a href="#" class="navListItemLink text-capitalize navListItemLink--childLink">packages</a>
+                                            </li>
+                                            <li class="dropDownItems">
+                                                <a href="#" class="navListItemLink text-capitalize navListItemLink--childLink">room rent</a>
+                                            </li>
+                                            <li class="dropDownItems">
+                                                <a href="#" class="navListItemLink text-capitalize navListItemLink--childLink">equipments</a>
+                                            </li>
+                                            <li class="dropDownItems">
+                                                <a href="#" class="navListItemLink text-capitalize navListItemLink--childLink">health tips</a>
+                                            </li>
+                                            <li class="dropDownItems">
+                                                <a href="#" class="navListItemLink text-capitalize navListItemLink--childLink">visitors' policy</a>
+                                            </li>
+                                        </ul>
+                                        <!-- dropdown for about ends here -->
+                                    </li>
+                                    <li class="navListItem">
+                                        <a href="contact.html" class="navListItemLink text-capitalize navListItemLink--parentLink">contact</a>
+                                    </li>
+                                </ul>
+                                     <!-- beef burger starts here-->
+                                    <div class="beefBurger">
+                                        <span class="bar"></span>
+                                        <span class="bar"></span>
+                                        <span class="bar"></span>
+                                    </div>
+                                </nav>                      
+                    </div>
+                <!-- nav containere ends here -->
+                    </div>
+                </div>
+            </div>
+            <!-- secondary header ends here -->
+        </header>
+        <!-- header ends here -->
+        <!-- *****====== slider starts here ======****** -->
+        <section id="slider" class="bannerSlider">  
+            <div class="bannerContainer">
+                <div class="slideContainer active" style="background-image:url(./images/Contact-page/contactBG.jpeg) ;">
+                    <div class="mainContent">
+                        <div class="slide">
+                            <div class="contentElement">
+                                <div class="slideHeading">
+                                <h2 class="sliderTitle">contact with royal aid hospital</h2>
+                                </div>
+                                <div class="slideBrief">
+                                <p class="slideDetail">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim id nulla labore doloremque et facilis? thingko xinalo fdod uni lkojhh. Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        </section>
+        <!-- ** Slider ends here ** -->
+    <!-- **=-= contact section started here=-=** -->
+    <section id="contactInfo" class="contactSectionPage">
+        <div class="contactPageContainer">
+            <div class="contactDetails">
+                <div class="mainContent">
+                    <h3 class="wow fadeInUp" data-wow-delay="0.57s"><span class="lineSpan">contact us </span></h3>
+                    <p class="wow fadeInUp" data-wow-delay="0.77s">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta veniam unde possimus molestias. Consectetur ad corrupti fugiat mollitia dolorem officia? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut, nesciunt? Ipsam, voluptate.</p>
+                </div>
+            </div>
+            <div class="DetailInformation">
+                <div class="mainContent">
+                    <div class="infoDetails">
+                        <div class="contact">
+                            <div class="contactField wow fadeInUp" data-wow-delay="0.47s" data-tilt>
+                                <form action="#" class="contactForm wow fadeInUp" data-wow-delay="0.77s">
+                                    <h3 class="contactFormTitle wow pulse" data-wow-delay="1.2s"> <span class="contactTitleSpan wow bounce" style="visibility: visible; animation-delay: 0.57s; animation-name: bounce; animation-duration: infinity;"><i class="fa-solid fa-pen-nib"></i></span> write your message here</h3>
+                                    <div class="visitor">
+                                        <label for="Name"></label>
+                                        <span class="contactIcon"><i class="fa-solid fa-user"></i></span>
+                                        <input type="text" id="Name" name="Name"  class="contactInput"  required placeholder="your name">
+                                    </div>
+                                    <div class="visitorEmail">
+                                        <label for="visitoremailAddress"></label>
+                                        <span class="contactIcon"><i class="fa-solid fa-envelope"></i></span>
+                                        <input type="email" id="visitoremailAddress" class="contactInput"  name="visitoremailAddress" placeholder="yourmail@mail.com" required>
+                                    </div>
+                                    <div class="visitorPhone">
+                                        <label for="phoneNumber"></label>
+                                        <span class="contactIcon"><i class="fa-solid fa-phone"> </i></span>
+                                        <input type="tel" id="visitorPhone" class="contactInput"  name="visitorPhone" placeholder="+8801234567890" pattern="[+,' '][\d]{7}[-,$,' ',][\d]{0,6}|[+,' '][\d]{3}[,-,$,' ',][\d]{4}[-,$,' ',][\d]{0,6}|[(][(+,' '][\d]{3}[)][-,$,' '][\d]{4}\b[-,$,' ',][\d]{0,6}|[[+,' '][\d]{3}[-,$,' ',][\d]{4}[-,$,' ',][\d]{0,6}|[(][(+,' '][\d]{3}[)][-,$,' '][\d]{4}\b[-,$,' ',][\d]{0,6}|[+' '][\d]{0,13}|[+,' '][\d]{0,7}[-,$,' ',][\d]{0,6}" required>
+                                    </div>
+                                    <div class="queries">
+                                        <label for="query"></label>
+                                        <span class="contactIcon"><i class="fa-solid fa-calendar-days"></i></span>
+                                        <select name="query" id="query" class="contactInput"  required>
+                                            <option value="undefined:undefined" selected="selected">you're looking for:</option>
+                                            <option value="number:01">Medical Treatment</option>
+                                            <option value="number:02">Product Buying</option>
+                                            <option value="number:03">Corporate Packages</option>
+                                            <option value="number:04">None of These Above</option>
+                                        </select>
+                                        </div>
+                                        <div class="message">
+                                            <label for="text"></label>
+                                            <textarea name="text" id="text" class="contactInput" cols="30" rows="6" placeholder="your message here"></textarea>
+                                        </div>
+                                        <div class="contactBtn">
+                                            <input type="submit" value="your message" id="appointmentButton" class="contactInput">
+                                        </div>
+                                </form>
+                            </div>
+                            <div class="contactAddress wow fadeInUp" data-wow-delay="0.67s" data-tilt>
+                                <h3 class="contactAddressTitle"><span class="contactTitleSpan"><i class="fa-solid fa-house-chimney"></i></span>our address</h3>
+                                <div class="contactAddressBox">
+                                    <address class="contactDetailAdderss"> <span class="addressBoxSpan"><i class="fa-solid fa-location-dot"></i></span> 121 King Street, Melbourne,Victoria 3000 Australia</address>
+                                </div>
+                                <div class="contactAddressBox">
+                                    <p class="contactMailAddreess"><span class="addressBoxSpan"><i class="fa-solid fa-envelope"></i></span> royalaidhospital@gmail.com</p>
+                                </div>
+                                <div class="contactAddressBox">
+                                    <p class="contactPhoneAddress"><span class="addressBoxSpan"><i class="fa-solid fa-phone"></i></span>doctor's appointment:+8801876543289</p>
+                                </div>
+                                <div class="contactAddressBox">
+                                    <p class="contactPhoneAddress"><span class="addressBoxSpan"><i class="fa-solid fa-phone"></i></span>emergency contact:+8801876543289</p>
+                                </div>
+                                <div class="contactAddressBox">
+                                    <p class="contactPhoneAddress"><span class="addressBoxSpan"><i class="fa-solid fa-phone"></i></span> hotline- 1341</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contactDivider"></div>
+                        <div class="contactSocialMedia">
+                            <h3 class="socialMediaTitle text-capitalize text-center wow fadeInUp" data-wow-delay="0.57s">find us in social media</h3>
+                            <div class="contactSocialMediaContainer">
+                                <div class="contactSocialMediaBox  wow bounceInLeft" data-wow-delay="0.67s">
+                                    <a class="contactLink" href=""><i class="fa-brands fa-facebook-f"></i></a>
+                                </div>
+                                <div class="contactSocialMediaBox wow fadeInUp" data-wow-delay="0.47s">
+                                    <a class="contactLink" href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                                </div>
+                                <div class="contactSocialMediaBox wow fadeInUp" data-wow-delay="0.47s">
+                                    <a class="contactLink" href=""><i class="fa-brands fa-twitter"></i></a>
+                                </div>
+                                <div class="contactSocialMediaBox wow bounceInRight" data-wow-delay="0.67s">
+                                    <a class="contactLink" href=""><i class="fa-brands fa-youtube"></i></a>
+                                </div>
+                            </div>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- **=-= contact section started here=-=** -->
+    <section id="ambulanceHiring" class="ambulanceHiring">
+        <div class="mainContent">
+            <div class="ambulanceContainer">
+                <div class="ambulanceImage wow fadeInUp" data-wow-delay="0.75s" data-tilt>
+                    <img src="images/ambulance/FR-pick-up-thumb-nail.jpg" alt="ambulanceThumb">
+                </div>
+                <div class="ambulanceInformation wow fadeInUp" data-wow-delay="0.85s">
+                    <h3 class="ambulanceTitle wow swing" data-wow-delay="0.75s">hire an ambulance!</h3>
+                    <p class="ambulanceBrief">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur aliquam, ipsum doloribus impedit doloremque placeat molestias.just <a href="#" target="_blank">Click here</a> or dial</p>
+                    <span class="ambulanceNumber wow bounceInUp"   data-wow-delay="0.85s" >+880-1890-198-958.</span>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***===Map Section completed here===*** -->
+    <section id="location" class="location overflow">
+        <div class="locationContent">
+            <div class="mainContent">
+                <div class="locationDetails wow fadeInUp" data-wow-delay="0.5s">
+                    <h3> <span class="lineSpan">find us in map</span></h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta fugit maxime tempora laborum quis reprehenderit!</p>
+                </div>
+            </div>
+            <div class="locatonContainer wow fadeInUp" data-wow-delay="0.65s" style="width: 100%;">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d912.9845788188792!2d90.42567182918967!3d23.749578999036878!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b86e721b2d0f%3A0xd71b687d826d71d7!2z4KaW4Ka_4Kay4KaX4Ka-4KaB4KaTIOCmmuCnjOCmsOCmvuCmuOCnjeCmpOCmviDgppzgpr7gpq7gp4cg4Kau4Ka44Kac4Ka_4KamIOCmkyDgpq7gpr7gpqbgprDgpr7gprjgpr4!5e0!3m2!1sbn!2sbd!4v1665176375293!5m2!1sbn!2sbd" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+    <!-- ***===Map Section completed here===*** -->
+    <!-- **seubscribe section starts here** -->
+    <section id="subscribe" class="subscribe overflow">
+        <div class="subscribeContainer" style="background-image: url('./images/subscribe/emailBanner.jpeg');">
+            <div class="mainContent">
+                <div class="subscribeContentBox overflow">
+                    <div class="subscribeContent">
+                        <h3 class="subscribeTitle wow fadeInUp" data-wow-delay="0.75s">subscribe us</h3>
+                        <p class="subscribeText wow fadeInUp" data-wow-delay="0.95s">subscribe us to get latest upadate, discount offer & newsletter.</p>
+                        
+                    </div>
+                    <div class="subscribeForm">
+                         <form action="#" class="subscriptionForm wow pulse" data-wow-delay="0.5s">
+                            <label for="subscriptionMail"></label>
+                            <input type="email" name="email" id="subscriptionMail" placeholder="exampple@xample.com">
+                            <label for="subscriptionBtn"></label>
+                            <input type="submit" id="subscriptionBtn" value="subscribe">
+                         </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- **subscribe section completed here** -->
+ <!-- *** ===== footer statrts here ===== *** -->
+ <footer id="FooterSection" class="footerSection overflow">
+    <div class="footerContainer overflow" style="background-image:url('./images/footer/footerBgImage.jpeg') ;">
+        <div class="mainContent">
+            <div class="footerOrganizationDetails" >
+                <div class="footerLogoBox wow fadeInUp" data-wow-delay="0.47s">
+                    <div class="footerLogo">
+                        <a href="#"><img src="images/logo/RoyalHospitalLogo.png" alt="CompanyLogo"></a>
+                    </div>
+                    <div class="footerHospitalDescription">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur a corrupti molestiae?</p>
+                    </div>
+                    <div class="footerSocialMedia">
+                        <div class="singleIcon">
+                            <a class="socialLink" href=""><i class="fa-brands fa-facebook-f media"></i></a>
+                        </div>
+                        <div class="singleIcon">
+                            <a class="socialLink" href=""><i class="fa-brands fa-linkedin-in media"></i></a>
+                        </div>                            
+                        <div class="singleIcon">
+                            <a class="socialLink" href=""><i class="fa-brands fa-twitter media"></i></a>
+                        </div>
+                        <div class="singleIcon">
+                            <a class="socialLink" href=""><i class="fa-brands fa-youtube media"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footerServiceBox wow fadeInUp" data-wow-delay="0.67s">
+                    <div class="footerServiceHighlight">
+                        <h3>our services</h3>
+                        <a href="#" class="footerServiceLink">disease checkup & consultancy</a>
+                        <a href="#" class="footerServiceLink">diagonastic tests</a>
+                        <a href="#ambulanceHiring" class="footerServiceLink">emergency ambulance</a>
+                    </div>
+                    <div class="footerPrivacy">
+                        <h3>other links</h3>
+                        <a href="#" class="footerServiceLink">terms & conditions</a>
+                        <a href="#" class="footerServiceLink">privacy policy</a>
+                        <a href="#" class="footerServiceLink">condition of uses</a>
+                        <a href="#" class="footerServiceLink">treatment policy</a>
+                    </div>
+                </div>
+                <div class="footerOtherBox wow fadeInUp" data-wow-delay="0.87s" >
+                    <div class="footerImportantLinks">
+                        <h3>important links</h3>
+                    <a href="#" class="footerServiceLink">gallery</a>
+                    <a href="contact.html" class="footerServiceLink">find doctors</a>
+                    <a href="appointment.html" class="footerServiceLink">appointment</a>
+                    </div>
+                    <div class="footerWorkingTimeHighlight">
+                        <h3>working hour</h3>
+                        <p class="footerServiceLink">Sat - Sun - 9:00 AM - 6:00 PM</p>
+                        <p class="footerServiceLink">Mon - Wed - 9:00 AM - 7:00 PM</p>
+                        <p class="footerServiceLink">Thursday - 9:00 AM - 6:30 PM </p>
+                        <p class="footerServiceLink">Friday - Closed</p>
+                    </div>
+                </div>
+                <div class="footerAddressBox wow fadeInUp" data-wow-delay="0.97s">
+                    <div class="officeLocation">
+                        <h3>office location</h3>
+                        <address class="footerServiceLink"><i class="fa-solid fa-location-dot"></i> 121 King Street, Melbourne,Victoria 3000 Australia</address>
+                    </div>
+                    <div class="hospitalMail">
+                        <h3>Email Address</h3>
+                        <p class="footerServiceLink"><i class="fa-solid fa-envelope"></i> royalaidhospital@gmail.com</p>
+                    </div>
+                    <div class="contactNumber">
+                        <h3>contact number</h3>
+                        <p class="footerServiceLink"><i class="fa-solid fa-phone"></i>01876543289</p>
+                        <p class="footerServiceLink"><i class="fa-solid fa-phone"></i>01876543289</p>
+                        <p class="footerServiceLink"><i class="fa-solid fa-phone"></i>1123 hotline</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footerDivider"></div>
+            <div class="footerCopyRight">
+                <span id="siteRights" class="siteRights">&copy;2022 all the rights reserves @ <span>Royal Hospital Ltd.</span></span>
+                <span class="footerCreator">developed by <a href="https://web.facebook.com/Ppitter78" target="_blank" rel="noopener noreferrer">Rakib Hasan</a> from <a href="https://www.facebook.com/hunterit.bd" target="_blank" rel="noopener noreferrer">Hunter IT.</a></span>
+            </div>
+        </div>
+    </div>
+ </footer>
+ <!-- *** =====footer ends here=====*** -->
+    </main>
+    <script src="theme/jquery-3.6.0.min.js"></script>
+    <script src="theme/owl.carousel.min.js"></script>
+    <script src="plaguin/plugins/wowJS/wow.min.js"></script>
+    <script src="js/vanilla-tilt.js"></script>
+    <script src="theme/swiper/swiper-bundle.min.js"></script>
+    <script src="js/productSlide.js"></script>
+    <script src="theme/magnific/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/sticky-header.js"></script>
+    <script src="js/plauginRunner.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/nav.js"></script>
+    <script src="js/sticky.js"></script>
+</body>
+</html>
